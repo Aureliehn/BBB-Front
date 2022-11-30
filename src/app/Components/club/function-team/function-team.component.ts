@@ -7,9 +7,9 @@ import { ClubService } from 'src/app/Services/club.service';
   styleUrls: ['./function-team.component.css']
 })
 export class FunctionTeamComponent implements OnInit {
-  public members: any[]=[];
-  public membersCom : any[]=[];
-  public membersBureau: any[]=[];
+  public members: any[]= [];
+  public membersCom : any[]= [];
+  public membersBureau: any[]= [];
   constructor(
     private clubService : ClubService
   ) { }
@@ -17,7 +17,6 @@ export class FunctionTeamComponent implements OnInit {
   ngOnInit(): void {
     this.getMembers();
     this.getComMembers();
-    console.log(this.membersBureau, "ici")
   }
 
   public getMembers(){

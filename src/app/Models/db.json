@@ -355,7 +355,7 @@
             "img":"assets/counselo.jpg"
         },
         {
-            "id":1,
+            "id":8,
             "firstname": "tar",
             "category": "u17",
             "lastname": "tampion",
@@ -363,21 +363,21 @@
             
         },
         {
-            "id": 2,
+            "id": 9,
             "firstname": "mimi",
             "category": "SF",
             "lastname": "tampion",
             "img":"assets/counselo.jpg"
         },
         {
-            "id": 3,
+            "id": 10,
             "firstname": "sophie",
             "category": "SF",
             "lastname": "lagirafe",
             "img":"assets/counselo.jpg"
         },
         {
-            "id": 4,
+            "id": 11,
             "firstname": "dark",
             "category": "SF",
             "lastname": "vador",
@@ -391,14 +391,14 @@
             "img":"assets/counselo.jpg"
         },
         {
-            "id": 6,
+            "id": 12,
             "firstname": "toto",
             "category": "SF",
             "lastname": "tampion",
             "img":"assets/counselo.jpg"
         },
         {
-            "id": 7,
+            "id": 13,
             "firstname": "bo",
             "category": "SF",
             "lastname": "ruto",
@@ -490,7 +490,7 @@
             
         },
         {
-            "id":3,
+            "id":5,
             "firstname": "jean mi",
             "function": "communication",
             "lastname": "baba",
@@ -498,7 +498,7 @@
             
         },
         {
-            "id":4,
+            "id":6,
             "firstname": "lorem",
             "function": "animation",
             "lastname": "baba",
