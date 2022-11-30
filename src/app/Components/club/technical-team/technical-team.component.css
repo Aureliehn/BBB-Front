@@ -1,0 +1,12 @@
+.badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--redColor);
+}
+.card{
+    border: 1px solid red;
+}
+.redColor{
+    color: var(--redColor);
+}

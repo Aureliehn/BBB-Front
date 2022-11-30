@@ -1,0 +1,15 @@
+ul::before{
+    content:" ";
+    width: 0.2em;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+
+}
+.col-6{
+    position: relative;
+}
+ul{
+    list-style: none;
+}

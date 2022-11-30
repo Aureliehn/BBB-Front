@@ -1,0 +1,17 @@
+a{
+    color: var(--redColor);
+}
+.dropdown-toggle:hover, 
+a:hover,
+.dropdown-toggle:active,
+a:active, .nav-link:active{
+    color: white;
+}
+
+img{
+    max-width: 42px;
+}
+.dropdown-item:hover{
+    background-color: var(--redColor);
+    color: white;
+}

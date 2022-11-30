@@ -1,0 +1,510 @@
+{
+    "sections": [
+        
+        {
+            "id": 1,
+            "name": "mini",
+            "pictures":[
+                {
+                    "id":1,
+                    "title":"U9 Mixte",
+                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U9-mixte-1536x1152.jpg"
+                },
+                {
+                    "id":2,
+                    "title":"U11 Garcon",
+                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g-1536x1152.jpg"
+                },
+                {
+                    "id":3,
+                    "title":"U11 Fille",
+                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11f.jpg"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name": "jeune",
+            "pictures":[
+                {
+                    "id":1,
+                    "title":"",
+                    "url":""
+                },
+                {
+                    "id":2,
+                    "title":"",
+                    "url":""
+                },
+                {
+                    "id":3,
+                    "title":"",
+                    "url":""
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name":"senior",
+            "pictures":[
+                {
+                    "id":1,
+                    "title":"",
+                    "url":""
+                },
+                {
+                    "id":2,
+                    "title":"",
+                    "url":""
+                },
+                {
+                    "id":3,
+                    "title":"",
+                    "url":""
+                }
+            ]
+        }
+    ],
+    "actu":[
+        {
+            "id":1,
+            "title": "titre",
+            "content":"blavlalvlllll",
+            "img":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g-1536x1152.jpg"
+        }
+    ],
+    "result":[
+        {
+            "id":1,
+            "section":"old",
+            "category": "SF",
+            "advers":"Issoire",
+            "score":"20-32"
+        },
+        {
+            "id":2,
+            "section":"old",
+            "category": "SF",
+            "advers":"TOTO",
+            "score":"20-32"
+        },
+        {
+            "id":3,
+            "section":"old",
+            "category": "SF",
+            "advers":"Tar",
+            "score":"20-32"
+        },
+        {
+            "id":4,
+            "section":"mini",
+            "category": "U11",
+            "advers":"Issoire",
+            "score":"20-32"
+        },
+        {
+            "id":5,
+            "section":"mini",
+            "category": "U11",
+            "advers":"TOTO",
+            "score":"20-32"
+        },
+        {
+            "id":6,
+            "section":"young",
+            "category": "U17",
+            "advers":"Tar",
+            "score":"20-32"
+        }
+    ],
+    "up":[
+        {
+            "id":1,
+            "section":"old",
+            "category": "SF",
+            "advers":"Issoire",
+            "place":"Brioude",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        },
+        {
+            "id":2,
+            "section":"old",
+            "category": "SF",
+            "advers":"TOTO",
+             "place":"Toto",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        },
+        {
+            "id":3,
+            "section":"old",
+            "category": "SF",
+            "advers":"Tar",
+             "place":"Tar",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        },
+        {
+            "id":4,
+            "section":"mini",
+            "category": "U11",
+            "advers":"Issoire",
+             "place":"brioude",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        },
+        {
+            "id":5,
+            "section":"mini",
+            "category": "U11",
+            "advers":"TOTO",
+             "place":"brioude",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        },
+        {
+            "id":6,
+            "section":"young",
+            "category": "U17",
+            "advers":"Tar",
+             "place":"tampion",
+            "date":"20/12/2022",
+            "hour":"11",
+            "min":"30"
+        }
+    ],
+    "actu":[
+        {
+            "id":1,
+            "title":"Tournoi parents-enfants",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/tournoi.png"
+        },
+        {
+            "id":2,
+            "title":"Tournoi inter-comités",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/affiche.jpg"
+        },
+        {
+            "id":3,
+            "title":"Ecole de basket",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/edb.png"
+        },
+        {
+            "id":1,
+            "title":"Tournoi parents-enfants",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/tournoi.png"
+        },
+        {
+            "id":2,
+            "title":"Tournoi inter-comités",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/affiche.jpg"
+        },
+        {
+            "id":3,
+            "title":"Ecole de basket",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lorem orci. Proin placerat vitae risus nec interdum. Vivamus tincidunt, enim nec scelerisque fringilla, sem nisl sodales quam, in hendrerit erat dui ut lorem. Proin tempor orci id blandit laoreet. Etiam cursus enim ipsum. Pellentesque in mattis est. Vestibulum venenatis augue nec aliquet dignissim. Maecenas sit amet dolor a ipsum faucibus imperdiet eu id mauris.",
+            "date":"20/12/2022",
+            "img":"assets/edb.png"
+        }
+    ],
+    "training":[
+        {
+            "id":1,
+            "section": "old",
+            "category": "SF",
+            "day": "vendredi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "la halle"
+        },
+        {
+            "id": 2,
+            "section": "old",
+            "category": "SM1",
+            "day": "mardi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "Gymnase"
+        },
+        {
+            "id": 3,
+            "section": "old",
+            "category": "SM2",
+            "day": "jeudi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "salle polyvalente"
+        },
+        {
+            "id": 4,
+            "section": "young",
+            "category": "U17",
+            "day": "vendredi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "la halle"
+        },
+        {
+            "id": 5,
+            "section": "young",
+            "category": "u18",
+            "day": "mardi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "Gymnase"
+        },
+        {
+            "id": 6,
+            "section": "young",
+            "category": "u15",
+            "day": "jeudi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "salle polyvalente"
+        },
+        {
+            "id": 7,
+            "section": "mini",
+            "category": "u9",
+            "day": "samedi",
+            "startHour": "18",
+            "startMinute": "15",
+            "endHour": "19",
+            "endMinute":"45",
+            "place": "salle polyvalente"
+        }
+    ]
+    ,
+    "technicalTeam":[
+        {
+            "id":1,
+            "firstname": "tar",
+            "category": "SF",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+            
+        },
+        {
+            "id": 2,
+            "firstname": "mimi",
+            "category": "SM1",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 3,
+            "firstname": "sophie",
+            "category": "SM2",
+            "lastname": "lagirafe",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 4,
+            "firstname": "dark",
+            "category": "u15",
+            "lastname": "vador",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 5,
+            "firstname": "na",
+            "category": "u18",
+            "lastname": "ruto",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 6,
+            "firstname": "toto",
+            "category": "u9",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 7,
+            "firstname": "bo",
+            "category": "U11",
+            "lastname": "ruto",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id":1,
+            "firstname": "tar",
+            "category": "u17",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+            
+        },
+        {
+            "id": 2,
+            "firstname": "mimi",
+            "category": "SF",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 3,
+            "firstname": "sophie",
+            "category": "SF",
+            "lastname": "lagirafe",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 4,
+            "firstname": "dark",
+            "category": "SF",
+            "lastname": "vador",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 5,
+            "firstname": "na",
+            "category": "U11",
+            "lastname": "ruto",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 6,
+            "firstname": "toto",
+            "category": "SF",
+            "lastname": "tampion",
+            "img":"assets/counselo.jpg"
+        },
+        {
+            "id": 7,
+            "firstname": "bo",
+            "category": "SF",
+            "lastname": "ruto",
+            "img":"assets/counselo.jpg"
+        }
+    ],
+    "functionalTeam":[
+        {
+            "id":1,
+            "firstname": "tar",
+            "function": "president",
+            "lastname": "tampion",
+            "type" :"bureau"
+            
+        },
+        {
+            "id":2,
+            "firstname": "simon",
+            "function": "Vice -president",
+            "lastname": "dutrou",
+            "type" :"bureau"
+            
+        },
+        {
+            "id":3,
+            "firstname": "ger",
+            "function": "tresorier",
+            "lastname": "maine",
+            "type" :"bureau"
+            
+        },
+        {
+            "id":4,
+            "firstname": "albert",
+            "function": "vice-trésorier",
+            "lastname": "einstein",
+            "type" :"bureau"
+            
+        },
+        {
+            "id":5,
+            "firstname": "jack",
+            "function": "secrétaire",
+            "lastname": "daniel",
+            "type" :"bureau"
+            
+        },
+        {
+            "id":6,
+            "firstname": "jones",
+            "function": "vice-secrétaire",
+            "lastname": "jack",
+            "type" :"bureau"
+            
+        }
+        
+    ],
+    "comTeam":[
+        {
+            "id":1,
+            "firstname": "ali",
+            "function": "communication",
+            "lastname": "expess",
+            "type" :"com"
+            
+        },
+        {
+            "id":2,
+            "firstname": "ali",
+            "function": "communication",
+            "lastname": "baba",
+            "type" :"com"
+            
+        },
+        {
+            "id":3,
+            "firstname": "jean mi",
+            "function": "communication",
+            "lastname": "baba",
+            "type" :"com"
+            
+        },
+        {
+            "id":4,
+            "firstname": "lorem",
+            "function": "animation",
+            "lastname": "baba",
+            "type" :"com"
+            
+        },
+        {
+            "id":3,
+            "firstname": "jean mi",
+            "function": "communication",
+            "lastname": "baba",
+            "type" :"com"
+            
+        },
+        {
+            "id":4,
+            "firstname": "lorem",
+            "function": "animation",
+            "lastname": "baba",
+            "type" :"com"
+            
+        }
+        
+    ]
+}

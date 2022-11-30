@@ -1,0 +1,28 @@
+<div class="container">
+    <h2><span class="span-title">ACTU</span> DU BBB</h2>
+    <ul class="cards">
+    <li *ngFor="let a of actu">
+        <a href="" class="card">
+          <img src="{{a.img}}" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header " >
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg" ><path /></svg>                     
+              <img class="card__thumb" src="assets/logoBBB.png" alt="" />
+              <div class="card__header-text" >
+                <h3 class="card__title fw-bold">{{a.title}}</h3>            
+                <span class="card__status">{{a.date}}</span>
+              </div>
+            </div>
+            <div class="card__description">
+              <p >{{a.content}}</p>
+            <!-- <button class="btn btn-outline-warning" >En savoir plus</button> -->
+            </div>
+          </div>
+        </a>      
+      </li>
+    </ul>
+</div>
+
+
+
+

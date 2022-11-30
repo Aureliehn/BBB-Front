@@ -1,0 +1,15 @@
+  <div class="container">
+    <div>
+      <h2 class="my-5">Equipe <span class="span-title">technique</span> </h2>
+    </div>
+    <div class="d-flex col-12 flex-wrap justify-content-between">
+
+      <div *ngFor="let m of members" class="card col-2 m-3">
+        <img src="{{m.img}}" class="card-img-top" alt="{{m.lastname}}">
+        <div class="card-body text-center">
+          <p class="card-text text-dark">{{m.firstname}} {{m.lastname}}</p>
+          <span class="badge">{{m.category}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
