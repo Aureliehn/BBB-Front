@@ -506,5 +506,93 @@
             
         }
         
+    ],
+    "sections":[
+        {
+            "id":1,
+            "title": "Ecole de basket",
+            "description": "",
+            "teams":[
+                {
+                    "name": "U9 Mixte",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U9-mixte-1536x1152.jpg"
+                },
+                {
+                    "name": "U11 Filles",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11f.jpg"
+                },
+                {
+                    "name": "U11 Garcons",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g.jpg"
+                }
+            ]
+        },
+        {
+            "id":2,
+            "title": "Jeunes",
+            "description": "",
+            "teams":[
+                {
+                    "name": "U13 Garcons",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U13-garcon-1536x1025.jpg"
+                },
+                {
+                    "name": "U13 Filles",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u13f.jpg"
+                },
+                {
+                    "name": "U15 Garcons",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U15-garcon-1536x1025.jpg"
+                },
+                {
+                    "name": "U15 Filles",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2018/11/U15F.jpg"
+                },
+                {
+                    "name": "U17 Garcons",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U17-garcon-1536x1025.jpg"
+                },
+                {
+                    "name": "U18 Filles",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u18f.jpg"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "title": "Adultes",
+            "description": "",
+            "teams":[
+                {
+                    "name": "Seniors Féminin",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-fille-1536x1025.jpg"
+                },
+                {
+                    "name": "Seniors Masculin 1",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-1-garcon-1536x1025.jpg"
+                },
+                {
+                    "name": "Seniors Masculin 2",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-1-garcon-1536x1025.jpg"
+                },
+                {
+                    "name": "Loisirs",
+                    "logo":"",
+                    "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/loisir.jpg"
+                }
+            ]
+        }
     ]
 }

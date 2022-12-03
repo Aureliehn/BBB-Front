@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClubService } from 'src/app/Services/club.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    // private ClubService: ClubService
+  ) { }
 
   ngOnInit(): void {
+  // this.getTest()
+  // console.log("landinf")
   }
 
+  // public getTest(){
+  //   console.log("fct")
+  //   this.ClubService.getTest()
+  //     .subscribe((r:[])=>{
+  //       console.log(r, "hhhhhhhhhhhhhhh")
+  //     })}
+
 }
+

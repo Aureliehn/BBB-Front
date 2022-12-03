@@ -25,5 +25,11 @@ export class ClubService {
       withCredentials: true
     })
   }
+  // public getTest(){
+  //   console.log("fction2")
+  //   return this.http.get("http://localhost:8000/api/tournament",{
+  //     withCredentials: true
+  //   })
+  // }
 
 }

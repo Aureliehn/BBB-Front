@@ -17,6 +17,7 @@ import { TechnicalTeamComponent } from './Components/club/technical-team/technic
 import { FunctionTeamComponent } from './Components/club/function-team/function-team.component';
 import { PartnersComponent } from './Components/club/partners/partners.component';
 import { TrainingComponent } from './Components/club/training/training.component';
+import { SectionComponent } from './Components/section/section.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { TrainingComponent } from './Components/club/training/training.component
     TechnicalTeamComponent,
     FunctionTeamComponent,
     PartnersComponent,
-    TrainingComponent
+    TrainingComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
