@@ -53,27 +53,22 @@ margin-left: 20px;
 .items:hover{
     color: red
 }
-.logo-menu-img{
+.logo-menu-img, .close-menu-img{
     width: 30px;
     display: none;
-    position: absolute;
-    right: 20px;
-    top: 13px;
+    margin-left: 20px;
+
 }
-.close-menu-img{
-    width: 30px;
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 13px;
-}
-@media screen and (max-width: 700px) {
-    .logo-menu-img{
-        background-color: orange;
-        display: block;
+
+
+@media screen and (max-width: 875px) {
+    .logo{
+        display: none;
     }
-    .close-menu-img{
-        background-color: orange;
+    .logo-items{
+        width: 40px;
+    }
+    .logo-menu-img, .close-menu-img{
         display: block;
     }
     .navbar{
@@ -84,9 +79,15 @@ margin-left: 20px;
         display: block;
         margin-right: 0;
         padding: 10px 20px;
+        z-index: 10;
     }
     .cont-items{
         display: none;
-        border-top: 1px solid white;
+        z-index: 2;
+        width: 30%;
     }
+    .responsive {
+        display: block;
+    }
+
 }

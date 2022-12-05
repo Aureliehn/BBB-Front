@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 public urlShop : string = "https://bb-sports.fr/";
 public menuCloseMobile: boolean = false
+public responsive: boolean = false
 
   constructor() { }
 
