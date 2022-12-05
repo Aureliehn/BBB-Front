@@ -4,12 +4,12 @@ import { filter } from 'rxjs/operators';
 import { SectionsService } from 'src/app/Services/sections.service';
 
 @Component({
-  selector: 'app-section',
+  selector: 'app-section-young',
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.css']
 })
 
-export class SectionComponent implements OnInit {
+export class SectionYoungComponent implements OnInit {
 
   public sectionId: number = 0;
   public section : any;

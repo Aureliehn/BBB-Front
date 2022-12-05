@@ -1,5 +1,5 @@
-a{
-    color: var(--redColor);
+/* a{
+    color: white;
 }
 .dropdown-toggle:hover, 
 a:hover,
@@ -14,4 +14,79 @@ img{
 .dropdown-item:hover{
     background-color: var(--redColor);
     color: white;
+}
+.dropdown-menu{
+    background-color: black;
+} */
+@import url('https://fonts.cdnfonts.com/css/poppins');
+nav{
+    font-weight: "Poppins";
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.cont-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.logo{
+    width: 40px;
+margin-left: 20px;
+}
+.cont-items{
+    font-size: 22px;
+    height: 100%;
+    align-items: center;
+}
+.items{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+
+}
+.items:hover{
+    color: red
+}
+.logo-menu-img{
+    width: 30px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+.close-menu-img{
+    width: 30px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+@media screen and (max-width: 700px) {
+    .logo-menu-img{
+        background-color: orange;
+        display: block;
+    }
+    .close-menu-img{
+        background-color: orange;
+        display: block;
+    }
+    .navbar{
+        display: block;
+    }
+    .items{
+        background-color: black;
+        display: block;
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+    .cont-items{
+        display: none;
+        border-top: 1px solid white;
+    }
 }

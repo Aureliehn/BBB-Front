@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+public urlShop : string = "https://bb-sports.fr/";
+public menuCloseMobile: boolean = false
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  goToWebsite(){
+    window.open(this.urlShop, "_blank")
+  }
+  logoMenuIsClicked(){
+    this.menuCloseMobile = true
+  }
 }

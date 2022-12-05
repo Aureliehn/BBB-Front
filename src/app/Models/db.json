@@ -1,78 +1,4 @@
 {
-    "sections": [
-        
-        {
-            "id": 1,
-            "name": "mini",
-            "pictures":[
-                {
-                    "id":1,
-                    "title":"U9 Mixte",
-                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U9-mixte-1536x1152.jpg"
-                },
-                {
-                    "id":2,
-                    "title":"U11 Garcon",
-                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g-1536x1152.jpg"
-                },
-                {
-                    "id":3,
-                    "title":"U11 Fille",
-                    "url":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11f.jpg"
-                }
-            ]
-        },
-        {
-            "id":2,
-            "name": "jeune",
-            "pictures":[
-                {
-                    "id":1,
-                    "title":"",
-                    "url":""
-                },
-                {
-                    "id":2,
-                    "title":"",
-                    "url":""
-                },
-                {
-                    "id":3,
-                    "title":"",
-                    "url":""
-                }
-            ]
-        },
-        {
-            "id":3,
-            "name":"senior",
-            "pictures":[
-                {
-                    "id":1,
-                    "title":"",
-                    "url":""
-                },
-                {
-                    "id":2,
-                    "title":"",
-                    "url":""
-                },
-                {
-                    "id":3,
-                    "title":"",
-                    "url":""
-                }
-            ]
-        }
-    ],
-    "actu":[
-        {
-            "id":1,
-            "title": "titre",
-            "content":"blavlalvlllll",
-            "img":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g-1536x1152.jpg"
-        }
-    ],
     "result":[
         {
             "id":1,
@@ -511,21 +437,19 @@
         {
             "id":1,
             "title": "Ecole de basket",
-            "description": "",
+            "description": "Le Mini Basket initie les jeunes de 5 à 10 ans non seulement à la découverte du Basket mais aussi au développement général d’un enfant.",
+            "logo": "http://www.ffbb.com/sites/default/files/logo.gif",
             "teams":[
                 {
                     "name": "U9 Mixte",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U9-mixte-1536x1152.jpg"
                 },
                 {
                     "name": "U11 Filles",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11f.jpg"
                 },
                 {
                     "name": "U11 Garcons",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u11g.jpg"
                 }
             ]
@@ -533,36 +457,31 @@
         {
             "id":2,
             "title": "Jeunes",
-            "description": "",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id sapien magna. Etiam in velit dui. Integer ornare orci erat, sit amet feugiat diam vulputate at. Quisque in elit ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales, mauris a vulputate aliquet, nibh nisi eleifend quam, id efficitur est nisi in dui. Morbi dignissim ullamcorper mauris ac accumsan. Vivamus tincidunt maximus elementum. Nulla vel convallis ipsum. In commodo dui ac hendrerit mollis. Integer egestas sapien sed lectus mollis, fringilla pulvinar sapien tincidunt. Vivamus efficitur nisl a sodales lobortis. Vestibulum magna enim, auctor eu tortor nec, luctus sagittis ligula. ",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b3/Logo_FFBB_2010.svg/682px-Logo_FFBB_2010.svg.png",
             "teams":[
                 {
                     "name": "U13 Garcons",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U13-garcon-1536x1025.jpg"
                 },
                 {
                     "name": "U13 Filles",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u13f.jpg"
                 },
                 {
                     "name": "U15 Garcons",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U15-garcon-1536x1025.jpg"
                 },
                 {
                     "name": "U15 Filles",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2018/11/U15F.jpg"
                 },
                 {
                     "name": "U17 Garcons",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/U17-garcon-1536x1025.jpg"
                 },
                 {
                     "name": "U18 Filles",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/u18f.jpg"
                 }
             ]
@@ -570,26 +489,23 @@
         {
             "id":3,
             "title": "Adultes",
-            "description": "",
+            "description": "orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id sapien magna. Etiam in velit dui. Integer ornare orci erat, sit amet feugiat diam vulputate at. Quisque in elit ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales, mauris a vulputate aliquet, nibh nisi eleifend quam, id efficitur est nisi in dui. Morbi dignissim ullamcorper mauris ac accumsan. Vivamus tincidunt maximus elementum. Nulla vel convallis ipsum. In commodo dui ac hendrerit mollis. Integer egestas sapien sed lectus mollis, fringilla pulvinar sapien tincidunt. Vivamus efficitur nisl a sodales lobortis. Vestibulum magna enim, auctor eu tortor nec, luctus sagittis ligula. ",
+            "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b3/Logo_FFBB_2010.svg/682px-Logo_FFBB_2010.svg.png",
             "teams":[
                 {
                     "name": "Seniors Féminin",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-fille-1536x1025.jpg"
                 },
                 {
                     "name": "Seniors Masculin 1",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-1-garcon-1536x1025.jpg"
                 },
                 {
                     "name": "Seniors Masculin 2",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/11/Seniors-1-garcon-1536x1025.jpg"
                 },
                 {
                     "name": "Loisirs",
-                    "logo":"",
                     "pictures":"http://basketballbrivadois.fr/wp-content/uploads/2022/01/loisir.jpg"
                 }
             ]

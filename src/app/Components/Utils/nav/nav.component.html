@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<!-- <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid whiteColor">
 
         <a class="navbar-brand" href="#"><img src="assets/logoBBB.png" alt=""></a>
@@ -23,17 +23,40 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [routerLink]="['/section']" [queryParams]="{ type: 'edb'}">Ecole de basket</a>
+              <a class="nav-link" [routerLink]="['/section']" [queryParams]="{ id: 1}">Ecole de basket</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jeune</a>
+              <a class="nav-link" [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">Jeune</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Senior</a>
+              <a class="nav-link" [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">Senior</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="goToWebsite()">Boutique</a>
             </li>
             
           </ul>
         </div>
       </div>
 
-  </nav>
+  </nav> -->
+
+<div class="navbar">
+  <div class="cont-logo">
+    <img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo">
+  </div>
+
+  <div class="cont-items">
+    <a href="" class="items">ACCUEIL</a>
+    <a href="" class="items">LE CLUB</a>
+    <a href="" class="items">ECOLE DE BASKET</a>
+    <a href="" class="items">JEUNE</a>
+    <a href="" class="items">SENIOR</a>
+    <a href="" class="items">BOUTIQUE</a>
+  </div>
+
+  <img *ngIf="menuCloseMobile == false" (click)="menuCloseMobile=true" class="logo-menu-img text-success" src="assets/menu.svg" alt="menu logo">
+  <img *ngIf="menuCloseMobile == true" (click)="menuCloseMobile=false" class="close-menu-img text-danger" src="assets/close.svg" alt="menu logo">
+
+</div>
+

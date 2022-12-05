@@ -18,7 +18,8 @@ import { FunctionTeamComponent } from './Components/club/function-team/function-
 import { PartnersComponent } from './Components/club/partners/partners.component';
 import { TrainingComponent } from './Components/club/training/training.component';
 import { SectionComponent } from './Components/section/section.component';
-
+import { SectionOldComponent } from './Components/section/sectionOld.component';
+import { SectionYoungComponent } from './Components/section/sectionYoung.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { SectionComponent } from './Components/section/section.component';
     FunctionTeamComponent,
     PartnersComponent,
     TrainingComponent,
-    SectionComponent
+    SectionComponent,
+    SectionOldComponent,
+    SectionYoungComponent
   ],
   imports: [
     BrowserModule,
