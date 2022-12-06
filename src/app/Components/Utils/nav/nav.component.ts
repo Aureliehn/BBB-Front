@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 public urlShop : string = "https://bb-sports.fr/";
-public menuCloseMobile: boolean = false
+public menuMobile: boolean = false
 public responsive: boolean = false
+public dropdown: boolean = false
 
   constructor() { }
 
@@ -18,6 +19,9 @@ public responsive: boolean = false
     window.open(this.urlShop, "_blank")
   }
   logoMenuIsClicked(){
-    this.menuCloseMobile = true
+    this.menuMobile = true
+  }
+  dropdownClick(){
+    this.dropdown = !this.dropdown;
   }
 }

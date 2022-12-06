@@ -1,21 +1,37 @@
-<div class="navbar">
-  <div class="cont-logo">
+<div class="navbar ">
+  <div class="cont-logo justify-content-between">
     <img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo">
-    <img *ngIf="menuCloseMobile == false" (click)="menuCloseMobile=true "  class="logo-menu-img" src="assets/menu.svg" alt="menu logo">
-    <img *ngIf="menuCloseMobile == true" (click)="menuCloseMobile=false " class="close-menu-img" src="assets/close.svg" alt="menu logo">
+    <img *ngIf="menuMobile == false" (click)="menuMobile=true " class="logo-menu-img col-1" src="assets/menu.svg"
+      alt="menu logo">
+    <img *ngIf="menuMobile == true" (click)="menuMobile=false " class="close-menu-img" src="assets/close.svg"
+      alt="menu logo">
+    <div class="d-flex align-items-center col-10">
+      <h1 class="">BASKET BALL BRIVADOIS</h1>
+    </div>
   </div>
 
-  <div class="cont-items "[ngClass]="{'responsive': menuCloseMobile === true}">
-    <a href="" class="items" ><img *ngIf="menuCloseMobile == true"src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo-items"></a>
-    <a href="" class="items" >ACCUEIL</a>
-    <a href="" class="items">LE CLUB</a>
-    <a href="" class="items" [routerLink]="['/section']" [queryParams]="{ id: 1}">ECOLE DE BASKET</a>
-    <a href="" class="items" [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">JEUNE</a>
-    <a href="" class="items" [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">SENIOR</a>
-    <a href="" class="items ">BOUTIQUE</a>
+  <div class="cont-items " [ngClass]="{'responsive': menuMobile === true}">
+    <a href="" class="items"><img *ngIf="menuMobile == true" src="assets/logoBBB.png" alt="logo basket ball brioude"
+        class="logo-items"></a>
+    <a href="" class="items">ACCUEIL</a>
+    <a class="items dropbtn" *ngIf="menuMobile == false" (click)="dropdownClick()">LE CLUB</a>
+    <a href="club/presentation" *ngIf="menuMobile == true" class="items a-drop">ENCADREMENT</a>
+    <a href="club/training" *ngIf="menuMobile == true" class="items a-drop">ENTRAINEMENTS</a>
+    <a href="" *ngIf="menuMobile == true" class="items a-drop">PARTENAIRES</a>
+
+    <a href="" class="items " (click)="menuMobile=false " [routerLink]="['/section']" [queryParams]="{ id: 1}">ECOLE DE BASKET</a>
+
+    <a href="" class="items" (click)="menuMobile=false " [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">JEUNE</a>
+
+    <a href="" class="items" (click)="menuMobile=false " [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">SENIOR</a>
+
+    <a href="" class="items" (click)="goToWebsite()">BOUTIQUE</a>
+
+    <div class="dropdown-content " *ngIf="dropdown">
+      <a href="club/presentation" class="items a-drop">ENCADREMENT</a>
+      <a href="club/training" class="items a-drop">ENTRAINEMENTS</a>
+      <a href="" class="items a-drop">PARTENAIRES</a>
+    </div>
   </div>
-
-
 
 </div>
-

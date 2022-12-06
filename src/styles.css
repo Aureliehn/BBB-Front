@@ -24,12 +24,13 @@ body {
 }
 
 /* FONT */
+@import url('https://fonts.cdnfonts.com/css/bree-serif-2');
 @import url("https://fonts.cdnfonts.com/css/tahoma");
 @import url("https://fonts.cdnfonts.com/css/rockwell-nova");
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
 
 h1, h2, h3, h4 {
-    font-family: 'Rubik Marker Hatch', cursive;
+    font-family: 'bree-serif';
 }
 /* SIZE */
 .w-100{

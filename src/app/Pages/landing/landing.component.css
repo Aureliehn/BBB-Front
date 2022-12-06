@@ -1,0 +1,20 @@
+.container-dashboard{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:flex-start;
+}
+app-dashboard-result, app-dashboard-upcoming{
+    width: 50%;
+}
+@media screen and (max-width: 986px) {
+    .container-dashboard{
+        flex-direction: column;
+    }
+    app-dashboard-result, app-dashboard-upcoming{
+        width: 100%;
+    }
+    app-dashboard-upcoming{
+        margin-top: 2em;
+    }
+}
