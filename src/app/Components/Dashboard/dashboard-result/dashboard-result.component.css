@@ -2,16 +2,8 @@ img{
     width: 30px;
 }
 h2{
-    text-align: center;
+    text-align: start;
 }
 .container-btn{
-    justify-content: center;
-}
-@media screen and (max-width: 986px) {
-    h2{
-        text-align: start;
-    }
-    .container-btn{
-        justify-content: start;
-    }
+    justify-content: start;
 }

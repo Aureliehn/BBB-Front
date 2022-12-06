@@ -18,17 +18,17 @@
   <div class="cont-items mt-2" [ngClass]="{'responsive': menuMobile === true}">
     <a href="" class="items"><img *ngIf="menuMobile == true" src="assets/logoBBB.png" alt="logo basket ball brioude"
         class="logo-items"></a>
-    <a href="" class="items">ACCUEIL</a>
+    <a href="#" class="items">ACCUEIL</a>
     <a class="items dropbtn" *ngIf="menuMobile == false" (click)="dropdownClick()">LE CLUB</a>
     <a href="club/presentation" *ngIf="menuMobile == true" class="items a-drop">ENCADREMENT</a>
     <a href="club/training" *ngIf="menuMobile == true" class="items a-drop">ENTRAINEMENTS</a>
     <a href="" *ngIf="menuMobile == true" class="items a-drop">PARTENAIRES</a>
 
-    <a href="" class="items " (click)="menuMobile=false " [routerLink]="['/section']" [queryParams]="{ id: 1}">ECOLE DE BASKET</a>
+    <a href="" class="items " (click)="active=false" (click)="menuMobile=false"[routerLink]="['/section']" [queryParams]="{ id: 1}">ECOLE DE BASKET</a>
 
-    <a href="" class="items" (click)="menuMobile=false " [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">JEUNE</a>
+    <a href="" class="items" (click)="active=false" (click)="menuMobile=false" [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">JEUNE</a>
 
-    <a href="" class="items" (click)="menuMobile=false " [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">SENIOR</a>
+    <a href="" class="items" (click)="active=false" (click)="menuMobile=false" [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">SENIOR</a>
 
     <a href="" class="items" (click)="goToWebsite()">BOUTIQUE</a>
 
@@ -40,16 +40,3 @@
   </div>
 
 </div>
-<!-- <script>
-    
-  const allBtn = document.querySelectorAll('.contLigne');
-  
-  allBtn.forEach(btn => {
-      btn.addEventListener('click', () => {
-          console.log("hello");
-          
-          btn.classList.toggle('active');
-      })
-  })
-  
-      </script> -->
