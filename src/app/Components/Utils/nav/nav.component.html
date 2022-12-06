@@ -1,16 +1,21 @@
 <div class="navbar ">
   <div class="cont-logo justify-content-between">
     <img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo">
-    <img *ngIf="menuMobile == false" (click)="menuMobile=true " class="logo-menu-img col-1" src="assets/menu.svg"
-      alt="menu logo">
-    <img *ngIf="menuMobile == true" (click)="menuMobile=false " class="close-menu-img" src="assets/close.svg"
-      alt="menu logo">
+      <div class="box">
+        <div class="contLigne btnHamburger" 
+        (click)="clickMenu()" 
+        [ngClass]="{'active': active === true}">
+          <div class="lignes"></div>
+          <div class="lignes"></div>
+          <div class="lignes"></div>
+        </div>
+    </div>
     <div class="d-flex align-items-center col-10">
       <h1 class="">BASKET BALL BRIVADOIS</h1>
     </div>
   </div>
 
-  <div class="cont-items " [ngClass]="{'responsive': menuMobile === true}">
+  <div class="cont-items mt-2" [ngClass]="{'responsive': menuMobile === true}">
     <a href="" class="items"><img *ngIf="menuMobile == true" src="assets/logoBBB.png" alt="logo basket ball brioude"
         class="logo-items"></a>
     <a href="" class="items">ACCUEIL</a>
@@ -35,3 +40,16 @@
   </div>
 
 </div>
+<!-- <script>
+    
+  const allBtn = document.querySelectorAll('.contLigne');
+  
+  allBtn.forEach(btn => {
+      btn.addEventListener('click', () => {
+          console.log("hello");
+          
+          btn.classList.toggle('active');
+      })
+  })
+  
+      </script> -->

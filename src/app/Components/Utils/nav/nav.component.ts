@@ -10,6 +10,7 @@ public urlShop : string = "https://bb-sports.fr/";
 public menuMobile: boolean = false
 public responsive: boolean = false
 public dropdown: boolean = false
+public active: boolean = false
 
   constructor() { }
 
@@ -23,5 +24,9 @@ public dropdown: boolean = false
   }
   dropdownClick(){
     this.dropdown = !this.dropdown;
+  }
+  clickMenu(){
+    this.active=!this.active
+    this.menuMobile = !this.menuMobile
   }
 }
