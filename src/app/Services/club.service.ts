@@ -25,6 +25,7 @@ export class ClubService {
       withCredentials: true
     })
   }
+  // ANCHOR DECOMMENTE ICI
   // public getTest(){
   //   console.log("fction2")
   //   return this.http.get("http://localhost:8000/api/tournament",{

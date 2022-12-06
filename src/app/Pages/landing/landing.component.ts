@@ -7,7 +7,7 @@ import { ClubService } from 'src/app/Services/club.service';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-
+// ANCHOR DECOMMENTE TOUT
   constructor(
     // private ClubService: ClubService
   ) { }
