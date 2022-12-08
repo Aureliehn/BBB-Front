@@ -13,7 +13,6 @@ export class TrainingService {
   public getAllTraining(){
     console.log("service");
     return this.http.get("http://localhost:3004/training",{
-      withCredentials: true
     })
   }
   // public getAllTrainingBySection(section:string){

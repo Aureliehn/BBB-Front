@@ -12,7 +12,6 @@ export class ActuService {
 
   public getActu(){
     return this.http.get("http://localhost:3004/actu",{
-      withCredentials: true
     })
   }
 }

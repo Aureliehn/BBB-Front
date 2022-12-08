@@ -12,7 +12,6 @@ export class ResultService {
 
   public getResult(){
     return this.http.get("http://localhost:3004/result",{
-      withCredentials: true
     })
   }
 

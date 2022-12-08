@@ -12,25 +12,22 @@ export class ClubService {
 
   public getTeamMembers(){
     return this.http.get("http://localhost:3004/technicalTeam",{
-      withCredentials: true
     })
   }
   public getFunctionalTeamMembers(){
     return this.http.get("http://localhost:3004/functionalTeam",{
-      withCredentials: true
     })
   }
   public getComTeamMembers(){
     return this.http.get("http://localhost:3004/ComTeam",{
-      withCredentials: true
     })
   }
   // ANCHOR DECOMMENTE ICI
-  // public getTest(){
-  //   console.log("fction2")
-  //   return this.http.get("http://localhost:8000/api/tournament",{
-  //     withCredentials: true
-  //   })
-  // }
+  public getTest(){
+    console.log("fction2")
+    return this.http.get("http://localhost:8000/api/tournament",{
+
+    })
+  }
 
 }

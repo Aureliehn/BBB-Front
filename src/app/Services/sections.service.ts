@@ -13,12 +13,10 @@ export class SectionsService {
 
   public getAllSections(){
     return this.http.get(`http://localhost:3004/sections/`,{
-      withCredentials: true
     })
   }
   public getSectionById(id:number){
     return this.http.get(`http://localhost:3004/sections/${id}`,{
-      withCredentials: true
     })
   }
 

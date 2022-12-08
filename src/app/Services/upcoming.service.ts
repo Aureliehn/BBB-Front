@@ -12,7 +12,6 @@ export class UpcomingService {
 
   public getUpcoming(){
     return this.http.get("http://localhost:3004/up",{
-      withCredentials: true
     })
   }
 }
