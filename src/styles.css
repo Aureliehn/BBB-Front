@@ -1,6 +1,7 @@
 :root{
     box-sizing: border-box;
-    --redColor: #AD0000;
+    --redColor:  #e0623c;
+    /* --redColor: #AD0000; */
     --greyColor: #888687;
     --darkGreyColor: #292527;
     --whiteColor: #FFFFFF;
@@ -44,7 +45,8 @@ h1, h2, h3, h4 {
     position: relative;
 }
 .span-title{
-    text-shadow: 4px 4px 0px var(--redColor)
+    text-shadow: 4px 4px 2px var(--redColor)
+    /* text-shadow: 4px 4px 0px var(--redColor) */
 }
 /* CTA */
 .cta1{
