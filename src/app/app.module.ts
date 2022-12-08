@@ -20,6 +20,7 @@ import { TrainingComponent } from './Components/club/training/training.component
 import { SectionComponent } from './Components/section/section.component';
 import { SectionOldComponent } from './Components/section/sectionOld.component';
 import { SectionYoungComponent } from './Components/section/sectionYoung.component';
+import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SectionYoungComponent } from './Components/section/sectionYoung.compone
     TrainingComponent,
     SectionComponent,
     SectionOldComponent,
-    SectionYoungComponent
+    SectionYoungComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

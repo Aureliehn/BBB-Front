@@ -1,0 +1,97 @@
+ .formContent{
+    margin-top: 30px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.box-form{
+    margin-top: 30px;
+    display: flex;
+}
+.inputs-container:nth-child(2) {
+    margin-left: 20px
+  }
+  .inputs-container input {
+    min-width: 350px;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  textarea{
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .inputs-container input:focus textarea:focus {
+    outline: 1px solid red;
+  }
+.input-effect{
+    position: relative;
+}
+.effect{
+    border: 0;  
+    background: #f1f1f1;
+}
+ .effect ~ .focus-bg:before,
+.effect ~ .focus-bg:after{
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 0; 
+    height: 0; 
+    background-color: red; 
+    transition: 0.3s; 
+    z-index: -1;
+}
+.effect:focus ~ .focus-bg:before,
+.has-content.effect ~ .focus-bg:before{
+    transition: 0.3s; 
+    width: 50%; 
+    height: 100%;
+}
+
+.effect ~ .focus-bg:after{
+    left: auto; 
+    right: 0; 
+    top: auto; 
+    bottom: 0;
+}
+.effect:focus ~ .focus-bg:after{
+    transition: 0.3s; 
+    width: 50%; 
+    height: 100%;
+}
+.effect ~ label{
+    position: absolute; 
+    left: 14px; 
+    width: 100%; 
+    top: 10px; 
+    color: #aaa; 
+    transition: 0.3s; 
+    z-index: -1; 
+    letter-spacing: 0.5px;
+}
+.effect:focus ~ label{
+    top: -21px; 
+    left: 0; 
+    font-size: 12px; 
+    color: red; 
+    transition: 0.3s;
+} 
+.formContent button {
+    display: block;
+    margin: 20px auto ;
+    min-width: 150px;
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+  .formContent button:hover {
+    background-color: red;
+    color: var(--white-color);
+    cursor: pointer;
+  }
