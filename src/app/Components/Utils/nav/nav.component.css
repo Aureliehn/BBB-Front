@@ -13,7 +13,7 @@ nav{
     font-family: "Poppins";
     height: 60px;
     width: 100%;
-    background-color: black;
+    background-color: var(--redColor);
     display: flex;
     justify-content: space-between;
 }
@@ -40,7 +40,7 @@ margin-left: 20px;
     cursor: pointer;
 }
 .items:hover{
-    color: #e0623c
+    color: black
 }
 .logo-menu-img, .close-menu-img{
     width: 30px;
@@ -57,7 +57,7 @@ margin-left: 20px;
     position: absolute;
     left: 50%;
     top: 60px;
-    background-color: black;
+    background-color: var(--redColor);
     padding: 0.5em;
 }
 /* animation menu hamburger */
@@ -84,7 +84,7 @@ margin-left: 20px;
 
 .btnHamburger.active::before {
     transition-delay: 0.3s!important;
-    border: 2px solid #e0623c;
+    border: 2px solid white;
 }
 
 .btnHamburger.active .lignes {
@@ -112,7 +112,7 @@ margin-left: 20px;
     width: 70%;
     height: 3px;
     border-radius: 5px;
-    background: #e0623c;
+    background:white;
     position: absolute;
     transition: all .5s ease-in-out;
 }
@@ -180,7 +180,7 @@ margin-left: 20px;
         display: block;
     }
     .items{
-        background-color: #e0623c;
+        background-color:var(--redColor);
         display: block;
         margin-right: 0;
         padding: 10px 1em;

@@ -1,11 +1,12 @@
 .container-dashboard{
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     flex-wrap: wrap;
     align-items:flex-start;
 }
 app-dashboard-result, app-dashboard-upcoming{
-    width: 50%;
+    /* width: 100%; */
 }
 @media screen and (max-width: 986px) {
     .container-dashboard{

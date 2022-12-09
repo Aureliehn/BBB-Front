@@ -1,5 +1,5 @@
 :root {
---surface-color: #fff;
+--surface-color: black;
 --curve: 40;
 }
 
@@ -16,7 +16,7 @@ background-color: #fef8f8;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 2rem;
-margin: 4rem 5vw;
+margin: 2rem 5vw;
 padding: 0;
 list-style-type: none;
 }
@@ -60,7 +60,8 @@ align-items: center;
 gap: 2em;
 padding: 0.5em;
 border-radius: calc(var(--curve) * 1px) 0 0 0;    
-background-color: var(--darkGreyColor);
+background-color: var(--whiteColor);
+color: black;
 transform: translateY(-100%);
 transition: .2s ease-in-out;
 }
@@ -93,7 +94,7 @@ border-radius: 50%;
 .card__title {
 font-size: 1em;
 margin: 0 0 .3em;
-color:white;
+color:black;
 }
 
 .card__tagline {
@@ -106,19 +107,19 @@ color: white;
 
 .card__status {
 font-size: .8em;
-color: white;
+color: darkgray;
 }
 
 .card__description {
 padding: 0 2em 2em;
 margin: 0;
-color: white;
-font-family: "MockFlowFont";   
+color: black;
+font-size: 14px;
 display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 3;
 overflow: hidden;
-background-color:  var(--darkGreyColor);
+background-color:  var(--whiteColor);
 height: 100%;
 }    
 .fs{

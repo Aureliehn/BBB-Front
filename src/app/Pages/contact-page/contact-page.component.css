@@ -3,6 +3,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    color: black;
 }
 .box-form{
     margin-top: 30px;
@@ -33,7 +34,7 @@
 }
 .effect{
     border: 0;  
-    background: #f1f1f1;
+    background: white;
 }
  .effect ~ .focus-bg:before,
 .effect ~ .focus-bg:after{
@@ -75,6 +76,7 @@
     z-index: -1; 
     letter-spacing: 0.5px;
 }
+
 .effect:focus ~ label{
     top: -21px; 
     left: 0; 
@@ -82,20 +84,21 @@
     color: red; 
     transition: 0.3s;
 } 
+
 button {
     display: block;
     margin: 20px auto ;
     min-width: 150px;
-    background-color: transparent;
-    color: var(--white-color);
+    background-color: var(--greyColor);
+    color: var(--whiteColor);
     padding: 7px;
     font-size: 15px;
     border-radius: 5px;
   }
   
 button:hover {
-    background-color: red;
-    color: var(--white-color);
+    background-color:var(--redColor);
+    color: var(--whiteColor);
     cursor: pointer;
   }
 @media screen and (max-width:746px) {
@@ -106,4 +109,12 @@ button:hover {
         margin-left: 0;
         margin-top: 20px;
     }
+}
+input.ng-touched.ng-valid,
+textarea.ng-touched.ng-valid{
+    border: green 1px solid;
+}
+input.ng-touched.ng-invalid,
+textarea.ng-touched.ng-invalid{
+    border: red 1px solid;
 }

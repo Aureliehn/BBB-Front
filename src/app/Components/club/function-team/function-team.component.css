@@ -2,7 +2,7 @@ ul::before{
     content:" ";
     width: 0.2em;
     height: 150px;
-    background-color: white;
+    background-color: var(--redColor);
     position: absolute;
     left: 0;
 

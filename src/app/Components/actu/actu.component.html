@@ -1,5 +1,5 @@
 <div class="container">
-    <h2><span class="span-title">ACTU</span> DU BBB</h2>
+    <h2 class="text-dark fw-bold"><span class="fw-bold redColor">ACTUALITES</span> DU BBB</h2>
     <ul class="cards">
     <li *ngFor="let a of actu">
         <a href="" class="card">
@@ -9,7 +9,7 @@
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg" ><path /></svg>                     
               <img class="card__thumb" src="assets/logoBBB.png" alt="" />
               <div class="card__header-text" >
-                <h3 class="card__title fw-bold">{{a.title}}</h3>            
+                <h3 class="card__title fw-bold">{{a.title|uppercase}}</h3>            
                 <span class="card__status">{{a.date}}</span>
               </div>
             </div>

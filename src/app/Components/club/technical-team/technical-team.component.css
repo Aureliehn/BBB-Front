@@ -10,3 +10,6 @@
 .redColor{
     color: var(--redColor);
 }
+img{
+    width: 350px;
+}

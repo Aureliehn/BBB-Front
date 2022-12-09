@@ -1,7 +1,7 @@
 img{
     /* position: relative; */
     object-fit: cover;
-    max-height: 430px;
+    max-height: 80vh;
     width: 100%;
 }
 .header-box{

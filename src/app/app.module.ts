@@ -21,6 +21,7 @@ import { SectionComponent } from './Components/section/section.component';
 import { SectionOldComponent } from './Components/section/sectionOld.component';
 import { SectionYoungComponent } from './Components/section/sectionYoung.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,9 @@ import { ContactPageComponent } from './Pages/contact-page/contact-page.componen
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
