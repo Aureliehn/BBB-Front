@@ -1,6 +1,7 @@
 <div class="formContent">
   <h2>Formulaire de contact</h2>
   <p class="redColor fw-bold" *ngIf="errorFields">Merci de remplir tous les champs</p>
+  <p class="successColor fw-bold" *ngIf="successMessage">Message envoyé! Nous vous répondrons dans les plus brefs délais</p>
   <form [formGroup]="contactForm">
     <div class="box-form">
       <div class="inputs-container">

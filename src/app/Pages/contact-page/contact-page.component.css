@@ -27,7 +27,7 @@
     border-radius: 5px;
   }
   .inputs-container input:focus, textarea:focus {
-    outline: 1px solid red;
+    outline: 1px solid #483d41;
   }
 .input-effect{
     position: relative;
@@ -44,7 +44,7 @@
     top: 0; 
     width: 0; 
     height: 0; 
-    background-color: red; 
+    background-color: var(--redColor); 
     transition: 0.3s; 
     z-index: -1;
 }
@@ -81,7 +81,7 @@
     top: -21px; 
     left: 0; 
     font-size: 12px; 
-    color: red; 
+    color: var(--redColor); 
     transition: 0.3s;
 } 
 
@@ -112,9 +112,9 @@ button:hover {
 }
 input.ng-touched.ng-valid,
 textarea.ng-touched.ng-valid{
-    border: green 1px solid;
+    border: var(--successColor) 1px solid;
 }
 input.ng-touched.ng-invalid,
 textarea.ng-touched.ng-invalid{
-    border: red 1px solid;
+    border: var(--redColor) 1px solid;
 }

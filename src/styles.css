@@ -5,6 +5,7 @@
     --greyColor: #888687;
     --darkGreyColor: #292527;
     --whiteColor: #FFFFFF;
+    --successColor: #3ded97;
 }
 body {
     width: 100%;
@@ -23,6 +24,9 @@ body {
 }
 .whiteColor{
     color: var(--whiteColor);
+}
+.successColor{
+    color: var(--successColor);
 }
 
 /* FONT */
