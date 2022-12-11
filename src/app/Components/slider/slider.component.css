@@ -1,0 +1,15 @@
+.carousel{
+    max-width: 500px;
+}
+.carousel-item{
+    position: relative;
+}
+.span-txt{
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+img{
+    object-fit: cover;
+}

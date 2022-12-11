@@ -22,6 +22,8 @@ import { SectionOldComponent } from './Components/section/sectionOld.component';
 import { SectionYoungComponent } from './Components/section/sectionYoung.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WrapperSectionComponent } from './Components/wrapper-section/wrapper-section.component';
+import { SliderComponent } from './Components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SectionComponent,
     SectionOldComponent,
     SectionYoungComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    WrapperSectionComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
