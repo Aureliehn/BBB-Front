@@ -3,11 +3,20 @@
     <div class="d-flex align-items-center me-2 ">
 
         <img class="me-2" src="assets/logoBBB.png" alt="logo basket ball brivadois"> 
-    <div class="mb-3 mt-3 d-flex">
-        <button (click)="handleSection('old')" class="cta1-mini me-1">ADULTE</button>
-        <button (click)="handleSection('young')" class="cta1-mini me-1">JEUNE</button>
-        <button (click)="handleSection('mini')" class="cta1-mini">MINI</button>
-    </div>
+        <div class="container-btn">
+            <a (click)="handleSection('old')" class="cta1-mini effect"
+               data-sm-link-text="Adulte">
+              <span>Adulte</span>
+            </a>
+            <a (click)="handleSection('young')" class="cta1-mini effect"
+               data-sm-link-text="Jeunes">
+              <span>Jeunes</span>
+            </a>
+            <a (click)="handleSection('mini')" class="cta1-mini effect"
+               data-sm-link-text="mini">
+              <span>Mini</span>
+            </a>
+        </div>
     </div>
    <div class="d-flex flex-column col-9 box-result">
     <h2>RESULTATS</h2>
@@ -27,26 +36,4 @@
         </tbody>
     </table>
    </div>
-
-    <!-- <h2 class="">RESULTATS DU <span class="span-title">BBB</span></h2>
-    <div class="d-flex f-wrap mb-3 mt-3">
-        <button (click)="handleSection('old')" class="cta1-mini me-1">ADULTE</button>
-        <button (click)="handleSection('young')" class="cta1-mini me-1">JEUNE</button>
-        <button (click)="handleSection('mini')" class="cta1-mini">MINI</button>
-    </div>
-    
-    <table class="table ">
-        <thead class="redColor">
-            <td>Equipe BBB</td>
-            <td>score</td>
-            <td>Equipe adverse</td>
-        </thead>
-        <tbody class="whiteColor flex-wrap" >
-            <tr *ngFor="let r of result" >
-            <td><img class="me-2" src="assets/logoBBB.png" alt="logo basket ball brivadois">{{r.category}} </td>
-            <td>{{r.score}} <br></td>
-            <td>{{r.advers}} <br></td>
-        </tr>
-        </tbody>
-    </table> -->
 </div>
