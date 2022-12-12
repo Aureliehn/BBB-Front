@@ -70,6 +70,30 @@ h4 {
 }
 
 /* CTA */
+.btn1 {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+	background: var(--redColor);
+	border: 1px solid white;
+  border-radius: 5px;
+	box-shadow: 2px 2px 0 white,
+		-2px -2px 0 white,
+		-2px 2px 0 white,
+		2px -2px 0 white;
+	transition: 500ms ease-in-out;
+}
+
+.btn1:hover {
+	box-shadow: 20px 5px 0 gray, -20px -5px 0 black;
+}
+
+.btn1:focus {
+	outline: none;
+}
 .cta1 {
   padding: 0.5em;
   background-color: var(--redColor);

@@ -14,6 +14,7 @@ export class TechnicalTeamComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMembers()
+    console.log(this.members)
   }
 
   public getMembers(){

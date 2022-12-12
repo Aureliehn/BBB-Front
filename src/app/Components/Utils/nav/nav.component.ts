@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-public urlShop : string = "https://bb-sports.fr/";
+public urlShop : string = "https://bb-sports.fr/basket-ball-brivadois.html";
 public menuMobile: boolean = false
 public responsive: boolean = false
 public dropdown: boolean = false

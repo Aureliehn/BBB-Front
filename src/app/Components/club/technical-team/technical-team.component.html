@@ -2,14 +2,18 @@
     <div>
       <h2 class="my-5 fw-bold">EQUIPE <span class="redColor">TECHNIQUE</span> </h2>
     </div>
-    <div class="d-flex col-12 flex-wrap justify-content-between">
+    <div class="d-flex col-12 flex-wrap justify-content-center">
 
-      <div *ngFor="let m of members" class="card">
-        <img src="{{m.img}}" class="card-img-top" alt="{{m.lastname}}">
-        <div class="card-body text-center">
-          <p class="card-text text-dark">{{m.firstname}} {{m.lastname}}</p>
-          <span class="badge">{{m.category}}</span>
+      <div *ngFor="let m of members" >
+        <div class="card m-2" *ngIf="m.team === 'TECH'">
+          <img *ngIf=" m.img != ''" src="{{m.img}}" class="card-img-top" alt="{{m.lastname}}">
+          <img *ngIf=" m.img === ''" src="assets/logoBBB.png" class="card-img-top" alt="{{m.lastname}}">
+          <div class="card-body text-center">
+            <p class="card-text text-dark">{{m.nom}} {{m.prenom}}</p>
+            <span class="badge">{{m.role}}</span>
+          </div>
         </div>
+
       </div>
     </div>
   </div>

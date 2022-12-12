@@ -15,20 +15,15 @@ export class FunctionTeamComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getMembers();
-    this.getComMembers();
+    this.getAllMembers();
   }
 
-  public getMembers(){
-    this.clubService.getFunctionalTeamMembers()
+  public getAllMembers(){
+    this.clubService.getTeamMembers()
     .subscribe((r:[])=>{
+      console.log(r)
       this.members = r
-    })
+      })
   }
-  public getComMembers(){
-    this.clubService.getComTeamMembers()
-    .subscribe((r:[])=>{
-      this.membersCom = r
-    })
-  }
+
 }

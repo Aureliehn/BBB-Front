@@ -4,8 +4,9 @@
     <div class="col-6">
       <h3 class="mb-2 redColor fw-bolder">Bureau</h3>
       <ul>
-        <li *ngFor="let member of members">
-          <span class="redColor">{{member.function | uppercase}}</span> {{member.firstname}} {{member.lastname}}
+        <li *ngFor="let member of members" >
+          <p *ngIf="member.team==='FUNC'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
+          
         </li>
       </ul>
 
@@ -13,8 +14,8 @@
     <div class="col-6">
       <h3 class="mb-2 redColor fw-bolder">Commissions</h3>
       <ul>
-        <li *ngFor="let member of membersCom">
-          <span class="redColor">{{member.function | uppercase}}</span> {{member.firstname}} {{member.lastname}}
+        <li *ngFor="let member of members">
+          <p *ngIf="member.team==='COM'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
         </li>
       </ul>
     </div>

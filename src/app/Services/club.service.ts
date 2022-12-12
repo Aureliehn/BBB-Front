@@ -11,22 +11,7 @@ export class ClubService {
     ) { }
 
   public getTeamMembers(){
-    return this.http.get("http://localhost:3004/technicalTeam",{
-    })
-  }
-  public getFunctionalTeamMembers(){
-    return this.http.get("http://localhost:3004/functionalTeam",{
-    })
-  }
-  public getComTeamMembers(){
-    return this.http.get("http://localhost:3004/ComTeam",{
-    })
-  }
-  // ANCHOR DECOMMENTE ICI
-  public getTest(){
-    console.log("fction2")
-    return this.http.get("http://localhost:8000/api/tournament",{
-
+    return this.http.get("api/profil/",{
     })
   }
 
