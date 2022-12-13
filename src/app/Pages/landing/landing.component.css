@@ -5,9 +5,7 @@
     flex-wrap: wrap;
     align-items:flex-start;
 }
-app-dashboard-result, app-dashboard-upcoming{
-    /* width: 100%; */
-}
+
 @media screen and (max-width: 986px) {
     .container-dashboard{
         flex-direction: column;

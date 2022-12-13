@@ -18,11 +18,8 @@ import { FunctionTeamComponent } from './Components/club/function-team/function-
 import { PartnersComponent } from './Components/club/partners/partners.component';
 import { TrainingComponent } from './Components/club/training/training.component';
 import { SectionComponent } from './Components/section/section.component';
-import { SectionOldComponent } from './Components/section/sectionOld.component';
-import { SectionYoungComponent } from './Components/section/sectionYoung.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { WrapperSectionComponent } from './Components/wrapper-section/wrapper-section.component';
 import { SliderComponent } from './Components/slider/slider.component';
 
 @NgModule({
@@ -41,10 +38,7 @@ import { SliderComponent } from './Components/slider/slider.component';
     PartnersComponent,
     TrainingComponent,
     SectionComponent,
-    SectionOldComponent,
-    SectionYoungComponent,
     ContactPageComponent,
-    WrapperSectionComponent,
     SliderComponent
   ],
   imports: [

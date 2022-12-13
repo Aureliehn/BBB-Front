@@ -21,16 +21,20 @@ export class SectionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-    this.route.queryParams.pipe(
-      filter(params => params.id)
-    )
-      .subscribe(params => {
-        this.sectionId = params.id;
+    this.route.params.subscribe(
+      (data) =>{
+        console.log(data)
+        if(data.id === '1'){
+          this.getSection(1)
+        }
+        else if(data.id === '2'){
+          this.getSection(2)
+        }
+        else{
+          this.getSection(3)
+        }
       }
-    );
-    this.getSection(this.sectionId);
-
+    )
   }
 
   public getSection(sectionId: number){

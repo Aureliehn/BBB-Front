@@ -1,14 +1,12 @@
 <div class="navbar ">
   <div class="cont-logo justify-content-between">
     <img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo">
-      <div class="box">
-        <div class="contLigne btnHamburger" 
-        (click)="clickMenu()" 
-        [ngClass]="{'active': active === true}">
-          <div class="lignes"></div>
-          <div class="lignes"></div>
-          <div class="lignes"></div>
-        </div>
+    <div class="box">
+      <div class="contLigne btnHamburger" (click)="clickMenu()" [ngClass]="{'active': active === true}">
+        <div class="lignes"></div>
+        <div class="lignes"></div>
+        <div class="lignes"></div>
+      </div>
     </div>
     <div class="d-flex align-items-center col-10">
       <h1 class="">BASKET BALL BRIVADOIS</h1>
@@ -24,11 +22,12 @@
     <a href="club/training" *ngIf="menuMobile == true" class="items a-drop">ENTRAINEMENTS</a>
     <a href="" *ngIf="menuMobile == true" class="items a-drop">PARTENAIRES</a>
 
-    <a href="" class="items " (click)="active=false" (click)="menuMobile=false"[routerLink]="['/section']" [queryParams]="{ id: 1}">ECOLE DE BASKET</a>
 
-    <a href="" class="items" (click)="active=false" (click)="menuMobile=false" [routerLink]="['/section-jeunes']" [queryParams]="{ id: 2}">JEUNE</a>
+    <a href="" class="items " (click)="active=false" (click)="menuMobile=false " (click)=" goToSection(1)">ECOLE DE
+      BASKET</a>
+    <a href="" class="items " (click)="active=false" (click)="menuMobile=false" (click)=" goToSection(2)">JEUNES</a>
+    <a href="" class="items " (click)="active=false" (click)="menuMobile=false" (click)=" goToSection(3)">ADULTES</a>
 
-    <a href="" class="items" (click)="active=false" (click)="menuMobile=false" [routerLink]="['/section-adultes']" [queryParams]="{ id: 3}">SENIOR</a>
 
     <a href="" class="items" (click)="goToWebsite()">BOUTIQUE</a>
 

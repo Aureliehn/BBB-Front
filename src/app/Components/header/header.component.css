@@ -1,16 +1,9 @@
 img{
-    /* position: relative; */
     object-fit: cover;
     max-height: 80vh;
     width: 100%;
 }
-.header-box{
-    /* position: relative; */
-}
 .header-txt{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     position: absolute;
     top: 20%;
     left: 5%;
@@ -18,14 +11,11 @@ img{
 }
 @import url('https://fonts.cdnfonts.com/css/bree-serif-2');
 h1{
-    
     color: var(--whiteColor);
     font-size: 72px;
     font-weight: 700;
     font-family: 'bree-serif';
-
-        text-shadow: 6px 6px 0px black;
-
+    text-shadow: 6px 6px 0px black;
 }
 
 .bg-mobile{
@@ -33,25 +23,6 @@ h1{
     font-size: 25px;
     text-shadow: none;
 }
-/* .title{
-    font-size: 35px;
-    font-weight: 700;
-    color: var(--whiteColor);
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    font-family: 'Poppins';
-} */
-/* .cta1{
-    position: absolute;
-    top: 30%;
-    right: 25%;
-}
-.jointxt{
-    position: absolute;
-    top: 60%;
-    right: 10%;
-} */
 
 @media screen and (max-width: 875px) {
     .bg-desktop{

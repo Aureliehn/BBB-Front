@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BBB } from 'src/app/bbb';
 import { ActuService } from 'src/app/Services/actu.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ActuService } from 'src/app/Services/actu.service';
 })
 export class ActuComponent implements OnInit {
 
-  public actu: any[]= [];
+  public actu: BBB.ACTU[];
 
   constructor(
     private actuService: ActuService
@@ -22,7 +23,6 @@ export class ActuComponent implements OnInit {
     this.actuService.getActu()
     .subscribe((r:[])=>{
       this.actu = r
-      console.log(this.actu)
     })
   }
 }

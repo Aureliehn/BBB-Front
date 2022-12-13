@@ -20,13 +20,6 @@ export class ContactPageComponent implements OnInit {
   public errorFields: boolean = false;
   public successMessage: boolean = false;
 
-  constructor(
-    private http: HttpClient,
-    private router: Router
-  ) { 
-    
-  }
-
   ngOnInit(): void {
     this.contactForm = new FormGroup({
       mail: new FormControl('', [Validators.required, Validators.email]) ,
@@ -43,27 +36,9 @@ export class ContactPageComponent implements OnInit {
       this.postDataFormContact(this.contactForm.value)
     }else{
       this.errorFields = true
-      console.log("no")
     }
-
   }
-  // public postDataFormContact(){
-  //   console.log(this.contactForm.value)
-  //   this.http.post("http://localhost:3004/messages",{
-  //     firstName : this.contactForm.get('firstName'),
-  //     lastName : this.contactForm.get('lastName'),
-  //     phoneNumer : this.contactForm.get('phoneNumer'),
-  //     mail : this.contactForm.get('mail'),
-  //     message : this.contactForm.get('message'),
-  //   }, {
-  //     withCredentials: true,
-  //   })
-  //   .subscribe({
-  //     next: () => console.log("ok"),
-  //     error: (e) => console.log(e)
-  //   })
 
-  // }
   public postDataFormContact(contactForm){
     return fetch("http://localhost:3004/messages",{
         method: 'POST',

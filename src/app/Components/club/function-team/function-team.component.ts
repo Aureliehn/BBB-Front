@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BBB } from 'src/app/bbb';
 import { ClubService } from 'src/app/Services/club.service';
 
 @Component({
@@ -7,9 +8,8 @@ import { ClubService } from 'src/app/Services/club.service';
   styleUrls: ['./function-team.component.css']
 })
 export class FunctionTeamComponent implements OnInit {
-  public members: any[]= [];
-  public membersCom : any[]= [];
-  public membersBureau: any[]= [];
+  public members: BBB.POLE[]
+
   constructor(
     private clubService : ClubService
   ) { }
@@ -21,7 +21,6 @@ export class FunctionTeamComponent implements OnInit {
   public getAllMembers(){
     this.clubService.getTeamMembers()
     .subscribe((r:[])=>{
-      console.log(r)
       this.members = r
       })
   }

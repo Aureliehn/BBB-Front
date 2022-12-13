@@ -1,16 +1,6 @@
-/* img{
-    width: 30px;
-}
-h2{
-    text-align: start;
-}
-.container-btn{
-    justify-content: start;
-} */
 @import url('https://fonts.cdnfonts.com/css/poppins');
 .container-fluid{
     background-color: var(--greyColor);
-    /* width: 100vw; */
     padding: 0;
 }
 img{

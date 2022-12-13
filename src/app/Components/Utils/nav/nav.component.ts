@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -11,8 +12,11 @@ public menuMobile: boolean = false
 public responsive: boolean = false
 public dropdown: boolean = false
 public active: boolean = false
+public idSection: number = 0
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -28,5 +32,12 @@ public active: boolean = false
   clickMenu(){
     this.active=!this.active
     this.menuMobile = !this.menuMobile
+  }
+  goToSection(id:number){
+    if(this.idSection != id){
+      this.idSection = id
+      this.router.navigateByUrl(`section/${this.idSection}`)
+    }
+
   }
 }
