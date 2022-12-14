@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TrainingComponent } from './Components/club/training/training.component';
+import { PartnersComponent } from './Components/partners/partners.component';
 import { SectionComponent } from './Components/section/section.component';
 import { ClubPresComponent } from './Pages/club/club-pres/club-pres.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
@@ -28,6 +29,10 @@ export const appRouteList: Routes = [
     {
         path: 'contact',
         component: ContactPageComponent
+    },
+    {
+        path: 'partenaires',
+        component: PartnersComponent
     }
 ];
 

@@ -20,12 +20,5 @@ export namespace BBB {
         id: number;
         title: string;
         description: string;
-        teams : [
-          {
-            name: string,
-            logo: string,
-            pictures: string
-          }
-        ];
       }
 }

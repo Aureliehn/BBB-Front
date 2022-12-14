@@ -21,6 +21,7 @@ import { SectionComponent } from './Components/section/section.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './Components/slider/slider.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { SliderComponent } from './Components/slider/slider.component';
     TrainingComponent,
     SectionComponent,
     ContactPageComponent,
-    SliderComponent
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +49,7 @@ import { SliderComponent } from './Components/slider/slider.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

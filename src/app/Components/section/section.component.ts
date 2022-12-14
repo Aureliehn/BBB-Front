@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { filter } from 'rxjs/operators';
 import { SectionsService } from 'src/app/Services/sections.service';
 
 @Component({
@@ -21,6 +20,7 @@ export class SectionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
     this.route.params.subscribe(
       (data) =>{
         console.log(data)
@@ -41,9 +41,15 @@ export class SectionComponent implements OnInit {
     this.sectionService.getSectionById(sectionId)
     .subscribe((r:any)=>{
       this.section = r;
-      this.teams = this.section.teams ;
-      console.log('teams', this.teams)
+      this.getTeamBySection(sectionId)
     })
   };
+  public getTeamBySection(section:number){
+    this.sectionService.getTeamBySection(section)
+    .subscribe((t)=>this.teams = t)
+    // console.log(this.teams)
+  }
+
+
 
 }

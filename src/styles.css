@@ -1,6 +1,6 @@
 :root {
   box-sizing: border-box;
-  --redColor: #AD0000;
+  --redColor: rgb(173, 0, 0);
   --greyColor: #888687;
   --darkGreyColor: #292527;
   --whiteColor: #FFFFFF;

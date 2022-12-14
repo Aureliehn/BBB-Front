@@ -1,10 +1,60 @@
 
-<h2 class="mb-5">{{section.title}}</h2>
-<div class="d-flex justify-content-around my-5 align-items-center">
+<div class="ms-5 mt-5">
+  <h2 class="mb-5">Les  <span class="redColor">{{section.nom}}</span> du BBB</h2>
+</div>
+
+<!-- <div class="d-flex justify-content-around my-5 align-items-center">
     <div class="col-4">{{section.description}}</div>
     <div class="cl-8">
-        <img src="{{section.logo}}" alt="" class="logo"></div>
+        <img src="{{section.img}}" alt="" class="logo"></div>
+</div> -->
+<!-- <app-slider [teams]="teams"></app-slider> -->
+<!-- <app-slider [section]="section.id"></app-slider> -->
+<div class="d-flex justify-content-between f-wrap">
+  <div class="col-8">
+    <div class="d-flex justify-content-center">
+      <div id="carouselBBBControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner " >
+            <div  class="carousel-item active">
+              <img src="{{teams[0].photo}}" class="d-block w-100" alt="{{teams[0].nom}}">
+              <span class="span-txt">{{teams[0].nom}}</span>
+            </div>
+            <div class="carousel-item" *ngFor="let r of teams">
+              <img src="{{r.photo}}" class="d-block w-100" alt="{{r.nom}}">
+              <span class="span-txt">{{r.nom}}</span>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+  </div>
+  <div class="mx-5 d-flex flex-column align-items-center">
+    <div class="">{{section.description}}</div>
+    <div class="mt-5">
+      <img src="{{section.img}}" alt="" class="logo"></div>
+  </div>
 </div>
-<app-slider [teams]="teams"></app-slider>
 
 
+
+
+<!-- <div class="container">
+  <div class="card" *ngFor="let r of teams">
+    <h3 class="title">{{r.nom}}</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <img src="{{r.photo}}" alt="">
+    </div>
+  </div>
+</div> -->

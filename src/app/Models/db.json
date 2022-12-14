@@ -535,5 +535,62 @@
       "message": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
       "id": 5
     }
+  ],
+  "partners":[
+    {
+      "id":1,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    },
+    {
+      "id":2,
+      "img": "https://scontent-mrs2-2.xx.fbcdn.net/v/t1.6435-1/84882566_864807010600357_48368323959717888_n.jpg?stp=dst-jpg_p148x148&_nc_cat=107&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=4MdGuhAjlzkAX95qzkX&_nc_ht=scontent-mrs2-2.xx&oh=00_AfDbTANkeoedjQN3heYXlVoURaHiVaWpQeWsn4MBemTJtg&oe=63C1203E",
+      "url": "https://www.dfigroupe.fr/"
+    },
+    {
+      "id":3,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    },
+    {
+      "id":4,
+      "img": "https://scontent-mrs2-2.xx.fbcdn.net/v/t1.6435-1/84882566_864807010600357_48368323959717888_n.jpg?stp=dst-jpg_p148x148&_nc_cat=107&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=4MdGuhAjlzkAX95qzkX&_nc_ht=scontent-mrs2-2.xx&oh=00_AfDbTANkeoedjQN3heYXlVoURaHiVaWpQeWsn4MBemTJtg&oe=63C1203E",
+      "url": "https://www.dfigroupe.fr/"
+    },
+    {
+      "id":5,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    },
+    {
+      "id":6,
+      "img": "https://scontent-mrs2-2.xx.fbcdn.net/v/t1.6435-1/84882566_864807010600357_48368323959717888_n.jpg?stp=dst-jpg_p148x148&_nc_cat=107&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=4MdGuhAjlzkAX95qzkX&_nc_ht=scontent-mrs2-2.xx&oh=00_AfDbTANkeoedjQN3heYXlVoURaHiVaWpQeWsn4MBemTJtg&oe=63C1203E",
+      "url": "https://www.dfigroupe.fr/"
+    },
+    {
+      "id":7,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    },
+    {
+      "id":8,
+      "img": "https://scontent-mrs2-2.xx.fbcdn.net/v/t1.6435-1/84882566_864807010600357_48368323959717888_n.jpg?stp=dst-jpg_p148x148&_nc_cat=107&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=4MdGuhAjlzkAX95qzkX&_nc_ht=scontent-mrs2-2.xx&oh=00_AfDbTANkeoedjQN3heYXlVoURaHiVaWpQeWsn4MBemTJtg&oe=63C1203E",
+      "url": "https://www.dfigroupe.fr/"
+    },
+    {
+      "id":9,
+      "img": "https://scontent-mrs2-2.xx.fbcdn.net/v/t1.6435-1/84882566_864807010600357_48368323959717888_n.jpg?stp=dst-jpg_p148x148&_nc_cat=107&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=4MdGuhAjlzkAX95qzkX&_nc_ht=scontent-mrs2-2.xx&oh=00_AfDbTANkeoedjQN3heYXlVoURaHiVaWpQeWsn4MBemTJtg&oe=63C1203E",
+      "url": "https://www.dfigroupe.fr/"
+    },
+    {
+      "id":10,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    },
+    {
+      "id":11,
+      "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fcarrosserie.brivadoise%2F&psig=AOvVaw3TK6BJ4sDqE2NySeLb6XUh&ust=1671106652970000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi1zsqL-fsCFQAAAAAdAAAAABAD",
+      "url": "https://www.ad.fr/garage/ad-carrosserie-brivadoise"
+    }
   ]
 }

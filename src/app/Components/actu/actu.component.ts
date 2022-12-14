@@ -22,6 +22,7 @@ export class ActuComponent implements OnInit {
   public getActu(){
     this.actuService.getActu()
     .subscribe((r:[])=>{
+      // console.log(r)
       this.actu = r
     })
   }

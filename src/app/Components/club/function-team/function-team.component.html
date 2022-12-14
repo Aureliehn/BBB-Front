@@ -1,21 +1,24 @@
-<div class="container">
-  <h2 class="mt-5 mb-3 frw-bold">EQUIPE <span class="span-title">FONCTIONNELLE</span></h2>
-  <div class="d-flex flex-wrap justify-content-between align-items-center">
-    <div class="col-6">
-      <h3 class="mb-2 redColor fw-bolder">Bureau</h3>
+<div class="essai"></div>
+<div class="container-fluid m-5">
+  <h2 class="mt-5 mb-5 fw-bold">EQUIPE <span class="redColor fw-bold">FONCTIONNELLE</span></h2>
+  <div class="box-section d-flex flex-wrap justify-content-center align-items-start">
+    
+    <div class="test ">
+      <h3 class="fw-bolder">BUREAU</h3>
+      
       <ul>
         <li *ngFor="let member of members" >
-          <p *ngIf="member.team==='FUNC'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
+          <p *ngIf="member.pole==='FUNC'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
           
         </li>
       </ul>
 
     </div>
-    <div class="col-6">
-      <h3 class="mb-2 redColor fw-bolder">Commissions</h3>
+    <div class="test">
+      <h3 class="mb-5 fw-bolder">COMMISSIONS</h3>
       <ul>
         <li *ngFor="let member of members">
-          <p *ngIf="member.team==='COM'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
+          <p *ngIf="member.pole==='COM'"><span class="redColor">{{member.role | uppercase}}</span> {{member.prenom}} {{member.nom}}</p>
         </li>
       </ul>
     </div>

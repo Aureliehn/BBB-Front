@@ -24,7 +24,7 @@ nav{
     margin-left: 5px;
 }
 .logo{
-    width: 40px;
+    width: 57px;
 margin-left: 20px;
 }
 .cont-items{
@@ -190,6 +190,7 @@ margin-left: 20px;
         color: black;
     }
     .cont-items{
+        position: relative;
         font-size: 16px;
         display: none;
         z-index: 2;
