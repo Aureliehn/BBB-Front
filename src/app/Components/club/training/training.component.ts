@@ -13,6 +13,18 @@ export class TrainingComponent implements OnInit {
   // public trainingOld : any[]= [];
   // public trainingYoung : any[]= [];
   // public trainingMini : any[]= [];
+  public sg : boolean = false
+  public sf : boolean = false
+  public lois : boolean = false
+  public u18f : boolean = false
+  public u17g : boolean = false
+  public u15g : boolean = false
+  public u15f : boolean = false
+  public u13g : boolean = false
+  public u13f : boolean = false
+  public u11 : boolean = false
+  public u9 : boolean = false
+  public u7 : boolean = false
 
   constructor(
     private trainingService : TrainingService

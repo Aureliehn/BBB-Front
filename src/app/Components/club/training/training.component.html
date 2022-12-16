@@ -1,93 +1,115 @@
-<!-- <h2>ENTRAINEMENTS <span class="span-title">ADULTES</span></h2>
-<table class="table text-light">
-    <thead>
-      <tr>
-        <th scope="col">Equipe</th>
-        <th scope="col">Jour</th>
-        <th scope="col">Heure</th>
-        <th scope="col">Lieu</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of trainingOld">
-        <th scope="row">{{item.category}}</th>
-        <td>{{item.day}}</td>
-        <td>{{item.startHour}}h{{item.startMinute}}
-          / {{item.endHour}}h{{item.endMinute}}
-        </td>
-        <td>{{item.place}}</td>
-      </tr>
-    </tbody>
-  </table>
-<h2 class="mt-5">ENTRAINEMENTS <span class="span-title">JEUNES</span></h2>
-<table class="table text-light">
-  <thead>
-    <tr>
-      <th scope="col">Equipe</th>
-      <th scope="col">Jour</th>
-      <th scope="col">Heure</th>
-      <th scope="col">Lieu</th>
-    </tr>
-  </thead>
-    <tbody>
-      <tr *ngFor="let item of trainingYoung">
-        <th scope="row">{{item.category}}</th>
-        <td>{{item.day}}</td>
-        <td>{{item.startHour}}h{{item.startMinute}}
-          / {{item.endHour}}h{{item.endMinute}}
-        </td>
-        <td>{{item.place}}</td>
-      </tr>
-    </tbody>
-  </table>
-<h2 class="mt-5">ENTRAINEMENTS <span class="span-title">MINI</span></h2>
-<table class="table text-light">
-  <thead>
-    <tr>
-      <th scope="col">Equipe</th>
-      <th scope="col">Jour</th>
-      <th scope="col">Heure</th>
-      <th scope="col">Lieu</th>
-    </tr>
-  </thead>
-    <tbody>
-      <tr *ngFor="let item of trainingMini">
-        <th scope="row">{{item.category}}</th>
-        <td>{{item.day}}</td>
-        <td>{{item.startHour}}h{{item.startMinute}}
-          / {{item.endHour}}h{{item.endMinute}}
-        </td>
-        <td>{{item.place}}</td>
-      </tr>
-    </tbody>
-  </table> -->
-  <h2>ENTRAINEMENTS <span class="span-title">BBB</span></h2>
-  <table class="table text-dark bg-light">
-    <thead>
-      <tr>
-        <th scope="col">lundi</th>
-        <th scope="col">mardi</th>
-        <th scope="col">mercredi</th>
-        <th scope="col">jeudi</th>
-        <th scope="col">vendredi</th>
-        <th scope="col">samedi</th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr *ngFor="let item of allTraining">
+  <h2>ENTRAINEMENTS <span class="redColor">BBB</span></h2>
 
-          <td ><span *ngIf="item.day === 'lundi'">{{item.category}}</span></td>
-          <td ><span *ngIf="item.day === 'mardi'">{{item.category}} {{item.startHour}}h{{item.startMinute}}
-            / {{item.endHour}}h{{item.endMinute}} <br>{{item.place}}</span></td>
-          <td ><span *ngIf="item.day === 'mercredi'">{{item.category}} {{item.startHour}}h{{item.startMinute}}
-            / {{item.endHour}}h{{item.endMinute}} <br> {{item.place}}</span></td>
-          <td ><span *ngIf="item.day === 'jeudi'">{{item.category}} {{item.startHour}}h{{item.startMinute}}
-            / {{item.endHour}}h{{item.endMinute}} <br> {{item.place}}</span></td>
-          <td ><span *ngIf="item.day === 'vendredi'">{{item.category}} {{item.startHour}}h{{item.startMinute}}
-            / {{item.endHour}}h{{item.endMinute}} <br> {{item.place}}</span></td>
-          <td ><span *ngIf="item.day === 'samedi'">{{item.category}}  {{item.startHour}}h{{item.startMinute}}
-            / {{item.endHour}}h{{item.endMinute}} <br> {{item.place}}</span></td>
+    <div class="wrapper">
+      <main>
+ 
+        <div class="calendar">
+          <div class="calendar__header">
+            <div></div>
+            <div>Halle des sports</div>
+            <div>Salle polyvalente</div>
+            <div>Gymnase</div>
+            <div>Lycée Lafayette</div>
+
+          </div>
+          <div class="calendar__week">
+            <div class="calendar__day day redColor fw-bold">Mardi</div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }">Seniors F + U 18F 19h/20h30 <br> </div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day"></div>
+
+          </div>
+          <div class="calendar__week">
+            <div class="calendar__day day redColor fw-bold">Mercredi</div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u11 || u13g || u15g }"> U 11 Mixtes 16h/17h30 <br>U13 G + U15 G 17h30/19h </div>
+            <div class="calendar__day day fs-12"  [ngClass]="{'bg-red': u17g || u15f}"> U 17 G 17h/18h30 <br>U15F 18h30/20h</div>
+            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': sg }">Séniors G 20h-21h30</div>
+            <div class="calendar__day day"></div>
+
+          </div>
+          <div class="calendar__week">
+            <div class="calendar__day day redColor fw-bold">Jeudi</div>
+            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': lois }">Loisirs 20h30/22h</div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13g }">U 13 G 17h30/19h</div>
+            <div class="calendar__day day"></div>
+
+          </div>
+          <div class="calendar__week">
+            <div class="calendar__day day redColor fw-bold">Vendredi</div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15f || u18f || sf || u17g}"> U 15 F +U 18F  17h30/19h <br>  Séniors F + U 17 G  20h30/22h</div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15g || sg}">U 15 G 17h30/19h <br>Séniors G 19h/20h30</div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13f }">U 13 F 17h30/19h</div> 
+
+          </div>
+          <div class="calendar__week">
+            <div class="calendar__day day redColor fw-bold">Samedi</div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day"></div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }">U7 mixtes 10h/10h45 <br> U9 11h/12h</div>
+
+          </div>
+        </div>
+      </main>
+      <div>
+
+        <div class="avatar">
+          <div class="avatar__img">
+            <img src="assets/logoBBB.png" alt="avatar">
+          </div>
           
-        </tr>
-      </tbody>
-    </table>
+        </div>
+        <nav class="menu">
+          <a class="menu__item" >
+          
+            <span class="menu__text" (click)="sg = !sg">Séniors G</span>
+          </a>
+          <a class="menu__item">
+       
+            <span class="menu__text" (click)="sf = !sf">Séniors F</span>
+          </a>
+          <a class="menu__item" >
+       
+            <span class="menu__text" (click)="lois = !lois">Loisirs</span>
+          </a>
+          <a class="menu__item" >
+          
+            <span class="menu__text" (click)="u18f = !u18f">U 18F</span>
+          </a>
+          <a class="menu__item menu__item--active" >
+       
+            <span class="menu__text" (click)="u17g = !u17g">U 17 G</span>
+          </a>
+          <a class="menu__item" >
+      
+            <span class="menu__text" (click)="u15g = !u15g">U 15 G</span>
+          </a>
+          <a class="menu__item" >
+       
+            <span class="menu__text" (click)="u15f = !u15f">U 15 F</span>
+          </a>
+          <a class="menu__item" >
+       
+            <span class="menu__text" (click)="u13g = !u13g">U 13 G</span>
+          </a>
+          <a class="menu__item" >
+       
+            <span class="menu__text" (click)="u13f = !u13f">U 13 F</span>
+          </a>
+          <a class="menu__item" >
+       
+            <span class="menu__text" (click)="u11 = !u11">U 11</span>
+          </a>
+          <a class="menu__item">
+       
+            <span class="menu__text" (click)="u9 = !u9">U 9</span>
+          </a>
+          <a class="menu__item">
+       
+            <span class="menu__text" (click)="u7 = !u7">U 7</span>
+          </a>
+        </nav>
+
+      </div>
