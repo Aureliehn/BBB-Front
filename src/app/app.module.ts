@@ -22,6 +22,7 @@ import { ContactPageComponent } from './Pages/contact-page/contact-page.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './Components/slider/slider.component';
 import { CommonModule } from '@angular/common';
+import { TestComponent } from './Components/test/test.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CommonModule } from '@angular/common';
     SectionComponent,
     ContactPageComponent,
     SliderComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
