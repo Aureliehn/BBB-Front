@@ -35,6 +35,7 @@ export class SectionComponent implements OnInit {
         }
       }
     )
+
   }
 
   public getSection(sectionId: number){
@@ -42,14 +43,13 @@ export class SectionComponent implements OnInit {
     .subscribe((r:any)=>{
       this.section = r;
       this.getTeamBySection(sectionId)
+      
     })
   };
   public getTeamBySection(section:number){
     this.sectionService.getTeamBySection(section)
-    .subscribe((t)=>this.teams = t)
-    // console.log(this.teams)
+    .subscribe((t)=>{
+      this.teams = t
+    })
   }
-
-
-
 }

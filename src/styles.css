@@ -38,10 +38,11 @@ body {
 @import url("https://fonts.cdnfonts.com/css/rockwell-nova");
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-2');
-
+@import url('https://fonts.cdnfonts.com/css/novecento-slab-book');
 h1 {
   /* font-family: 'bree-serif'; */
-  font-family: 'helvetica-2';
+  /* font-family: 'helvetica-2'; */
+  font-family: 'Novecento slab Book';
 }
 
 h2,

@@ -1,6 +1,6 @@
 <div class="navbar ">
   <div class="cont-logo justify-content-between">
-    <img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo">
+    <a href="accueil"><img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo"></a> 
     <div class="box">
       <div class="contLigne btnHamburger" (click)="clickMenu()" [ngClass]="{'active': active === true}">
         <div class="lignes"></div>
@@ -16,7 +16,7 @@
   <div class="cont-items mt-2" [ngClass]="{'responsive': menuMobile === true}">
     <a href="" class="items"><img *ngIf="menuMobile == true" src="assets/logoBBB.png" alt="logo basket ball brioude"
         class="logo-items"></a>
-    <a href="#" class="items">ACCUEIL</a>
+    <a href="accueil" class="items">ACCUEIL</a>
     <a class="items dropbtn" *ngIf="menuMobile == false" (click)="dropdownClick()">LE CLUB</a>
     <a href="club/presentation" *ngIf="menuMobile == true" class="items a-drop">ENCADREMENT</a>
     <a href="club/training" *ngIf="menuMobile == true" class="items a-drop">ENTRAINEMENTS</a>
@@ -34,7 +34,7 @@
     <div class="dropdown-content " *ngIf="dropdown">
       <a href="club/presentation" class="items a-drop">ENCADREMENT</a>
       <a href="club/training" class="items a-drop">ENTRAINEMENTS</a>
-      <a href="" class="items a-drop">PARTENAIRES</a>
+      <a href="partenaires" class="items a-drop">PARTENAIRES</a>
     </div>
   </div>
 
