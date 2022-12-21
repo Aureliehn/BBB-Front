@@ -9,6 +9,13 @@ import { TrainingService } from 'src/app/Services/training.service';
 export class TrainingComponent implements OnInit {
 
   public allTraining : any[]= [];
+  spMonday: any[]=[]
+  monday: any[]=[]
+  tuesday : any[]=[]
+  wednesday : any[]=[]
+  thursday: any[]=[]
+  friday: any[]=[]
+  saturday: any[]=[]
   // public training : any[]= [];
   // public trainingOld : any[]= [];
   // public trainingYoung : any[]= [];
@@ -41,7 +48,32 @@ public getAllTraining(){
     .subscribe((r:[])=>{
       this.allTraining = r
       console.log(this.allTraining, 't')
+      this.tri()
     })
+}
+public tri(){
+  for(let r of this.allTraining){
+    if(r.jour === "LU"){
+      this.monday.push(r)
+    }
+    else if(r.jour === "MA"){
+      this.tuesday.push(r)
+    }
+    else if(r.jour === "ME"){
+      this.wednesday.push(r)
+    }
+    else if(r.jour === "JE"){
+      this.thursday.push(r)
+    }
+    else if(r.jour === "VE"){
+      this.friday.push(r)
+    }
+    if(r.jour === "SA"){
+      this.saturday.push(r)
+    }
+   
+  }
+  console.log(this.monday, 'monday', this.thursday, 'thr', this.saturday, 'sa')
 }
   // public getTrainingBySection(section:string){
   //   console.log("ici")

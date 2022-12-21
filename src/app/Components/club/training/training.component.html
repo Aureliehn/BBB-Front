@@ -14,44 +14,87 @@
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Mardi</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }">Seniors F + U 18F 19h/20h30 <br> </div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day"></div>
+            
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" *ngFor="let t of tuesday">
+              <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} </p>
+            </div>
+            <div class="calendar__day day" *ngFor="let t of tuesday">
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+            </div>
+            <div class="calendar__day day" *ngFor="let t of tuesday">
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} </span> 
+            </div>
+            <div class="calendar__day day" *ngFor="let t of tuesday">
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+            </div>
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Mercredi</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u11 || u13g || u15g }"> U 11 Mixtes 16h/17h30 <br>U13 G + U15 G 17h30/19h </div>
-            <div class="calendar__day day fs-12"  [ngClass]="{'bg-red': u17g || u15f}"> U 17 G 17h/18h30 <br>U15F 18h30/20h</div>
-            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': sg }">Séniors G 20h-21h30</div>
-            <div class="calendar__day day"></div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u11 || u13g || u15g }" *ngFor="let t of wednesday"> 
+              <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} </p>
+            </div>
+            <div class="calendar__day day fs-12"  [ngClass]="{'bg-red': u17g || u15f}" *ngFor="let t of wednesday">
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+              </div>
+            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': sg }" *ngFor="let t of wednesday">
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} </span> 
+            </div>
+            <div class="calendar__day day" *ngFor="let t of wednesday">
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+            </div>
 
           </div>
           <div class="calendar__week">
-            <div class="calendar__day day redColor fw-bold">Jeudi</div>
-            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': lois }">Loisirs 20h30/22h</div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13g }">U 13 G 17h30/19h</div>
-            <div class="calendar__day day"></div>
+            <div class="calendar__day day redColor fw-bold" >Jeudi</div>
+            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': lois }" *ngFor="let t of thursday">
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day" *ngFor="let t of thursday">
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13g }" *ngFor="let t of thursday">
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+            </div>
+            <div class="calendar__day day" *ngFor="let t of thursday">
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Vendredi</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15f || u18f || sf || u17g}"> U 15 F +U 18F  17h30/19h <br>  Séniors F + U 17 G  20h30/22h</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15g || sg}">U 15 G 17h30/19h <br>Séniors G 19h/20h30</div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13f }">U 13 F 17h30/19h</div> 
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15f || u18f || sf || u17g}" *ngFor="let t of friday">
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15g || sg}" *ngFor="let t of friday">
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day" *ngFor="let t of friday">
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+            </div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13f }" *ngFor="let t of friday">
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div> 
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Samedi</div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day"></div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }">U7 mixtes 10h/10h45 <br> U9 11h/12h</div>
+            <div class="calendar__day day" *ngFor="let t of saturday">
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day" *ngFor="let t of saturday">
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday">
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+            </div>
+            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday" >
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+            </div>
 
           </div>
         </div>
+        
       </main>
       <div>
 

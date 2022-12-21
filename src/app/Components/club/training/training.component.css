@@ -234,3 +234,11 @@ main {
  color: white;
  font-size: 14px
 }
+@media screen and (max-width: 490px){
+  main{
+    padding: 0;
+  }
+  .calendar__week{
+    font-size: 10px;
+  }
+}
