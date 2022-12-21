@@ -10,9 +10,14 @@ export class TrainingService {
     private http: HttpClient
     ) { }
 
+  // public getAllTraining(){
+  //   console.log("service");
+  //   return this.http.get("http://localhost:3004/training",{
+  //   })
+  // }
   public getAllTraining(){
     console.log("service");
-    return this.http.get("http://localhost:3004/training",{
+    return this.http.get("api/entrainement",{
     })
   }
   // public getAllTrainingBySection(section:string){

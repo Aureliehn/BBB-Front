@@ -14,5 +14,8 @@ export class ResultService {
     return this.http.get("http://localhost:3004/result",{
     })
   }
-
+  // public  getResult(){
+  //   return this.http.get("api/resultat",{
+  //   })
+  // }
 }

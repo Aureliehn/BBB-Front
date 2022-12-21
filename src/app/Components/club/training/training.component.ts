@@ -40,6 +40,7 @@ public getAllTraining(){
   this.trainingService.getAllTraining()
     .subscribe((r:[])=>{
       this.allTraining = r
+      console.log(this.allTraining, 't')
     })
 }
   // public getTrainingBySection(section:string){

@@ -22,6 +22,7 @@ export class DashboardResultComponent implements OnInit {
     this.resultService.getResult()
     .subscribe((r:[])=>{
       this.result = r
+      // console.log(this.result, 'res')
       if(section!=''){
         const datas:any[]= this.result.filter(function(d){
           return d.section === section

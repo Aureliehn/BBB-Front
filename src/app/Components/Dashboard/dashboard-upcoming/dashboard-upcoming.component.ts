@@ -8,7 +8,8 @@ import { UpcomingService } from 'src/app/Services/upcoming.service';
 })
 export class DashboardUpcomingComponent implements OnInit {
   public result: any[]=[];
-  public section: string ="mini";
+  public section: number = 0
+  // public section: string ="mini";
 
   constructor(
     private upCommingService : UpcomingService
@@ -18,15 +19,17 @@ export class DashboardUpcomingComponent implements OnInit {
    this.getMatch(this.section);
   }
 
-  public getMatch(section  : string){
+  public getMatch(section  : number){
     this.upCommingService.getUpcoming()
     .subscribe((r:[])=>{
       this.result = r;
-      if(section!=''){
+      console.log(this.result, 'r')
+      if(section!=0){
         const datas:any[]= this.result.filter(function(d){
           return d.section === section;
         })
         this.result = datas;
+        console.log(this.result, 'data')
       }
     })
   }
