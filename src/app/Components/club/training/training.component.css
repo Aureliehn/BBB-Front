@@ -14,6 +14,7 @@ h2{
 
 .wrapper {
   display: grid;
+  grid-template-rows: 20px 1fr 20px;
   grid-template-rows: 70px 1fr 70px;
   grid-template-columns: 1fr;
   grid-template-areas: "sidebar"
@@ -24,10 +25,11 @@ h2{
 
 @media screen and (min-width: 850px) {
   .wrapper {
-    grid-template-columns: 200px 5fr;
+    grid-template-columns: 100px 5fr;
     grid-template-rows: 1fr;
     grid-template-areas: "sidebar content";
   }
+
 }
 
 
@@ -132,9 +134,11 @@ sidebar {
 .calendar__header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);  
+  border: solid var(--redColor) 1px;
+  /* grid-template-columns: repeat(5, 1fr);   */
 }
 .calendar__week {
-  grid-auto-rows: 100px;
+  /* grid-auto-rows: 100px; */
   text-align: center;
 }
 
@@ -147,7 +151,8 @@ sidebar {
 
 .calendar__day {
 
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 8px;
 }
 
 .fs-12{
@@ -238,7 +243,15 @@ main {
   main{
     padding: 0;
   }
-  .calendar__week{
+  .calendar__week , .calendar__day  {
     font-size: 10px;
+    padding: 0;
   }
+  .calendar__header{
+    font-size: 12px;
+  }
+  .avatar__img{
+    display: none;
+  }
+
 }

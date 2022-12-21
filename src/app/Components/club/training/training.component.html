@@ -15,81 +15,83 @@
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Mardi</div>
             
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" *ngFor="let t of tuesday">
-              <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} </p>
-            </div>
-            <div class="calendar__day day" *ngFor="let t of tuesday">
-              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
-            </div>
-            <div class="calendar__day day" *ngFor="let t of tuesday">
-              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} </span> 
-            </div>
-            <div class="calendar__day day" *ngFor="let t of tuesday">
-              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+            <div *ngFor="let t of tuesday">
+              <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" >
+                <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut }} / {{t.fin}} </p>
+              </div>
+              <div class="calendar__day day">
+                <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}}/{{t.fin}} </span>
+              </div>
+              <div class="calendar__day day">
+                <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut }} /{{t.fin}} </span> 
+              </div>
+              <div class="calendar__day day">
+                <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut }} / {{t.fin}} </span>
+              </div>
             </div>
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Mercredi</div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u11 || u13g || u15g }" *ngFor="let t of wednesday"> 
-              <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} </p>
+              <p *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut }} / {{t.fin}} </p>
             </div>
             <div class="calendar__day day fs-12"  [ngClass]="{'bg-red': u17g || u15f}" *ngFor="let t of wednesday">
-              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut }} / {{t.fin}} </span>
               </div>
             <div class="calendar__day day fs-12"[ngClass]="{'bg-red': sg }" *ngFor="let t of wednesday">
-              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} </span> 
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut }} / {{t.fin}} </span> 
             </div>
             <div class="calendar__day day" *ngFor="let t of wednesday">
-              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} </span>
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut }} / {{t.fin}} </span>
             </div>
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold" >Jeudi</div>
             <div class="calendar__day day fs-12"[ngClass]="{'bg-red': lois }" *ngFor="let t of thursday">
-              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day" *ngFor="let t of thursday">
-              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13g }" *ngFor="let t of thursday">
-              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span> 
             </div>
             <div class="calendar__day day" *ngFor="let t of thursday">
-              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Vendredi</div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15f || u18f || sf || u17g}" *ngFor="let t of friday">
-              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15g || sg}" *ngFor="let t of friday">
-              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day" *ngFor="let t of friday">
-              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span> 
             </div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13f }" *ngFor="let t of friday">
-              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div> 
 
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Samedi</div>
             <div class="calendar__day day" *ngFor="let t of saturday">
-              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Halle des sports'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day" *ngFor="let t of saturday">
-              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Salle polyvalente'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday">
-              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span> 
+              <span *ngIf="t.salle === 'Gymnase'">{{t.equipe}} {{t.debut}} / {{t.fin}} <br></span> 
             </div>
             <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday" >
-              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut}} {{t.fin}} <br></span>
+              <span *ngIf="t.salle === 'Lycee Lafayette'">{{t.equipe}} {{t.debut }} / {{t.fin}} <br></span>
             </div>
 
           </div>
@@ -104,7 +106,7 @@
           </div>
           
         </div>
-        <nav class="menu">
+        <!-- <nav class="menu">
           <a class="menu__item" >
           
             <span class="menu__text" [ngClass]="{'bg-red': sg }"  (click)="sg = !sg">Séniors G</span>
@@ -153,6 +155,6 @@
        
             <span class="menu__text" [ngClass]="{'bg-red': u7 }"  (click)="u7 = !u7">U 7</span>
           </a>
-        </nav>
+        </nav> -->
 
       </div>
