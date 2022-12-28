@@ -10,16 +10,8 @@ export class UpcomingService {
     private http: HttpClient
     ) { }
 
-  // public getUpcoming(){
-  //   return this.http.get("http://localhost:3004/up",{
-  //   })
-  // }
   public getUpcoming(){
     return this.http.get("api/match",{
     })
   }
 }
-  // public  getResult(){
-  //   return this.http.get("api/resultat",{
-  //   })
-  // }

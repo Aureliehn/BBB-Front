@@ -8,7 +8,7 @@ import { ResultService } from 'src/app/Services/result.service';
 })
 export class DashboardResultComponent implements OnInit {
   public result: any[]=[];
-  public section: string ="mini";
+  public section: number = 3
 
   constructor(
     private resultService : ResultService
@@ -18,21 +18,21 @@ export class DashboardResultComponent implements OnInit {
     this.getResult(this.section);
   }
 
-  public getResult(section: string){
+  public getResult(section  : number){
     this.resultService.getResult()
     .subscribe((r:[])=>{
-      this.result = r
-      // console.log(this.result, 'res')
-      if(section!=''){
+      this.result = r;
+      console.log(this.result, 'r')
+      if(section!=0){
         const datas:any[]= this.result.filter(function(d){
-          return d.section === section
+          return d.section === section;
         })
-        this.result = datas
+        this.result = datas;
+        console.log(this.result, 'data')
       }
     })
   }
-
-  public handleSection(section:string){
+  public handleSection(section){
     this.section = section
     this.getResult(this.section)
   }

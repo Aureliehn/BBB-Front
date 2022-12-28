@@ -8,8 +8,7 @@ import { UpcomingService } from 'src/app/Services/upcoming.service';
 })
 export class DashboardUpcomingComponent implements OnInit {
   public result: any[]=[];
-  public section: number = 0
-  // public section: string ="mini";
+  public section: number = 3
 
   constructor(
     private upCommingService : UpcomingService

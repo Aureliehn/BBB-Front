@@ -10,12 +10,8 @@ export class ResultService {
     private http: HttpClient
     ) { }
 
-  public getResult(){
-    return this.http.get("http://localhost:3004/result",{
+  public  getResult(){
+    return this.http.get("/api/match/",{
     })
   }
-  // public  getResult(){
-  //   return this.http.get("api/resultat",{
-  //   })
-  // }
 }
