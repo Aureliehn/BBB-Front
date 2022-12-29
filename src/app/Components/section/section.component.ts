@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { BBB } from 'src/app/bbb';
 import { SectionsService } from 'src/app/Services/sections.service';
 
@@ -13,7 +14,9 @@ export class SectionComponent implements OnInit {
 
   public sectionId: number = 0;
   public section : any;
-  public teams: any;
+  // public teams: BBB.team
+  private equipe: BBB.team[] =[]
+  teams$ : BehaviorSubject<any> = new BehaviorSubject<any>(this.equipe)
 
   constructor(
     private route: ActivatedRoute,
@@ -47,12 +50,23 @@ export class SectionComponent implements OnInit {
       }
     })
   };
-
+  
   public getTeamBySection(section:number){
     this.sectionService.getTeamBySection(section)
     .subscribe({
-      next: (t: BBB.team)=>this.teams = t
+      next:(response: any)=>
+      {
+        this.teams$ = response
+        console.log(this.teams$, "teams$")
+      }
+      
     })
-  }
 
+  }
+  // public getTeamBySection(section:number){
+  //   this.sectionService.getTeamBySection(section)
+  //   .subscribe({
+  //     next: (t: BBB.team)=>this.teams = t
+  //   })
+  // }
 }

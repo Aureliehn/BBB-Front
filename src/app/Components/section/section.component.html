@@ -11,10 +11,10 @@
 
           <div class="carousel-inner " >
             <div  class="carousel-item active">
-              <img src="{{teams[0].photo}}" class="d-block w-100" alt="{{teams[0].nom}}">
-              <span class="span-txt">{{teams[0].nom}}</span>
+              <img src="{{teams$[0].photo}}" class="d-block w-100" alt="{{teams$[0].nom}}">
+              <span class="span-txt">{{teams$[0].nom}}</span>
             </div>
-            <div class="carousel-item" *ngFor="let r of teams">
+            <div class="carousel-item" *ngFor="let r of teams$">
               <img src="{{r.photo}}" class="d-block w-100" alt="{{r.nom}}">
               <span class="span-txt">{{r.nom}}</span>
             </div>
