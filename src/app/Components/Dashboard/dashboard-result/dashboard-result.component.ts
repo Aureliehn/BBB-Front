@@ -22,13 +22,11 @@ export class DashboardResultComponent implements OnInit {
     this.resultService.getResult()
     .subscribe((r:[])=>{
       this.result = r;
-      console.log(this.result, 'r')
       if(section!=0){
         const datas:any[]= this.result.filter(function(d){
           return d.section === section;
         })
         this.result = datas;
-        console.log(this.result, 'RESULTAT')
       }
     })
   }

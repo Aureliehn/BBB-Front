@@ -28,7 +28,6 @@ export class DashboardUpcomingComponent implements OnInit {
           return d.section === section;
         })
         this.result = datas;
-        console.log(this.result, 'data')
       }
     })
   }

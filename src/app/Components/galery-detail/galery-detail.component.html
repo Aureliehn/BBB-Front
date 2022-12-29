@@ -1,4 +1,6 @@
 <div *ngFor="let a of album">
-   <p *ngFor="let p of a.photos">{{p.titre}}</p>
+
+    <p *ngFor="let p of a.photos">{{p.titre}}</p>
    <img *ngFor="let p of a.photos" src="{{p.img}}" alt="{{p.titre}}">
+
 </div>

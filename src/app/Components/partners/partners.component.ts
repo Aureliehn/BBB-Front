@@ -24,7 +24,6 @@ this.getSection(1)
     this.partnersService.getAllPartners()
     .subscribe((r:any)=>{
           this.partners = r;
-      
         })
   }
   public getSection(sectionId: number){
