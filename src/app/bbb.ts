@@ -1,5 +1,3 @@
-import { StringifyOptions } from "querystring";
-
 export namespace BBB {
   export interface ACTU {
     id:number,
@@ -16,9 +14,15 @@ export namespace BBB {
     nom: string,
     img: string
   }
-    export interface section{
-        id: number;
-        title: string;
-        description: string;
-      }
+  export interface section{
+    id: number;
+    title: string;
+    description: string;
+  }
+  export interface team{
+    id: number;
+    nom: string;
+    photo: string;
+    section: number;
+  }
 }

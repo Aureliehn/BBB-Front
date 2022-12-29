@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BBB } from 'src/app/bbb';
 import { SectionsService } from 'src/app/Services/sections.service';
 
 @Component({
@@ -35,21 +36,23 @@ export class SectionComponent implements OnInit {
         }
       }
     )
-
   }
 
   public getSection(sectionId: number){
     this.sectionService.getSectionById(sectionId)
-    .subscribe((r:any)=>{
-      this.section = r;
-      this.getTeamBySection(sectionId)
-      
+    .subscribe({
+      next: (r:BBB.section[])=>{
+        this.section = r;
+        this.getTeamBySection(sectionId)
+      }
     })
   };
+
   public getTeamBySection(section:number){
     this.sectionService.getTeamBySection(section)
-    .subscribe((t)=>{
-      this.teams = t
+    .subscribe({
+      next: (t: BBB.team)=>this.teams = t
     })
   }
+
 }

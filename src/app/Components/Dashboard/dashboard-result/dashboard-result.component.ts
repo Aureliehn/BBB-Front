@@ -28,7 +28,7 @@ export class DashboardResultComponent implements OnInit {
           return d.section === section;
         })
         this.result = datas;
-        console.log(this.result, 'data')
+        console.log(this.result, 'RESULTAT')
       }
     })
   }

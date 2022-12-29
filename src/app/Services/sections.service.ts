@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BBB } from '../bbb';
 
 
 @Injectable({
@@ -16,13 +17,13 @@ export class SectionsService {
     })
   }
   public getSectionById(id:number){
-    return this.http.get(`api/section/${id}`,{
+    return this.http.get<BBB.section []>(`api/section/${id}`,{
     })
   }
 
   public getTeamBySection(section:number){
     console.log('section recue', section)
-    return this.http.get(`api/equipe/?section=${section}`,{
+    return this.http.get<BBB.team>(`api/equipe/?section=${section}`,{
     })}
 
 }

@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './Components/slider/slider.component';
 import { CommonModule } from '@angular/common';
 import { TestComponent } from './Components/test/test.component';
+import { ErrorPageComponent } from './Components/Utils/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { TestComponent } from './Components/test/test.component';
     ContactPageComponent,
     SliderComponent,
     TestComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,
