@@ -24,6 +24,7 @@ import { SliderComponent } from './Components/slider/slider.component';
 import { CommonModule } from '@angular/common';
 import { TestComponent } from './Components/test/test.component';
 import { ErrorPageComponent } from './Components/Utils/error-page/error-page.component';
+import { GaleryComponent } from './Components/galery/galery.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ErrorPageComponent } from './Components/Utils/error-page/error-page.com
     SliderComponent,
     TestComponent,
     ErrorPageComponent,
+    GaleryComponent,
   ],
   imports: [
     BrowserModule,

@@ -25,4 +25,10 @@ export namespace BBB {
     photo: string;
     section: number;
   }
+  export interface album{
+    id: number;
+    titre: string;
+    description: string;
+    couverture: string
+  }
 }

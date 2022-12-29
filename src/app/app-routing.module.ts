@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TrainingComponent } from './Components/club/training/training.component';
+import { GaleryComponent } from './Components/galery/galery.component';
 import { PartnersComponent } from './Components/partners/partners.component';
 import { SectionComponent } from './Components/section/section.component';
 import { TestComponent } from './Components/test/test.component';
@@ -35,6 +36,10 @@ export const appRouteList: Routes = [
     {
         path: 'partenaires',
         component: TestComponent
+    },
+    {
+        path: 'galerie',
+        component: GaleryComponent
     },
     {   path: '**', pathMatch: 'full', 
         component: ErrorPageComponent 
