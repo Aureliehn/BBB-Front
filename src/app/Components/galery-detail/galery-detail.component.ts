@@ -9,6 +9,8 @@ import { GaleryService } from 'src/app/Services/galery.service';
 })
 export class GaleryDetailComponent implements OnInit {
 public idAlbum: any
+public album: any
+public pictures : any
   constructor(
     private route: ActivatedRoute,
     private galeryService: GaleryService
@@ -20,6 +22,7 @@ public idAlbum: any
         console.log(data.id,'id')
         this.idAlbum = data.id
         this.getPictures(this.idAlbum)
+        
       }
     )
   }
@@ -27,7 +30,12 @@ public idAlbum: any
   public getPictures(album: any){
     this.galeryService.getPicturesByAlbum(album)
     .subscribe({
-      next: (response: any)=>console.log(response, 'reponse photo')
+      next: (response: any)=> {
+        this.album = response
+      console.log(this.album)
+
+      }
     })
+    console.log(this.album)
   }
 }

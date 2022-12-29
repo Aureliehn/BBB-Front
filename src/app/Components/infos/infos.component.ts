@@ -14,7 +14,7 @@ export class InfosComponent implements OnInit {
     {name: "Salle polyvalente", lat:45.29808363379214, lng:3.390451961376416},
   ]
   public markerbbb = L.icon({
-    iconUrl: 'assets/logoBBB.png',
+    iconUrl: 'assets/icons8.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [0, -41]

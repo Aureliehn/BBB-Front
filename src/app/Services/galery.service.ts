@@ -16,7 +16,7 @@ export class GaleryService {
   }
   public getPicturesByAlbum(album: number){
     console.log('album recue', album)
-    return this.http.get(`api/photos/?album=${album}`,{
+    return this.http.get(`api/album/?album=${album}`,{
     })
   }
 }
