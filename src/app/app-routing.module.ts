@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TrainingComponent } from './Components/club/training/training.component';
 import { GaleryDetailComponent } from './Components/galery-detail/galery-detail.component';
 import { GaleryComponent } from './Components/galery/galery.component';
+import { InfosComponent } from './Components/infos/infos.component';
 import { PartnersComponent } from './Components/partners/partners.component';
 import { SectionComponent } from './Components/section/section.component';
 import { TestComponent } from './Components/test/test.component';
@@ -37,6 +38,10 @@ export const appRouteList: Routes = [
     {
         path: 'partenaires',
         component: TestComponent
+    },
+    {
+        path: 'infos',
+        component: InfosComponent
     },
     {
         path: 'galerie',

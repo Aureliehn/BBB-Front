@@ -26,6 +26,7 @@ import { TestComponent } from './Components/test/test.component';
 import { ErrorPageComponent } from './Components/Utils/error-page/error-page.component';
 import { GaleryComponent } from './Components/galery/galery.component';
 import { GaleryDetailComponent } from './Components/galery-detail/galery-detail.component';
+import { InfosComponent } from './Components/infos/infos.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { GaleryDetailComponent } from './Components/galery-detail/galery-detail.
     ErrorPageComponent,
     GaleryComponent,
     GaleryDetailComponent,
+    InfosComponent,
   ],
   imports: [
     BrowserModule,
