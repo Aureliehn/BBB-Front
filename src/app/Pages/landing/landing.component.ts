@@ -13,16 +13,8 @@ public showSpinner : boolean = false
   ) { }
 
   ngOnInit(): void {
-this.showSpinnerHome()
+
   }
 
-public showSpinnerHome(){
-  this.showSpinner =true
-  setTimeout(() => {
-    this.hideSpinnerHome();
-  }, 4000);
-}
-public hideSpinnerHome(){
-  this.showSpinner= false
-}
+
 }
