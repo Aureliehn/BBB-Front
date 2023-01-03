@@ -8,7 +8,7 @@ import { SectionsService } from 'src/app/Services/sections.service';
 })
 export class SliderComponent implements OnInit{
   @Input() section : any
-  // @Input() teams : any
+  @Input() teams : any
 constructor(private sectionService: SectionsService){}
   ngOnInit(): void {
     if(this.section === 1){

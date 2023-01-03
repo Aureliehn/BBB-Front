@@ -6,36 +6,36 @@
 <div class="d-flex justify-content-between flex-wrap row">
   <div class=" col-xl-8 col-lg-12 col-sm-12">
     <div class="d-flex justify-content-center">
-      <div id="carouselBBBControls" class="carousel slide" data-bs-ride="carousel">
-         <div class="test" >
 
-          <div class="carousel-inner " >
-            <div  class="carousel-item active">
-              <img src="{{teams$[0].photo}}" class="d-block w-100" alt="{{teams$[0].nom}}">
-              <span class="span-txt">{{teams$[0].nom}}</span>
+      <div id="carouselBBBControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="test">
+
+          <div class="carousel-inner ">
+            <div class="carousel-item" *ngFor="let result of teams$; let i = index" [ngClass]="{'active': i === 1}">
+              <img src={{result.photo}} title={{result.nom}} class="d-block w-100" />
+              <span class="span-txt">{{result.nom}}</span>
             </div>
-            <div class="carousel-item" *ngFor="let r of teams$">
-              <img src="{{r.photo}}" class="d-block w-100" alt="{{r.nom}}">
-              <span class="span-txt">{{r.nom}}</span>
-            </div>
-            
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+
         </div>
-         </div>
-  </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBBBControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </div>
   <div class="mx-auto d-flex flex-column align-items-center col-xl-3 col-lg-12 flex-wrap">
     <div class="content-box">
-      <p>{{section.description}}</p></div>
+      <p>{{section.description}}</p>
+    </div>
     <div class="mt-5">
       <img src="{{section.img}}" alt="" class="logo"></div>
   </div>
-</div> 
+</div>
+
