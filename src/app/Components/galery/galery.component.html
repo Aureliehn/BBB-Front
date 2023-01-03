@@ -1,3 +1,4 @@
+<spinner [waitingFor]="albums"></spinner>
 <div class="container d-flex flex-wrap justify-content-center p-5">
     <div *ngFor="let album of albums" class="card m-2" style="width: 18rem;">
         <img class="card-img-top" src="{{album.couverture}}" alt="Card image cap">
@@ -9,3 +10,4 @@
         </div>
       </div>
 </div>
+

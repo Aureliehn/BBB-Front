@@ -18,7 +18,6 @@ public getPartners(){
   .subscribe((r:any)=>{
     console.log(r)
   this.partners = r
-console.log(this.partners, 'trt')})
-  // console.log(this.partners)
+})
 }
 }

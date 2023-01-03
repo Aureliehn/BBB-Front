@@ -15,7 +15,7 @@ export class SectionComponent implements OnInit {
   public sectionId: number = 0;
   public section : any;
   // public teams: BBB.team
-  private equipe: BBB.team[] =[]
+  public equipe: BBB.team[] =[]
   teams$ : BehaviorSubject<any> = new BehaviorSubject<any>(this.equipe)
 
   constructor(
