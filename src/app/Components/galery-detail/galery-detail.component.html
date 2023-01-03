@@ -1,6 +1,9 @@
-<div *ngFor="let a of album">
-
-    <p *ngFor="let p of a.photos">{{p.titre}}</p>
-   <img *ngFor="let p of a.photos" src="{{p.img}}" alt="{{p.titre}}">
-
+<div class="container d-flex flex-wrap justify-content-center p-5">
+  <div *ngFor="let p of album.photos" class="card m-2" style="width: 18rem;">
+    <img class="card-img-top" src="{{p.img}}" alt="{{p.img}}">
+    <div class="card-body">
+      <h5 class="card-title">{{p.titre}}</h5>
+      <p class="card-text">{{p.description}}</p>
+    </div>
+  </div>
 </div>

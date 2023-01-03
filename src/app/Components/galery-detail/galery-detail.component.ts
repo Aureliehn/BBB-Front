@@ -9,7 +9,7 @@ import { GaleryService } from 'src/app/Services/galery.service';
 })
 export class GaleryDetailComponent implements OnInit {
 public idAlbum: any
-public album: any[]=[];
+public album: any;
 public pictures : any
   constructor(
     private route: ActivatedRoute,
@@ -26,31 +26,15 @@ public pictures : any
     )
   }
 
-  // public getPictures(id: any){
-  //   this.galeryService.getAlbum()
-  //   .subscribe((r:[])=>{
-  //     console.log(id, 'num')
-  //     this.album = r;
-  //     console.log(this.album, 'r')
-  //     if(id!=0){
-  //       const datas:any[]= this.album.filter(function(d:any){
-  //         console.log(d.id, 'd.id')
-  //         return d.id === id;
-  //       })
-  //       this.album = datas;
-  //       console.log(this.album, 'data')
-  //     }
-  //   })
-  //   console.log(this.album)
-  // }
   public getPictures(album: any){
+    console.log(album, 'alb recue')
     this.galeryService.getPicturesByAlbum(album)
     .subscribe({
       next: (response: any)=> {
         this.album = response
-        console.log(this.album)
+        console.log(this.album, 'this.album')
       }
     })
-    console.log(this.album)
+    console.log(this.album, 'csl2')
   }
 }
