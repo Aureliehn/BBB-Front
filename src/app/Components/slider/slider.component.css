@@ -1,15 +1,65 @@
 .carousel{
-    max-width: 500px;
+    border: none;
+    max-width: 40vw;
+    margin-bottom: 5em;
+    position: relative;
+} 
+.carousel:before{
+  background-color:  #232323;
+  overflow: hidden;
+    content: '';
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  right: 10%;
+  width: 120%;
+  height: 120%;
+}
+.test:before{
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 70%;
+  height: 70%;
+  background: var(--redColor);
+  clip-path: circle(150px at 80% 20%);
+  opacity:0.7;
+}
+.test:after{
+  color: white;
+    content: 'BBB';
+  position: absolute;
+  bottom: -13%;
+  left: -5%;
+  font-size: 5em;
+  font-weight: 800;
+  font-style: italic;
+  opacity: 0.2;
+  letter-spacing: 0.1em;
 }
 .carousel-item{
     position: relative;
 }
 .span-txt{
-    background-color: red;
+    background-color: var(--redColor);
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0%;;
+    left: 0%;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5em;
 }
 img{
+     border-radius: 10%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 995px){
+  .carousel{
+    max-width: 70vw;
+  }
+  .content-box{
+    margin-left: 1em;
+  }
 }

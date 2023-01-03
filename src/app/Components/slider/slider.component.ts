@@ -11,14 +11,14 @@ export class SliderComponent implements OnInit{
   @Input() teams : any
 constructor(private sectionService: SectionsService){}
   ngOnInit(): void {
-    if(this.section === 1){
-      this.getTeamBySection(1)
-    }else if(this.section == 2){
-      this.getTeamBySection(2)
-    }
-    else{
-      this.getTeamBySection(3)
-    }
+    // if(this.section === 1){
+    //   this.getTeamBySection(1)
+    // }else if(this.section == 2){
+    //   this.getTeamBySection(2)
+    // }
+    // else{
+    //   this.getTeamBySection(3)
+    // }
     // console.log('section SliderComponent', this.section)
 
     
