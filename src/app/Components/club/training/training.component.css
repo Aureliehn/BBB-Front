@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 *{
   font-family: 'Poppins', sans-serif;
 }
@@ -11,7 +8,6 @@ h2{
   color:rgb(50, 58, 69);
 }
 /* WRAPPER */
-
 .wrapper {
   display: grid;
   grid-template-rows: 20px 1fr 20px;
@@ -19,7 +15,6 @@ h2{
   grid-template-columns: 1fr;
   grid-template-areas: "sidebar"
                        "content";
-  /* width: 100vw; unnecessary, but let's keep things consistent */
   height: 100vh;
 }
 
@@ -29,11 +24,7 @@ h2{
     grid-template-rows: 1fr;
     grid-template-areas: "sidebar content";
   }
-
 }
-
-
-
 /* SIDEBAR */
 
 main {
@@ -41,40 +32,17 @@ main {
   padding: 48px;
 }
 
-sidebar {
-  grid-area: sidebar;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 3fr 1fr;
-  grid-template-areas: "logo menu avatar"
-                       "copyright menu avatar";
-}
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.copyright {
-  text-align: center;
-}
 .avatar {
   grid-area: avatar;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
 }
-.avatar__name {
-  flex: 1;
-  text-align: right;
-  margin-right: 1em;
-}
+
 .avatar__img > img {
   display: block;
 }
 
-.copyright {
-  grid-area: copyright;
-}
 .menu {
   grid-area: menu;
   display: flex;
@@ -92,8 +60,8 @@ sidebar {
   sidebar {
     grid-template-areas: "logo"
                          "avatar"
-                         "menu"
-                         "copyright";
+                         "menu";
+                         /* "copyright"; */
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 1fr 50px;
   }
@@ -122,23 +90,13 @@ sidebar {
 
 /* MAIN */
 
-.toolbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
-.calendar{}
-
 .calendar__week,
 .calendar__header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);  
   border: solid var(--redColor) 1px;
-  /* grid-template-columns: repeat(5, 1fr);   */
 }
 .calendar__week {
-  /* grid-auto-rows: 100px; */
   text-align: center;
 }
 
@@ -150,8 +108,6 @@ sidebar {
 }
 
 .calendar__day {
-
-  /* padding: 16px; */
   padding: 8px;
 }
 
@@ -164,23 +120,14 @@ sidebar {
 :root {
   --red: #ED5454;
 }
-
 body {
   font-family: Montserrat;
   font-weight: 100;
   color: #A8B2B9;
 }
-
-sidebar {
-  background-color: white;
-  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
 main {
   background-color: #FCFBFC;
 }
-
-
 .menu__item {
   text-transform: uppercase;
   font-size: 0.7rem;

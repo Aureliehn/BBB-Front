@@ -31,4 +31,8 @@ export namespace BBB {
     description: string;
     couverture: string
   }
+  export interface partners{
+    id: number;
+    img: string;
+  }
 }

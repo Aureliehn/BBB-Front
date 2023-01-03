@@ -1,5 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { PartnersService } from 'src/app/Services/partners.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import { BBB } from 'src/app/bbb';
+import {
+  PartnersService
+} from 'src/app/Services/partners.service';
 
 @Component({
   selector: 'app-test',
@@ -7,17 +13,17 @@ import { PartnersService } from 'src/app/Services/partners.service';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
-public partners: any
-  constructor(private partnersService : PartnersService) { }
+  public partners: BBB.partners
+  constructor(private partnersService: PartnersService) {}
 
   ngOnInit(): void {
     this.getPartners()
   }
-public getPartners(){
-  this.partnersService.getAllPartners()
-  .subscribe((r:any)=>{
-    console.log(r)
-  this.partners = r
-})
-}
+  public getPartners() {
+    this.partnersService.getAllPartners()
+      .subscribe((r: any) => {
+        console.log(r)
+        this.partners = r
+      })
+  }
 }

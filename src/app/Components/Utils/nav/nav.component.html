@@ -1,6 +1,6 @@
 <div class="navbar ">
   <div class="cont-logo justify-content-between">
-    <a href="accueil"><img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo"></a> 
+    <a href="accueil"><img src="assets/logoBBB.png" alt="logo basket ball brioude" class="logo"></a>
     <div class="box">
       <div class="contLigne btnHamburger" (click)="clickMenu()" [ngClass]="{'active': active === true}">
         <div class="lignes"></div>
@@ -28,7 +28,7 @@
       BASKET</a>
     <a href="" class="items " (click)="active=false" (click)="menuMobile=false" (click)=" goToSection(2)">JEUNES</a>
     <a href="" class="items " (click)="active=false" (click)="menuMobile=false" (click)=" goToSection(3)">ADULTES</a>
-    <a [routerLink]="['/galerie']" class="items "(click)="menuMobile=false">GALERIE</a>
+    <a [routerLink]="['/galerie']" class="items " (click)="menuMobile=false">GALERIE</a>
 
 
     <a href="" class="items" (click)="goToWebsite()">BOUTIQUE</a>

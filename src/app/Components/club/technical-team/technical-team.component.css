@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 *{
   font-family: 'Poppins', sans-serif;
 }
@@ -19,9 +16,7 @@ h2{
 .box-tech .myCard{
   position: relative;
   width: 270px;
-  /* width: 320px; */
   height: 400px;
-  /* height: 450px; */
   background: #232323;
   border-radius: 20px;
   overflow: hidden;
@@ -36,7 +31,6 @@ h2{
   background: var(--redColor);
   clip-path: circle(150px at 80% 20%);
   opacity: 0.70;
-  /*  */
   transition: 0.5s ease-in-out;
 }
 .box-tech .myCard:hover:before{
@@ -59,14 +53,11 @@ h2{
   z-index: 10000;
   width: 100%;
   height: 220px;
-
-  /* transform: translateY(1%); */
   transition: 0.5s;
 }
 .box-tech .myCard:hover .imgBx{
   top: 27%;
   transform: translateX(1%);
-    
 }
 .box-tech .myCard .imgBx img{
   position: absolute;
@@ -92,17 +83,6 @@ h2{
   margin-right: 8px;
   font-weight: 700;
 }
-/* .capacity-box{
-  display: none;
-  position: absolute;
-  bottom: 30%;
-  right: 20%;
-  color: white;
-}
-
-.capacity-box:hover{
-  display: block;
-} */
 .box-tech .myCard .capacity-box{
   visibility: hidden;
 }
@@ -117,24 +97,20 @@ h2{
 }
 .box-tech .myCard .capacity-box {
   background-color: white;
-  /* padding: 1em; */
   border-radius: 8px;
-position: absolute;
+  position: absolute;
   transition: 0.5s;
   color: black;
   bottom: 10%;
   border: black 1px solid;
-
-  /* right: 10%; */
 }
 .box-tech .myCard .capacity-box .span1{
   background-color: white;
-  /* padding: 1em; */
   color: white;
   display: block;
- width: 100%;
- letter-spacing: 10px;
- font-weight: 800;
+  width: 100%;
+  letter-spacing: 10px;
+  font-weight: 800;
 }
 .circle-red{
   width: 20px;
