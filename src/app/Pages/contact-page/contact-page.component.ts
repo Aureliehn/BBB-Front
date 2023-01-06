@@ -31,13 +31,20 @@ export class ContactPageComponent implements OnInit {
   })
   }
 
-  public submit(){
-    if(this.contactForm.valid){
-      this.postDataFormContact(this.contactForm.value)
-    }else{
-      this.errorFields = true
+  // public submit(){
+  //   if(this.contactForm.valid){
+  //     this.postDataFormContact(this.contactForm.value)
+  //   }else{
+  //     this.errorFields = true
+  //   }
+  // }
+  public submit() {
+    this.errorFields = !this.contactForm.valid;
+    if (this.contactForm.valid) {
+      this.postDataFormContact(this.contactForm.value);
     }
   }
+  
 
   public postDataFormContact(contactForm){
     return fetch("http://localhost:3004/messages",{

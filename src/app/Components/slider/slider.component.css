@@ -1,13 +1,14 @@
-.carousel{
-    border: none;
-    max-width: 40vw;
-    margin-bottom: 5em;
-    position: relative;
-} 
-.carousel:before{
-  background-color:  #232323;
+.carousel {
+  border: none;
+  max-width: 40vw;
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.carousel:before {
+  background-color: #232323;
+  content: '';
   overflow: hidden;
-    content: '';
   position: absolute;
   top: -10%;
   left: -10%;
@@ -15,7 +16,8 @@
   width: 120%;
   height: 120%;
 }
-.ref:before{
+
+.ref:before {
   content: '';
   position: absolute;
   top: -10%;
@@ -24,9 +26,10 @@
   height: 70%;
   background: var(--redColor);
   clip-path: circle(150px at 80% 20%);
-  opacity:0.7;
+  opacity: 0.7;
 }
-.ref:after{
+
+.ref:after {
   color: white;
   content: 'BBB';
   position: absolute;
@@ -38,28 +41,38 @@
   opacity: 0.2;
   letter-spacing: 0.1em;
 }
-.carousel-item{
-    position: relative;
-}
-.span-txt{
-    background-color: var(--redColor);
-    position: absolute;
-    top: 0%;;
-    left: 0%;
-    color: white;
-    border-radius: 8px;
-    padding: 0.5em;
-}
-img{
-    border-radius: 10%;
-    object-fit: cover;
+
+.carousel-item {
+  position: relative;
 }
 
-@media screen and (max-width: 995px){
-  .carousel{
+.carousel-item img {
+  max-width: 614px;
+  max-height: 410px;
+  object-fit: cover;
+}
+
+.span-txt {
+  background-color: var(--redColor);
+  border-radius: 8px;
+  color: white;
+  left: 0%;
+  padding: 0.5em;
+  position: absolute;
+  top: 0%;
+}
+
+img {
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 995px) {
+  .carousel {
     max-width: 70vw;
   }
-  .content-box{
+
+  .content-box {
     margin-left: 1em;
   }
 }

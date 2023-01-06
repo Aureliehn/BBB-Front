@@ -1,4 +1,4 @@
-  <h2>ENTRAINEMENTS <span class="redColor">BBB</span></h2>
+  <!-- <h2>ENTRAINEMENTS <span class="redColor">BBB</span></h2>
 
     <div class="wrapper">
       <main>
@@ -16,7 +16,7 @@
             <div class="calendar__day day redColor fw-bold">Mardi</div>
             
             <div *ngFor="let t of tuesday">
-              <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" >
+              <div class="calendar__day day fs-12" >
                 <p *ngIf="t.salle === 'Halle des sports'"><span class="fw-bold">{{t.equipe.nom}} </span>{{t.debut }} / {{t.fin}} </p>
               </div>
               <div class="calendar__day day">
@@ -33,13 +33,13 @@
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Mercredi</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u11 || u13g || u15g }" *ngFor="let t of wednesday"> 
+            <div class="calendar__day day fs-12" *ngFor="let t of wednesday"> 
               <p *ngIf="t.salle === 'Halle des sports'"><span class="fw-bold">{{t.equipe.nom}} </span>{{t.debut }} / {{t.fin}} </p>
             </div>
-            <div class="calendar__day day fs-12"  [ngClass]="{'bg-red': u17g || u15f}" *ngFor="let t of wednesday">
+            <div class="calendar__day day fs-12"  *ngFor="let t of wednesday">
               <span *ngIf="t.salle === 'Salle polyvalente'"><span class="fw-bold">{{t.equipe.nom}} </span>{{t.debut }} / {{t.fin}} </span>
               </div>
-            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': sg }" *ngFor="let t of wednesday">
+            <div class="calendar__day day fs-12" *ngFor="let t of wednesday">
               <span *ngIf="t.salle === 'Gymnase'"><span class="fw-bold">{{t.equipe.nom}} </span>{{t.debut }} / {{t.fin}} </span> 
             </div>
             <div class="calendar__day day" *ngFor="let t of wednesday">
@@ -49,13 +49,13 @@
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold" >Jeudi</div>
-            <div class="calendar__day day fs-12"[ngClass]="{'bg-red': lois }" *ngFor="let t of thursday">
+            <div class="calendar__day day fs-12" *ngFor="let t of thursday">
               <span *ngIf="t.salle === 'Halle des sports'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day" *ngFor="let t of thursday">
               <span *ngIf="t.salle === 'Salle polyvalente'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13g }" *ngFor="let t of thursday">
+            <div class="calendar__day day fs-12" *ngFor="let t of thursday">
               <span *ngIf="t.salle === 'Gymnase'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span> 
             </div>
             <div class="calendar__day day" *ngFor="let t of thursday">
@@ -65,16 +65,16 @@
           </div>
           <div class="calendar__week">
             <div class="calendar__day day redColor fw-bold">Vendredi</div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15f || u18f || sf || u17g}" *ngFor="let t of friday">
+            <div class="calendar__day day fs-12" *ngFor="let t of friday">
               <span *ngIf="t.salle === 'Halle des sports'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u15g || sg}" *ngFor="let t of friday">
+            <div class="calendar__day day fs-12" *ngFor="let t of friday">
               <span *ngIf="t.salle === 'Salle polyvalente'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
             <div class="calendar__day day" *ngFor="let t of friday">
               <span *ngIf="t.salle === 'Gymnase'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span> 
             </div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u13f }" *ngFor="let t of friday">
+            <div class="calendar__day day fs-12" *ngFor="let t of friday">
               <span *ngIf="t.salle === 'Lycee Lafayette'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div> 
 
@@ -87,10 +87,10 @@
             <div class="calendar__day day" *ngFor="let t of saturday">
               <span *ngIf="t.salle === 'Salle polyvalente'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday">
+            <div class="calendar__day day fs-12"  *ngFor="let t of saturday">
               <span *ngIf="t.salle === 'Gymnase'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut}} / {{t.fin}} <br></span> 
             </div>
-            <div class="calendar__day day fs-12" [ngClass]="{'bg-red': u7 || u9 }" *ngFor="let t of saturday" >
+            <div class="calendar__day day fs-12" *ngFor="let t of saturday" >
               <span *ngIf="t.salle === 'Lycee Lafayette'"><span class="fw-bold">{{t.equipe.nom}}</span> {{t.debut }} / {{t.fin}} <br></span>
             </div>
 
@@ -104,57 +104,126 @@
           <div class="avatar__img">
             <img src="assets/logoBBB.png" alt="avatar">
           </div>
-          
         </div>
-        <!-- <nav class="menu">
-          <a class="menu__item" >
-          
-            <span class="menu__text" [ngClass]="{'bg-red': sg }"  (click)="sg = !sg">Séniors G</span>
-          </a>
-          <a class="menu__item">
-       
-            <span class="menu__text" [ngClass]="{'bg-red': sf }"  (click)="sf = !sf">Séniors F</span>
-          </a>
-          <a class="menu__item" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': lois }"  (click)="lois = !lois">Loisirs</span>
-          </a>
-          <a class="menu__item" >
-          
-            <span class="menu__text" [ngClass]="{'bg-red': u18f }"  (click)="u18f = !u18f">U 18F</span>
-          </a>
-          <a class="menu__item menu__item--active" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u17g }"  (click)="u17g = !u17g">U 17 G</span>
-          </a>
-          <a class="menu__item" >
-      
-            <span class="menu__text" [ngClass]="{'bg-red': u15g }"  (click)="u15g = !u15g">U 15 G</span>
-          </a>
-          <a class="menu__item" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u15f }"  (click)="u15f = !u15f">U 15 F</span>
-          </a>
-          <a class="menu__item" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u13g }"  (click)="u13g = !u13g">U 13 G</span>
-          </a>
-          <a class="menu__item" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u13f }"  (click)="u13f = !u13f">U 13 F</span>
-          </a>
-          <a class="menu__item" >
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u11 }"  (click)="u11 = !u11">U 11</span>
-          </a>
-          <a class="menu__item">
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u9 }"  (click)="u9 = !u9">U 9</span>
-          </a>
-          <a class="menu__item">
-       
-            <span class="menu__text" [ngClass]="{'bg-red': u7 }"  (click)="u7 = !u7">U 7</span>
-          </a>
-        </nav> -->
-
       </div>
+       -->
+
+      
+
+      <!-- <div class="calendar__week" *ngFor="let day of days">
+        <div class="calendar__day day redColor fw-bold">{{ day.name }}</div>
+        <div *ngFor="let training of day.trainings" class="calendar__day">
+          <div *ngIf="training.salle === 'Halle des sports'">
+            <p><span class="fw-bold">{{ training.equipe.nom }}</span> {{ training.debut }} / {{ training.fin }}</p>
+          </div>
+        </div>
+        <div *ngFor="let training of day.trainings" class="calendar__day">
+          <div *ngIf="training.salle === 'Salle polyvalente'">
+            <p><span class="fw-bold">{{ training.equipe.nom }}</span> {{ training.debut }} / {{ training.fin }}</p>
+          </div>
+        </div>
+        <div *ngFor="let training of day.trainings" class="calendar__day">
+          <div *ngIf="training.salle === 'Gymnase'">
+            <p><span class="fw-bold">{{ training.equipe.nom }}</span> {{ training.debut }} / {{ training.fin }}</p>
+          </div>
+        </div>
+        <div *ngFor="let training of day.trainings" class="calendar__day">
+          <div *ngIf="training.salle === 'Lycee Lafayette'">
+            <p><span class="fw-bold">{{ training.equipe.nom }}</span> {{ training.debut }} / {{ training.fin }}</p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th *ngFor="let day of days">{{ day.name }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let salle of ['Halle des sports', 'Salle polyvalente', 'Gymnase', 'Lycee Lafayette']">
+            <td>{{ salle }}</td>
+            <ng-container *ngFor="let day of days">
+
+              <td *ngFor="let training of day.trainings" class="calendar__day">
+                <div>
+                  <p><span class="fw-bold">{{ training.equipe.nom }}</span> {{ training.debut }} / {{ training.fin }}</p>
+                </div>
+              </td>
+              
+            </ng-container>
+          </tr>
+        </tbody>
+      </table> -->
+      <!-- <div *ngFor="let day of days">
+        <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" >
+          <p><span class="fw-bold">{{ day.name }}</span></p>
+          <div *ngFor="let training of day.trainings">
+            <p *ngIf="training.salle === salle">
+              {{ training.equipe.nom }} {{ training.debut }} / {{ training.fin }}
+            </p>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div *ngFor="let day of days">
+        <div class="calendar__day day fs-12" [ngClass]="{'bg-red': sf  || u18f }" >
+          <p><span class="fw-bold">{{ day.name }}</span></p>
+          <div *ngFor="let training of day.trainings">
+            <p *ngIf="training.salle === selectedSalle">
+              {{ training.equipe.nom }} {{ training.debut }} / {{ training.fin }}
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+<!-- 
+      <table>
+        <tr>
+          <th>Salle</th>
+          <th>Lundi</th>
+          <th>Mardi</th>
+          <th>Mercredi</th>
+          <th>Jeudi</th>
+          <th>Vendredi</th>
+          <th>Samedi</th>
+          <th>Dimanche</th>
+
+        </tr>
+        <tr *ngFor="let salle of salles">
+          <td>{{salle}}</td>
+          <td *ngFor="let day of days">
+            <div *ngFor="let training of day.trainings | trainingFilter:salle">
+              {{training.debut}} - {{training.fin}}<br>
+              {{training.equipe.nom}}
+            </div>
+          </td>
+        </tr>
+      </table>
+       -->
+
+       <table>
+        <tr *ngFor="let day of days">
+          <ng-container *ngIf="day === days[0]">
+            <th>Jours</th>
+            <th *ngFor="let salle of salles">{{salle}}</th>
+          </ng-container>
+          <td>
+            <ng-container *ngIf="day.name === 'LU'">Lundi</ng-container>
+            <ng-container *ngIf="day.name === 'MA'">Mardi</ng-container>
+            <ng-container *ngIf="day.name === 'ME'">Mercredi</ng-container>
+            <ng-container *ngIf="day.name === 'JE'">Jeudi</ng-container>
+            <ng-container *ngIf="day.name === 'VE'">Vendredi</ng-container>
+            <ng-container *ngIf="day.name === 'SA'">Samedi</ng-container>
+            <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
+          </td>
+          <td *ngFor="let salle of salles">
+
+            <div *ngFor="let training of day.trainings | trainingFilter:salle">
+              {{training.debut}} - {{training.fin}}<br>
+              {{training.equipe.nom}}
+            </div>
+          </td>
+        </tr>
+      </table>
+      
+      

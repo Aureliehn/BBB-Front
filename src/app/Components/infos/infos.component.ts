@@ -11,7 +11,7 @@ export class InfosComponent implements OnInit {
   public coords: any[] = [
     {name: "Halle des sports", adress:"", lat:45.29638986814711, lng:3.3906543690181374},
     {name: "Lycée Lafayette", adress:"Av. Cochet de Saint-Vallier, 43100 Brioude", lat:45.295564, lng:3.386482},
-    {name: "Salle polyvalente", adress:"Rue de la Croix Saint-Isidore, 43100 Brioude", lat:45.29808363379214, lng:3.390451961376416},
+    {name: "Salle polyvalente & Gymnase", adress:"Rue de la Croix Saint-Isidore, 43100 Brioude", lat:45.29808363379214, lng:3.390451961376416},
   ]
   public markerbbb = L.icon({
     iconUrl: 'assets/icons8.png',

@@ -21,7 +21,6 @@ export class TechnicalTeamComponent implements OnInit {
     this.clubService.getTeamMembers()
     .subscribe((r:[])=>{
       this.members = r
-      console.log(this.members)
     })
   }
 }

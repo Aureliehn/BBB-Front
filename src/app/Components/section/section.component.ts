@@ -25,31 +25,28 @@ export class SectionComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.route.params.subscribe(
-      (data) =>{
-        console.log(data)
-        if(data.id === '1'){
-          this.getSection(1)
-        }
-        else if(data.id === '2'){
-          this.getSection(2)
-        }
-        else{
-          this.getSection(3)
-        }
+    this.route.params.subscribe(data => {
+      console.log(data);
+      switch (data.id) {
+        case '1':
+          this.getSection(1);
+          break;
+        case '2':
+          this.getSection(2);
+          break;
+        default:
+          this.getSection(3);
+          break;
       }
-    )
+    });
   }
 
-  public getSection(sectionId: number){
-    this.sectionService.getSectionById(sectionId)
-    .subscribe({
-      next: (r:BBB.section[])=>{
-        this.section = r;
-        this.getTeamBySection(sectionId)
-      }
-    })
-  };
+  public getSection(sectionId: number) {
+    this.sectionService.getSectionById(sectionId).subscribe(r => {
+      this.section = r;
+      this.getTeamBySection(sectionId);
+    });
+  }
   
   public getTeamBySection(section:number){
     this.sectionService.getTeamBySection(section)
@@ -57,16 +54,8 @@ export class SectionComponent implements OnInit {
       next:(response: any)=>
       {
         this.teams$ = response
-        console.log(this.teams$, "teams$")
       }
-      
     })
-
   }
-  // public getTeamBySection(section:number){
-  //   this.sectionService.getTeamBySection(section)
-  //   .subscribe({
-  //     next: (t: BBB.team)=>this.teams = t
-  //   })
-  // }
+
 }

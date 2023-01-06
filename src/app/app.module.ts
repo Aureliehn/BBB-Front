@@ -28,6 +28,7 @@ import { GaleryComponent } from './Components/galery/galery.component';
 import { GaleryDetailComponent } from './Components/galery-detail/galery-detail.component';
 import { InfosComponent } from './Components/infos/infos.component';
 import { SpinnerComponent } from './Components/Utils/spinner/spinner.component';
+import { TrainingFilterPipe } from './global/training-filter.pipe';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { SpinnerComponent } from './Components/Utils/spinner/spinner.component';
     GaleryDetailComponent,
     InfosComponent,
     SpinnerComponent,
+    TrainingFilterPipe
   ],
   imports: [
     BrowserModule,

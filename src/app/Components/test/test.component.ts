@@ -22,7 +22,6 @@ export class TestComponent implements OnInit {
   public getPartners() {
     this.partnersService.getAllPartners()
       .subscribe((r: any) => {
-        console.log(r)
         this.partners = r
       })
   }
