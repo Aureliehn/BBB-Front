@@ -118,5 +118,8 @@ export class TrainingComponent implements OnInit {
       this.days.push(this.week[day]);
     }
   }
-
+  trackByFn(index: number, item: any) {
+    return item.equipe.nom; // retourne le nom de l'équipe comme identifiant unique
+  }
+  
 }

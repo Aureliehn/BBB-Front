@@ -200,30 +200,42 @@
         </tr>
       </table>
        -->
+       <h2>ENTRAINEMENTS <span class="redColor">BBB</span></h2>
 
-       <table>
-        <tr *ngFor="let day of days">
-          <ng-container *ngIf="day === days[0]">
-            <th>Jours</th>
-            <th *ngFor="let salle of salles">{{salle}}</th>
-          </ng-container>
-          <td>
-            <ng-container *ngIf="day.name === 'LU'">Lundi</ng-container>
-            <ng-container *ngIf="day.name === 'MA'">Mardi</ng-container>
-            <ng-container *ngIf="day.name === 'ME'">Mercredi</ng-container>
-            <ng-container *ngIf="day.name === 'JE'">Jeudi</ng-container>
-            <ng-container *ngIf="day.name === 'VE'">Vendredi</ng-container>
-            <ng-container *ngIf="day.name === 'SA'">Samedi</ng-container>
-            <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
-          </td>
-          <td *ngFor="let salle of salles">
+    <div class="wrapper">
+      <main>
+       <div>
+        <ng-container *ngFor="let day of days">
+          <span *ngFor="let training of day.trainings ; trackBy: trackByFn" (click)="selected = training.equipe.nom" [class.selected]="selected === training.equipe.nom">{{training.equipe.nom}}</span>
+        </ng-container>
+        
+      </div>
 
-            <div *ngFor="let training of day.trainings | trainingFilter:salle">
-              {{training.debut}} - {{training.fin}}<br>
-              {{training.equipe.nom}}
-            </div>
-          </td>
-        </tr>
-      </table>
-      
+    <!-- </div> -->
+    <table>
+      <tr>
+        <th>Jours</th>
+        <th *ngFor="let salle of salles">{{salle}}</th>
+      </tr>
+      <tr *ngFor="let day of days">
+        <td>
+          <ng-container *ngIf="day.name === 'LU'">Lundi</ng-container>
+          <ng-container *ngIf="day.name === 'MA'">Mardi</ng-container>
+          <ng-container *ngIf="day.name === 'ME'">Mercredi</ng-container>
+          <ng-container *ngIf="day.name === 'JE'">Jeudi</ng-container>
+          <ng-container *ngIf="day.name === 'VE'">Vendredi</ng-container>
+          <ng-container *ngIf="day.name === 'SA'">Samedi</ng-container>
+          <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
+        </td>
+        <td *ngFor="let salle of salles">
+          <div *ngFor="let training of day.trainings | trainingFilter:salle" [class.selected]="selected === training.equipe.nom">
+            {{training.equipe.nom}} <br>
+            {{training.debut}} - {{training.fin}}
+          </div>
+        </td>
+      </tr>
+    </table>
+    
+    
+  </main>
       
