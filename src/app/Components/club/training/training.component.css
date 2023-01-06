@@ -6,7 +6,9 @@ main {
   background-color: #FCFBFC;
 }
 .selected {
-  color: red;
+  color:var(--redColor);
+  font-weight: bold;
+  background-color: lightgrey;
 }
 table{
   width: 100vw;
@@ -17,4 +19,17 @@ table td {
 }
 table {
   table-layout: fixed;
+}
+.calendar__info {
+  padding: 8px;
+}
+.calendar__day, .calendar__place{
+  color:var(--redColor);
+}
+
+.fs-12{
+  font-size: 12px
+}
+.border{
+  border-bottom: 1px solid black;
 }

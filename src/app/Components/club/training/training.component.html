@@ -176,30 +176,7 @@
         </div>
       </div> -->
 
-<!-- 
-      <table>
-        <tr>
-          <th>Salle</th>
-          <th>Lundi</th>
-          <th>Mardi</th>
-          <th>Mercredi</th>
-          <th>Jeudi</th>
-          <th>Vendredi</th>
-          <th>Samedi</th>
-          <th>Dimanche</th>
 
-        </tr>
-        <tr *ngFor="let salle of salles">
-          <td>{{salle}}</td>
-          <td *ngFor="let day of days">
-            <div *ngFor="let training of day.trainings | trainingFilter:salle">
-              {{training.debut}} - {{training.fin}}<br>
-              {{training.equipe.nom}}
-            </div>
-          </td>
-        </tr>
-      </table>
-       -->
        <h2>ENTRAINEMENTS <span class="redColor">BBB</span></h2>
 
     <div class="wrapper">
@@ -215,9 +192,9 @@
     <table>
       <tr>
         <th>Jours</th>
-        <th *ngFor="let salle of salles">{{salle}}</th>
+        <th *ngFor="let salle of salles" class="calendar__place">{{salle}}</th>
       </tr>
-      <tr *ngFor="let day of days">
+      <tr *ngFor="let day of days" class="border" >
         <td>
           <ng-container *ngIf="day.name === 'LU'">Lundi</ng-container>
           <ng-container *ngIf="day.name === 'MA'">Mardi</ng-container>
@@ -228,9 +205,9 @@
           <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
         </td>
         <td *ngFor="let salle of salles">
-          <div *ngFor="let training of day.trainings | trainingFilter:salle" [class.selected]="selected === training.equipe.nom">
+          <div class="calendar__info day fs-12" *ngFor="let training of day.trainings | trainingFilter:salle" [class.selected]="selected === training.equipe.nom">
             {{training.equipe.nom}} <br>
-            {{training.debut}} - {{training.fin}}
+            {{training.debut | timeFormat}} - {{training.fin | timeFormat}}
           </div>
         </td>
       </tr>
