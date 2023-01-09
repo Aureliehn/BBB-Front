@@ -15,14 +15,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClubPresComponent } from './Pages/club/club-pres/club-pres.component';
 import { TechnicalTeamComponent } from './Components/club/technical-team/technical-team.component';
 import { FunctionTeamComponent } from './Components/club/function-team/function-team.component';
-import { PartnersComponent } from './Components/club/partners/partners.component';
+// import { PartnersComponent } from './Components/club/partners/partners.component';
 import { TrainingComponent } from './Components/club/training/training.component';
 import { SectionComponent } from './Components/section/section.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SliderComponent } from './Components/slider/slider.component';
 import { CommonModule } from '@angular/common';
-import { TestComponent } from './Components/test/test.component';
+import { TestComponent } from './Components/partners/partners.component';
 import { ErrorPageComponent } from './Components/Utils/error-page/error-page.component';
 import { GaleryComponent } from './Components/galery/galery.component';
 import { GaleryDetailComponent } from './Components/galery-detail/galery-detail.component';
@@ -46,7 +46,7 @@ import { NearestDatePipe } from './global/NearesrDate.pipe';
     ClubPresComponent,
     TechnicalTeamComponent,
     FunctionTeamComponent,
-    PartnersComponent,
+    // PartnersComponent,
     TrainingComponent,
     SectionComponent,
     ContactPageComponent,

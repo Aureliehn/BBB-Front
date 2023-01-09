@@ -19,7 +19,7 @@
     </div>
     <div class="d-flex flex-column col-9 box-result">
         <h2 class="text-white">MATCHS A VENIR</h2>
-        <table class="table ">
+        <table class="table " *ngIf="!dataNull">
             <thead class="whiteColor poppins">
                 <td class="fw-bold">EQUIPE BBB</td>
                 <td class="fw-bold">DATE</td>
@@ -33,5 +33,6 @@
             </tr>
             </tbody>
         </table>
+        <p *ngIf="dataNull" class="text-light">Il n'y a pas encore de matchs à venir!</p>
     </div>
 </div>

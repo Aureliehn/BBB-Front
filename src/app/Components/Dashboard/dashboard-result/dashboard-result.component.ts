@@ -8,30 +8,28 @@ import { ResultService } from 'src/app/Services/result.service';
 })
 export class DashboardResultComponent implements OnInit {
   public result: any[]=[];
-  public section: number = 3
-
+  public dataNull: boolean = false;
   constructor(
     private resultService : ResultService
   ) { }
 
   ngOnInit(): void {
-    this.getResult(this.section);
+    this.getResult();
   }
 
-  public getResult(section  : number){
+  public getResult(section: number = null){
     this.resultService.getResult()
     .subscribe((r:[])=>{
       this.result = r;
-      if(section!=0){
-        const datas:any[]= this.result.filter(function(d){
-          return d.section === section;
-        })
-        this.result = datas;
+      if (section !== null) {
+        const filteredResults = this.result.filter(result => result.section === section);
+        this.result = filteredResults;
       }
+      this.dataNull = this.result.length === 0;
     })
   }
-  public handleSection(section){
-    this.section = section
-    this.getResult(this.section)
+
+  public handleSection(section) {
+    this.getResult(section);
   }
 }

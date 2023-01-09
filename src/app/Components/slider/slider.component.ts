@@ -15,7 +15,7 @@ constructor(private sectionService: SectionsService){}
 
   public getTeamBySection(id:number){
     this.sectionService.getTeamBySection(id)
-    .subscribe((response)=>console.log(response, 'res', 'thissection', this.section))
+    .subscribe((response)=>console.log(response))
   }
 }
 

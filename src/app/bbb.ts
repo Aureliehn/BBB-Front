@@ -19,6 +19,11 @@ export namespace BBB {
     title: string;
     description: string;
   }
+  export interface MyResultType {
+    id: number;
+    name: string;
+    section: number;
+  }
   export interface team{
     id: number;
     nom: string;

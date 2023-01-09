@@ -12,6 +12,7 @@ export class DashboardUpcomingComponent implements OnInit {
   public result: any[]=[];
   public section: number = 3
   public currentDate: Date;
+  public dataNull: boolean = false;
   constructor(
     private upCommingService : UpcomingService
   ) { }
@@ -29,6 +30,8 @@ export class DashboardUpcomingComponent implements OnInit {
           return d.section === section;
         })
         this.result = datas;
+        console.log('r', this.result)
+        this.dataNull = this.result.length === 0;
       }
     })
   }
