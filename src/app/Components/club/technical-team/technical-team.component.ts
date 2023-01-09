@@ -8,7 +8,8 @@ import { ClubService } from 'src/app/Services/club.service';
   styleUrls: ['./technical-team.component.css']
 })
 export class TechnicalTeamComponent implements OnInit {
-  public members: BBB.POLE[]
+  public members: BBB.POLE[];
+  public default: string = 'Super coach BBB'
   constructor(
     private clubService : ClubService
   ) { }
@@ -21,7 +22,6 @@ export class TechnicalTeamComponent implements OnInit {
     this.clubService.getTeamMembers()
     .subscribe((r:[])=>{
       this.members = r
-      console.log(this.members, 'me')
     })
   }
 }
