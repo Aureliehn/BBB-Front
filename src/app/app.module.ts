@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClubPresComponent } from './Pages/club/club-pres/club-pres.component';
 import { TechnicalTeamComponent } from './Components/club/technical-team/technical-team.component';
 import { FunctionTeamComponent } from './Components/club/function-team/function-team.component';
-// import { PartnersComponent } from './Components/club/partners/partners.component';
 import { TrainingComponent } from './Components/club/training/training.component';
 import { SectionComponent } from './Components/section/section.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
@@ -31,6 +30,7 @@ import { SpinnerComponent } from './Components/Utils/spinner/spinner.component';
 import { TrainingFilterPipe } from './global/training-filter.pipe';
 import { TimeFormatPipe } from './global/timeFormat.pipe';
 import { NearestDatePipe } from './global/NearesrDate.pipe';
+import { CapitalizePipe } from './global/capitalize.pipe';
 
 
 @NgModule({
@@ -46,7 +46,6 @@ import { NearestDatePipe } from './global/NearesrDate.pipe';
     ClubPresComponent,
     TechnicalTeamComponent,
     FunctionTeamComponent,
-    // PartnersComponent,
     TrainingComponent,
     SectionComponent,
     ContactPageComponent,
@@ -59,7 +58,8 @@ import { NearestDatePipe } from './global/NearesrDate.pipe';
     SpinnerComponent,
     TrainingFilterPipe,
     TimeFormatPipe,
-    NearestDatePipe
+    NearestDatePipe,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,

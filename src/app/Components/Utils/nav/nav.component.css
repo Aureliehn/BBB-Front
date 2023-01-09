@@ -30,6 +30,7 @@ nav {
 .logo {
   width: 57px;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .cont-items {
@@ -203,6 +204,7 @@ nav {
 
   .logo {
     display: none;
+    padding: 20px;
   }
 
   .logo-items {
