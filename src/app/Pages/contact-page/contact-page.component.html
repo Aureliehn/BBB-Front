@@ -7,21 +7,21 @@
       <div class="inputs-container">
         <div class="input-effect">
           <input 
-            formControlName="lastName" 
+            formControlName="nom" 
             type="text" 
             class="effect focus-bg" 
             placeholder="Nom"
           >
           <label 
-            for="lastName" 
-            *ngIf="contactForm.get('lastName').hasError('minlength')"
+            for="nom" 
+            *ngIf="contactForm.get('nom').hasError('minlength')"
           >
             Entrez un nom valide
           </label>
           <label 
             class="text-dark" 
-            for="lastName" 
-            *ngIf="!contactForm.get('lastName').hasError('minlength')"
+            for="nom" 
+            *ngIf="!contactForm.get('nom').hasError('minlength')"
             >
             Votre nom
           </label>
@@ -29,21 +29,21 @@
         </div>
         <div class="input-effect ">
           <input 
-            formControlName="firstName" 
+            formControlName="prenom" 
             type="text" 
             class="effect focus-bg" 
             placeholder="Prénom"
             >
           <label 
-            for="firstName" 
-            *ngIf="contactForm.get('firstName').hasError('minlength')"
+            for="prenom" 
+            *ngIf="contactForm.get('prenom').hasError('minlength')"
             >
             Entrez votre prénom valide
           </label>
           <label 
             class="text-dark" 
-            for="firstName" 
-            *ngIf="!contactForm.get('firstName').hasError('minlength')"
+            for="prenom" 
+            *ngIf="!contactForm.get('prenom').hasError('minlength')"
             >
             Votre prénom
           </label>
@@ -52,40 +52,40 @@
       <div class="inputs-container">
         <div class="input-effect">
           <input 
-            formControlName="mail" 
+            formControlName="expediteur" 
             type="text" 
             class="effect focus-bg" 
             placeholder="Mail"
           >
           <label 
-            for="mail" 
-            *ngIf="contactForm.get('mail').hasError('email')">
+            for="expediteur" 
+            *ngIf="contactForm.get('expediteur').hasError('email')">
             Entrez une adresse mail valide
           </label>
           <label 
           class="text-dark"
-            for="mail" 
-            *ngIf="!contactForm.get('mail').hasError('email')">
+            for="expediteur" 
+            *ngIf="!contactForm.get('expediteur').hasError('email')">
             Email
           </label>
         </div>
         <div class="input-effect ">
           <input 
-            formControlName="phoneNumber" 
+            formControlName="telephone" 
             type="text" 
             class="effect focus-bg" 
             placeholder="Numéro de téléphone"
           >
           <label 
-            for="phoneNumber" 
-            *ngIf="contactForm.get('phoneNumber').hasError('pattern')"
+            for="telephone" 
+            *ngIf="contactForm.get('telephone').hasError('pattern')"
             >
             Entrez un numéro de téléphone valide
           </label>
           <label 
-            for="phoneNumber" 
+            for="telephone" 
             class="text-dark"
-            *ngIf="!contactForm.get('phoneNumber').hasError('pattern')"
+            *ngIf="!contactForm.get('telephone').hasError('pattern')"
             >
             Numéro de téléphone
           </label>

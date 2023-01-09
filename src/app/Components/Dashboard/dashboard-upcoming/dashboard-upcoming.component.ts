@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UpcomingService } from 'src/app/Services/upcoming.service';
 
+
 @Component({
   selector: 'app-dashboard-upcoming',
   templateUrl: './dashboard-upcoming.component.html',
@@ -10,7 +11,7 @@ import { UpcomingService } from 'src/app/Services/upcoming.service';
 export class DashboardUpcomingComponent implements OnInit {
   public result: any[]=[];
   public section: number = 3
-
+  public currentDate: Date;
   constructor(
     private upCommingService : UpcomingService
   ) { }

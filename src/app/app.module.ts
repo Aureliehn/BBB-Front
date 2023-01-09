@@ -30,6 +30,7 @@ import { InfosComponent } from './Components/infos/infos.component';
 import { SpinnerComponent } from './Components/Utils/spinner/spinner.component';
 import { TrainingFilterPipe } from './global/training-filter.pipe';
 import { TimeFormatPipe } from './global/timeFormat.pipe';
+import { NearestDatePipe } from './global/NearesrDate.pipe';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { TimeFormatPipe } from './global/timeFormat.pipe';
     InfosComponent,
     SpinnerComponent,
     TrainingFilterPipe,
-    TimeFormatPipe
+    TimeFormatPipe,
+    NearestDatePipe
   ],
   imports: [
     BrowserModule,
