@@ -165,15 +165,20 @@ nav {
   }
 }
 
-@media screen and (max-width: 1262px) {
+/* @media screen and (max-width: 1462px) {
   .dropdown-content {
     left: 40%;
   }
-}
+} */
 
-@media screen and (max-width: 1054px) {
+@media screen and (max-width: 1454px) {
   .dropdown-content {
     left: 35%;
+  }
+}
+@media screen and (max-width: 1193px) {
+  .dropdown-content {
+    left: 25%;
   }
 }
 

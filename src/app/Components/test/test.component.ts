@@ -23,6 +23,13 @@ export class TestComponent implements OnInit {
     this.partnersService.getAllPartners()
       .subscribe((r: any) => {
         this.partners = r
+        console.log(this.partners, 'p')
       })
+  }
+  public openWebsite(url:string){
+    console.log(url)
+    if(url != null){
+      window.open(url, "_blank")
+    }
   }
 }

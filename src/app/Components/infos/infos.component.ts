@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet'
 import { BBB } from 'src/app/bbb';
+import { ClubService } from 'src/app/Services/club.service';
 
 @Component({
   selector: 'app-infos',
@@ -22,8 +23,9 @@ export class InfosComponent implements OnInit {
     iconAnchor: [12, 41],
     popupAnchor: [0, -41]
   })
+  public licences: BBB.Licence[]
 
-  constructor() { }
+  constructor(private clubService: ClubService) { }
 
   ngOnInit(): void {
     const centre: {lat: number, lng: number} = {
@@ -37,6 +39,8 @@ export class InfosComponent implements OnInit {
       maxZoom: 20
     }).addTo(this.map)
     this.addMarker(this.coords)
+    this.getLicence()
+
   }
 
   public addMarker(coords: BBB.Coordinates[]){
@@ -46,5 +50,16 @@ export class InfosComponent implements OnInit {
         .addTo(this.map)
       marker.bindPopup((`<br>${c.name}</br>${c.adress}<br/>`)) 
     }
+  }
+
+  public getLicence(){
+    this.clubService.getLicence()
+    .subscribe({
+      next: (r:BBB.Licence[])=> {
+        this.licences = r;
+        console.log(this.licences, 'licence')
+      }
+    })
+    
   }
 }

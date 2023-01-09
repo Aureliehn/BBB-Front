@@ -14,7 +14,6 @@ constructor(private sectionService: SectionsService){}
   }
 
   public getTeamBySection(id:number){
-    console.log('slider')
     this.sectionService.getTeamBySection(id)
     .subscribe((response)=>console.log(response, 'res', 'thissection', this.section))
   }

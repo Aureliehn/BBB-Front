@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BASE_URL } from '../global/global';
 
 @Injectable({
   providedIn: 'root'
@@ -11,12 +12,11 @@ export class GaleryService {
   ) { }
 
   public getAlbum(){
-    return this.http.get("/api/album",{
+    return this.http.get(`${BASE_URL}/album`,{
     })
   }
   public getPicturesByAlbum(album: number){
-    console.log('album recue', album)
-    return this.http.get(`api/album/${album}`,{
+    return this.http.get(`${BASE_URL}/album/${album}`,{
     })
   }
 }

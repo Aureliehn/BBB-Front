@@ -4,10 +4,8 @@
     <div class="infos-price">
       <h2>Infos pratiques</h2>
       <p>Tarifs des licences</p>
-      <ul>
-        <li>Nom de la catégorie : prix </li>
-        <li>Nom de la catégorie : prix </li>
-        <li>Nom de la catégorie : prix </li>
+      <ul *ngFor="let licence of licences">
+        <li>{{licence.categorie}} : {{licence.prix}}€ </li>
       </ul>
 
       <p>Pour plus de renseignements <a href="/contact">contactez nous</a></p>

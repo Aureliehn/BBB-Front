@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { BASE_URL } from '../global/global';
 
 @Injectable({
   providedIn: 'root'
@@ -9,21 +10,10 @@ export class TrainingService {
   constructor(
     private http: HttpClient
     ) { }
-
-  // public getAllTraining(){
-  //   console.log("service");
-  //   return this.http.get("http://localhost:3004/training",{
-  //   })
-  // }
+    
   public getAllTraining(){
-    console.log("service");
-    return this.http.get("api/entrainement",{
+    return this.http.get(`${BASE_URL}/entrainement`,{
     })
   }
-  // public getAllTrainingBySection(section:string){
-  //   console.log("service");
-  //   return this.http.get("http://localhost:3004/training",{
-  //     withCredentials: true
-  //   })
-  // }
+
 }

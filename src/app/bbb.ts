@@ -41,4 +41,9 @@ export namespace BBB {
     lat: number;
     lng: number;
   }
+  export interface Licence {
+    id:number;
+    prix:number;
+    categorie:string
+  }
 }

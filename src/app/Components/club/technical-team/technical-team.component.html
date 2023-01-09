@@ -31,14 +31,11 @@
                   <div class="circle-red" ></div>
                   <div class="circle-red" ></div>
                 </div>
-                <div class="d-flex mt-4">
+                <div class="d-flex mt-4" *ngFor="let c of m.capacites">
                   <div class="circle-red" ></div>
-                  <span class="italic">Passes volantes</span>
+                  <span class="italic">{{c.capacite}}</span>
                 </div>
-                <div class="d-flex mt-2 mb-5">
-                  <div class="circle-red" ></div>
-                  <span class="italic fw-bold">Combot de paniers</span>
-                </div>
+                
               </div>
 
             </diV>

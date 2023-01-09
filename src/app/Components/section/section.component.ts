@@ -25,7 +25,6 @@ export class SectionComponent implements OnInit {
   ngOnInit(): void {
 
     this.route.params.subscribe(data => {
-      console.log(data);
       switch (data.id) {
         case '1':
           this.getSection(1);

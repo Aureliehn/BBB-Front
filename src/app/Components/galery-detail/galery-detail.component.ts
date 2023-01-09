@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { BASE_URL } from 'src/app/global/global';
 import { GaleryService } from 'src/app/Services/galery.service';
-
+import { ElementRef, Renderer2 } from '@angular/core'
 @Component({
   selector: 'app-galery-detail',
   templateUrl: './galery-detail.component.html',
@@ -15,7 +14,8 @@ export class GaleryDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private galeryService: GaleryService
+    private galeryService: GaleryService,
+    private renderer: Renderer2, private elementRef: ElementRef
   ) {}
 
   ngOnInit(): void {
@@ -41,4 +41,11 @@ export class GaleryDetailComponent implements OnInit {
         }
       });
   }
+
+  openImageInNewWindow(imgUrl: string) {
+    const popup = window.open();
+    popup.document.write(`<img src="${imgUrl}" />`);
+  }
+  
+  
 }

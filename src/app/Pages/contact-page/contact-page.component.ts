@@ -16,6 +16,7 @@ import {
 import {
   Router
 } from '@angular/router';
+import { BASE_URL } from 'src/app/global/global';
 
 @Component({
   selector: 'app-contact-page',
@@ -51,19 +52,20 @@ export class ContactPageComponent implements OnInit {
     this.errorFields = !this.contactForm.valid;
     if (this.contactForm.valid) {
       console.log(this.contactForm.value)
-      this.postDataFormContact();
+      this.postDataFormContact(this.contactForm.value);
     }
   }
 
 
-  public postDataFormContact() {
-    this.http.post('api/contact-form/', {
-      message: this.message,
-      prenom: this.prenom,
-      nom: this.nom,
-      telephone: this.telephone,
-      expediteur: this.expediteur
-    }, {
+  public postDataFormContact(contact) {
+    this.http.post(BASE_URL + '/contact-form/', {
+      message: contact.message,
+      prenom: contact.prenom,
+      nom: contact.nom,
+      telephone: contact.telephone,
+      expediteur: contact.expediteur
+    }
+    , {
       withCredentials: true,
     }
 )
