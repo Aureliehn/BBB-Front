@@ -1,53 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import { TrainingService } from 'src/app/Services/training.service';
-
-// @Component({
-//   selector: 'app-training',
-//   templateUrl: './training.component.html',
-//   styleUrls: ['./training.component.css']
-// })
-// export class TrainingComponent implements OnInit {
-
-//   public allTraining : any[]= [];
-
-//   public monday: any[]=[]
-//   public tuesday : any[]=[]
-//   public wednesday : any[]=[]
-//   public thursday: any[]=[]
-//   public friday: any[]=[]
-//   public saturday: any[]=[]
-
-//   constructor(
-//     private trainingService : TrainingService
-//   ) { }
-
-//   ngOnInit(): void {
-//     this.getAllTraining()
-//   }
-// public getAllTraining(){
-//   this.trainingService.getAllTraining()
-//     .subscribe((r:[])=>{
-//       this.allTraining = r
-//       this.tri()
-//     })
-// }
-// public tri() {
-//   const days = ['LU', 'MA', 'ME', 'JE', 'VE', 'SA'];
-//   const week = {
-//     LU: this.monday,
-//     MA: this.tuesday,
-//     ME: this.wednesday,
-//     JE: this.thursday,
-//     VE: this.friday,
-//     SA: this.saturday,
-//   };
-//   for (let r of this.allTraining) {
-//     if (days.includes(r.jour)) {
-//       week[r.jour].push(r);
-//     }
-//   }
-// }
-// }
 import { Component, NgModule, OnInit } from '@angular/core';
 import { TrainingService } from 'src/app/Services/training.service';
 
@@ -97,7 +47,6 @@ export class TrainingComponent implements OnInit {
       );
   }
 
-
   public tri() {
     this.week = {
     'LU': [],
@@ -117,10 +66,5 @@ export class TrainingComponent implements OnInit {
     for (let day of this.DAYS) {
       this.days.push(this.week[day]);
     }
-    console.log(this.week)
-  }
-  trackByFn(index: number, item: any) {
-    return item.equipe.nom; // retourne le nom de l'équipe comme identifiant unique
-  }
-  
+  }  
 }

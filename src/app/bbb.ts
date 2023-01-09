@@ -35,4 +35,10 @@ export namespace BBB {
     id: number;
     img: string;
   }
+  export interface Coordinates {
+    name: string;
+    adress: string;
+    lat: number;
+    lng: number;
+  }
 }

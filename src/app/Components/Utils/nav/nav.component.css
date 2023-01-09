@@ -177,13 +177,13 @@ nav {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1036px) {
   .cont-items {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 906px) {
   .box {
     display: flex;
   }

@@ -11,7 +11,6 @@ export class SpinnerComponent {
 
   constructor(){}
   ngOnInit(): void {
-    console.log(this.waitingFor, 'wait')
   }
 
 }
