@@ -18,8 +18,7 @@
                  <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
                </td>
                <td *ngFor="let salle of salles">
-                 <div class="calendar__info day fs-12" *ngFor="let training of day.trainings | trainingFilter:salle"
-                   [class.selected]="selected === training.equipe.nom">
+                 <div class="calendar__info day fs-12" *ngFor="let training of day.trainings | trainingFilter:salle">
                    <span class="redColor fw-bold">{{training.equipe.nom}} </span><br>
                    {{training.debut | timeFormat}} - {{training.fin | timeFormat}}
                  </div>
@@ -29,3 +28,4 @@
 
 
          </main>
+<app-exceptional-training></app-exceptional-training>

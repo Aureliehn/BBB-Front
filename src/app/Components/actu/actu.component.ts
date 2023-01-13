@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BBB } from 'src/app/bbb';
+import { CLUB } from 'src/app/bbb';
 import { ActuService } from 'src/app/Services/actu.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ActuService } from 'src/app/Services/actu.service';
 })
 export class ActuComponent implements OnInit {
 
-  public actu: BBB.ACTU[];
+  public actu: CLUB.Actu[];
 
   constructor(
     private actuService: ActuService
@@ -21,8 +21,11 @@ export class ActuComponent implements OnInit {
 
   public getActu(){
     this.actuService.getActu()
-    .subscribe((r:BBB.ACTU[])=>{
-      this.actu = r
+    .subscribe({
+      next:(r: CLUB.Actu[])=>{
+        this.actu = r
+      }
     })
   }
+
 }

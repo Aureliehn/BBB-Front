@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BBB } from 'src/app/bbb';
+import { CLUB } from 'src/app/bbb';
 import { ClubService } from 'src/app/Services/club.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ClubService } from 'src/app/Services/club.service';
   styleUrls: ['./technical-team.component.css']
 })
 export class TechnicalTeamComponent implements OnInit {
-  public members: BBB.POLE[];
+  public members: CLUB.Pole[];
   public default: string = 'Super coach BBB'
   constructor(
     private clubService : ClubService

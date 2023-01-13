@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { BBB } from 'src/app/bbb';
+import { PLAYER } from 'src/app/bbb';
 import { SectionsService } from 'src/app/Services/sections.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class SectionComponent implements OnInit {
 
   public sectionId: number = 0;
   public section : any;
-  public equipe: BBB.team[] =[]
+  public equipe: PLAYER.team[] =[]
   teams$ : BehaviorSubject<any> = new BehaviorSubject<any>(this.equipe)
 
   constructor(

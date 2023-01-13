@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BASE_URL } from '../global/global';
+import { DASHBOARD } from '../bbb';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class UpcomingService {
     ) { }
 
   public getUpcoming(){
-    return this.http.get(`${BASE_URL}/match`,{
+    return this.http.get<DASHBOARD.Upcoming[]>(`${BASE_URL}/match`,{
     })
   }
 }

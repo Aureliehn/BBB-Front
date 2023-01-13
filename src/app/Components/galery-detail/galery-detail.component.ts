@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GaleryService } from 'src/app/Services/galery.service';
 import { ElementRef, Renderer2 } from '@angular/core'
+import { PICTURES } from 'src/app/bbb';
 @Component({
   selector: 'app-galery-detail',
   templateUrl: './galery-detail.component.html',
   styleUrls: ['./galery-detail.component.css']
 })
 export class GaleryDetailComponent implements OnInit {
-  public idAlbum: any;
+  public idAlbum: number;
   public album: any;
-  public pictures : any;
+  public pictures : PICTURES.Photo[];
 
   constructor(
     private route: ActivatedRoute,
     private galeryService: GaleryService,
-    private renderer: Renderer2, private elementRef: ElementRef
   ) {}
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class GaleryDetailComponent implements OnInit {
   public getPictures(album: any) {
     this.galeryService.getPicturesByAlbum(album)
       .subscribe({
-        next: (response: any) => {
+        next: (response: PICTURES.Photo[]) => {
           this.album = response;
           this.album.photos = this.album.photos.map(d => {
             return {

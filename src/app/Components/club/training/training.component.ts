@@ -1,4 +1,5 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TRAINING } from 'src/app/bbb';
 import { TrainingService } from 'src/app/Services/training.service';
 
 export class TrainingModule { }
@@ -11,19 +12,18 @@ export class TrainingModule { }
 export class TrainingComponent implements OnInit {
 
   private readonly DAYS = ['LU', 'MA', 'ME', 'JE', 'VE', 'SA', 'DI'];
-  public allTraining: any[] = [];
-  public days: any[] = [];
-  public week: any = {};
-  public salle: string;
+  public allTraining: TRAINING.training[] = [];
+  public days = [];
+  public week = {};
   public salles: string[];
 
-  constructor(private trainingService: TrainingService) {
+
+  constructor(public trainingService: TrainingService) {
     this.salles = ['Salle polyvalente', 'Gymnase', 'Lycée Lafayette', 'Halle des sports'];
    }
 
   ngOnInit(): void {
     this.getAllTraining();
-
   }
 
   public getAllTraining() {
@@ -31,7 +31,7 @@ export class TrainingComponent implements OnInit {
       .subscribe(
         (r: []) => {
           this.allTraining = r;
-          this.tri();
+          this.sortTraining();
           this.days = [];
           for (let day of this.DAYS) {
             this.days.push({
@@ -47,7 +47,7 @@ export class TrainingComponent implements OnInit {
       );
   }
 
-  public tri() {
+  public sortTraining() {
     this.week = {
     'LU': [],
     'MA': [],
@@ -68,3 +68,5 @@ export class TrainingComponent implements OnInit {
     }
   }  
 }
+
+

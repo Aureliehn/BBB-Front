@@ -1,0 +1,5 @@
+<p>exceptional training!</p>
+<div *ngFor="let t of allTraining">
+    <p>{{t.equipe.nom}}</p>
+    <p>{{t.jour}} {{t.debut|timeFormat}} {{t.fin|timeFormat}}</p>
+</div>

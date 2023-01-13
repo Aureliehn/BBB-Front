@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet'
-import { BBB } from 'src/app/bbb';
+import { CLUB } from 'src/app/bbb';
 import { ClubService } from 'src/app/Services/club.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ClubService } from 'src/app/Services/club.service';
 })
 export class InfosComponent implements OnInit {
   public map: any
-  public coords: BBB.Coordinates[] = [
+  public coords: CLUB.Coordinates[] = [
     {name: "Halle des sports", adress:"", lat:45.29638986814711, lng:3.3906543690181374},
     {name: "Lycée Lafayette", adress:"Av. Cochet de Saint-Vallier, 43100 Brioude", lat:45.295564, lng:3.386482},
     {name: "Salle polyvalente & Gymnase", adress:"Rue de la Croix Saint-Isidore, 43100 Brioude", lat:45.29808363379214, lng:3.390451961376416},
@@ -23,7 +23,7 @@ export class InfosComponent implements OnInit {
     iconAnchor: [12, 41],
     popupAnchor: [0, -41]
   })
-  public licences: BBB.Licence[]
+  public licences: CLUB.Licence[]
 
   constructor(private clubService: ClubService) { }
 
@@ -43,7 +43,7 @@ export class InfosComponent implements OnInit {
 
   }
 
-  public addMarker(coords: BBB.Coordinates[]){
+  public addMarker(coords: CLUB.Coordinates[]){
     for(const c of coords){
       const marker = L.marker([c.lat, c.lng],{
         icon: this.markerbbb})
@@ -55,7 +55,7 @@ export class InfosComponent implements OnInit {
   public getLicence(){
     this.clubService.getLicence()
     .subscribe({
-      next: (r:BBB.Licence[])=> {
+      next: (r:CLUB.Licence[])=> {
         this.licences = r;
         console.log(this.licences, 'licence')
       }

@@ -1,35 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { ResultService } from 'src/app/Services/result.service';
+import { tap } from 'rxjs/operators';
+import { DASHBOARD } from 'src/app/bbb';
+import { SharedDashboardService } from 'src/app/Services/shared-dashboard.service';
 
 @Component({
   selector: 'app-dashboard-result',
   templateUrl: './dashboard-result.component.html',
-  styleUrls: ['./dashboard-result.component.css']
+  styleUrls: ['../dashboard-result/dashboard-result.component.css']
 })
 export class DashboardResultComponent implements OnInit {
-  public result: any[]=[];
+  public result: DASHBOARD.Result[] = [];
   public dataNull: boolean = false;
-  constructor(
-    private resultService : ResultService
-  ) { }
+  
+  constructor(private sharedService: SharedDashboardService) { }
 
   ngOnInit(): void {
     this.getResult();
   }
 
-  public getResult(section: number = null){
-    this.resultService.getResult()
-    .subscribe((r:[])=>{
-      this.result = r;
-      if (section !== null) {
-        const filteredResults = this.result.filter(result => result.section === section);
-        this.result = filteredResults;
-      }
+  public getResult(section: number = null) {
+    this.sharedService.getResult(section)
+    .pipe(
+        tap(res => console.log(res, 'r'))
+    )
+    .subscribe(res => {
+      this.result = res;
       this.dataNull = this.result.length === 0;
-    })
-  }
+    });
+  } 
 
-  public handleSection(section) {
+
+
+  public handleSection(section: number) {
     this.getResult(section);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BBB } from 'src/app/bbb';
+import { PICTURES } from 'src/app/bbb';
 import { GaleryService } from 'src/app/Services/galery.service';
 import { Router } from '@angular/router';
 
@@ -8,12 +8,16 @@ import { Router } from '@angular/router';
   templateUrl: './galery.component.html',
   styleUrls: ['./galery.component.css']
 })
+
 export class GaleryComponent implements OnInit {
-public albums: BBB.album[]
+
+public albums: PICTURES.Album[];
+
   constructor(
     private galeryService: GaleryService,
     private router: Router
-  ) { }
+  ) { 
+  }
 
   ngOnInit(): void {
     this.getAllAlbum()
@@ -21,7 +25,7 @@ public albums: BBB.album[]
 
   public getAllAlbum(){
     this.galeryService.getAlbum()
-    .subscribe((r:[])=>{
+    .subscribe((r:PICTURES.Album[])=>{
       this.albums = r
     })
   }

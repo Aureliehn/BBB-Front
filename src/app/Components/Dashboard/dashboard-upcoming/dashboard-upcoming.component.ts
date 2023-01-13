@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UpcomingService } from 'src/app/Services/upcoming.service';
-
+import { tap } from 'rxjs/operators';
+import { DASHBOARD } from 'src/app/bbb';
+import { SharedDashboardService } from 'src/app/Services/shared-dashboard.service';
 
 @Component({
   selector: 'app-dashboard-upcoming',
@@ -9,34 +10,28 @@ import { UpcomingService } from 'src/app/Services/upcoming.service';
 })
 
 export class DashboardUpcomingComponent implements OnInit {
-  public result: any[]=[];
+  public result: DASHBOARD.Upcoming[]=[];
   public section: number = 3
   public currentDate: Date;
   public dataNull: boolean = false;
-  constructor(
-    private upCommingService : UpcomingService
-  ) { }
+  
+  constructor(private sharedService: SharedDashboardService) {}
 
   ngOnInit(): void {
-   this.getMatch(this.section);
+    this.getMatch();
   }
+  public getMatch(section: number = null) {
+    this.sharedService.getMatch(section)
+    .pipe(
+        tap(res => console.log(res))
+    )
+    .subscribe(res => {
+      this.result = res;
+      this.dataNull = this.result.length === 0;
+    });
+  } 
 
-  public getMatch(section  : number){
-    this.upCommingService.getUpcoming()
-    .subscribe((r:[])=>{
-      this.result = r;
-      if(section!=0){
-        const datas:any[]= this.result.filter(function(d){
-          return d.section === section;
-        })
-        this.result = datas;
-        console.log('r', this.result)
-        this.dataNull = this.result.length === 0;
-      }
-    })
-  }
-  public handleSection(section){
-    this.section = section;
-    this.getMatch(this.section);
+  public handleSection(section) {
+    this.getMatch(section);
   }
 }

@@ -31,6 +31,7 @@ import { TrainingFilterPipe } from './global/training-filter.pipe';
 import { TimeFormatPipe } from './global/timeFormat.pipe';
 import { NearestDatePipe } from './global/NearesrDate.pipe';
 import { CapitalizePipe } from './global/capitalize.pipe';
+import { ExceptionalTrainingComponent } from './Components/exceptional-training/exceptional-training.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { CapitalizePipe } from './global/capitalize.pipe';
     TrainingFilterPipe,
     TimeFormatPipe,
     NearestDatePipe,
-    CapitalizePipe
+    CapitalizePipe,
+    ExceptionalTrainingComponent
   ],
   imports: [
     BrowserModule,
