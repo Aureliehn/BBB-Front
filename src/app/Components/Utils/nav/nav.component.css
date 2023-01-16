@@ -172,11 +172,11 @@ nav {
   }
 }
 
-/* @media screen and (max-width: 1462px) {
+@media screen and (max-width: 1524px) {
   .dropdown-content {
     left: 40%;
   }
-} */
+}
 
 @media screen and (max-width: 1454px) {
   .dropdown-content {
