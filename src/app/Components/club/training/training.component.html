@@ -9,13 +9,7 @@
              </tr>
              <tr *ngFor="let day of days" class="border">
                <td>
-                 <ng-container *ngIf="day.name === 'LU'">Lundi</ng-container>
-                 <ng-container *ngIf="day.name === 'MA'">Mardi</ng-container>
-                 <ng-container *ngIf="day.name === 'ME'">Mercredi</ng-container>
-                 <ng-container *ngIf="day.name === 'JE'">Jeudi</ng-container>
-                 <ng-container *ngIf="day.name === 'VE'">Vendredi</ng-container>
-                 <ng-container *ngIf="day.name === 'SA'">Samedi</ng-container>
-                 <ng-container *ngIf="day.name === 'DI'">Dimanche</ng-container>
+                 <ng-container>{{day.name | day | capitalize}}</ng-container>
                </td>
                <td *ngFor="let salle of salles">
                  <div class="calendar__info day fs-12" *ngFor="let training of day.trainings | trainingFilter:salle">

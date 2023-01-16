@@ -11,6 +11,7 @@ import { TrainingComponent } from '../club/training/training.component';
 export class ExceptionalTrainingComponent extends TrainingComponent implements OnInit{
   
   public frequence: string = 'UNE';
+  public isOpen = true;
   
   constructor(trainingService: TrainingService) {
     super(trainingService);

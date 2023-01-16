@@ -20,7 +20,7 @@ export class DashboardUpcomingComponent implements OnInit {
   ngOnInit(): void {
     this.getMatch();
   }
-  public getMatch(section: number = null) {
+  public getMatch(section: number = 3) {
     this.sharedService.getMatch(section)
     .pipe(
         tap(res => console.log(res))

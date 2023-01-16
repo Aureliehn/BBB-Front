@@ -33,14 +33,13 @@ body {
 /* FONT */
 @import url('https://fonts.cdnfonts.com/css/novecento-slab-book');
 @import url('https://fonts.cdnfonts.com/css/poppins');
-@import url('https://fonts.cdnfonts.com/css/bree-serif-2');
 @import url("https://fonts.cdnfonts.com/css/tahoma");
-@import url("https://fonts.cdnfonts.com/css/rockwell-nova");
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-2');
 @import url('https://fonts.cdnfonts.com/css/novecento-slab-book');
 h1 {
   font-family: 'Novecento slab Book';
+  /* font-family: "Poppins"; */
 }
 
 h2,
@@ -67,7 +66,6 @@ h4 {
 
 .span-title {
   text-shadow: 4px 4px 2px var(--redColor)
-    /* text-shadow: 4px 4px 0px var(--redColor) */
 }
 
 /* CTA */

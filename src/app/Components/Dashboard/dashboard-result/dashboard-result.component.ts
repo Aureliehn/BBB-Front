@@ -11,14 +11,14 @@ import { SharedDashboardService } from 'src/app/Services/shared-dashboard.servic
 export class DashboardResultComponent implements OnInit {
   public result: DASHBOARD.Result[] = [];
   public dataNull: boolean = false;
-  
+  public currentDate: Date;
   constructor(private sharedService: SharedDashboardService) { }
 
   ngOnInit(): void {
     this.getResult();
   }
 
-  public getResult(section: number = null) {
+  public getResult(section: number = 3) {
     this.sharedService.getResult(section)
     .pipe(
         tap(res => console.log(res, 'r'))

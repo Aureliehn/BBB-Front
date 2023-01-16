@@ -59,14 +59,12 @@ export class ContactPageComponent implements OnInit {
 
   public postDataFormContact(contact) {
     this.http.post(BASE_URL + '/contact-form/', {
+      titre:'Demande de Contact',
       message: contact.message,
       prenom: contact.prenom,
       nom: contact.nom,
       telephone: contact.telephone,
       expediteur: contact.expediteur
-    }
-    , {
-      withCredentials: true,
     }
 )
     .subscribe({
@@ -76,31 +74,3 @@ export class ContactPageComponent implements OnInit {
 
 }
 }
-//   public postDataFormContact(contactForm) {
-
-//     return fetch("http://localhost:3004/messages", {
-//         method: 'POST',
-//         body: JSON.stringify(contactForm),
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//       })
-//       .then(() => this.successMessage = true)
-//       .then(() => this.contactForm.reset({
-//         message: '',
-//         prenom: '',
-//         nom: '',
-//         telephone: '',
-//         expediteur: ''
-//       }))
-//   }
-// }
-// a récupérer 
-// prenom ok
-// nom ok
-// expediteur (email) ok
-// telephone ok
-// titre ok
-// Message
-// candidature
-//  url/api/contact-form
