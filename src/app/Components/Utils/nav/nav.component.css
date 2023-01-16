@@ -163,7 +163,12 @@ nav {
 
 @media screen and (min-width: 1600px) {
   .dropdown-content {
-    left: 60%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1722px) {
+  .dropdown-content {
+    left: 55%;
   }
 }
 
