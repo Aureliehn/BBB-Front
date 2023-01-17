@@ -16,7 +16,7 @@ button{
 .box-result{
     text-align: start;
 }
-table tr, td{width: 300px;}
+table tr, td{width: 300px; padding: 5px 0;}
 
 @media screen and (max-width: 875px) {
     .container-fluid{
