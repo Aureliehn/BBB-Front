@@ -10,3 +10,8 @@ h2{
 .logo{
     max-width: 300px;
 }
+@media screen and (max-width:1200px) {
+  .content-box, .logo{
+    padding: 1em;
+  }
+}

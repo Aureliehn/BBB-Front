@@ -19,6 +19,7 @@ img{
     -webkit-animation: fadein 5s;
     animation: fadein 4s;
     -moz-animation: fadein 4s;
+    cursor: pointer;
 }
 
 @-webkit-keyframes fadein {
