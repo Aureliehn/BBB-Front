@@ -4,7 +4,7 @@
 
     <div class="carousel-inner ">
       <div class="carousel-item" *ngFor="let result of teams; let i = index" [ngClass]="{'active': i === 1}">
-        <img src={{result.photo}} title={{result.nom}} class="d-block w-100" />
+        <img src={{result.photo}} title={{result.nom}} class="d-block w-100 h-100" />
         <span class="span-txt">{{result.nom}}</span>
       </div>
     </div>

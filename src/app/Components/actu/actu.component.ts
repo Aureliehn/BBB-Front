@@ -16,6 +16,7 @@ import {
 })
 export class ActuComponent implements OnInit {
   public actu: CLUB.Actu[];
+  public currentDate: Date; 
   constructor(
     private actuService: ActuService
   ) {}

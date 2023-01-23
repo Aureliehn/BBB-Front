@@ -33,6 +33,7 @@ import { NearestDatePipe } from './global/NearestDate.pipe';
 import { CapitalizePipe } from './global/capitalize.pipe';
 import { ExceptionalTrainingComponent } from './Components/club/exceptional-training/exceptional-training.component';
 import { DayPipe } from './global/day.pipe';
+import { DateFilterPipe } from './global/dateFilter.pipe';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { DayPipe } from './global/day.pipe';
     NearestDatePipe,
     CapitalizePipe,
     DayPipe,
-    ExceptionalTrainingComponent
+    ExceptionalTrainingComponent,
+    DateFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -31,7 +31,7 @@
             <td *ngIf="!r.a_venir ">{{r.equipe_1.nom}}</td>
             <td *ngIf="!r.a_venir && !r.forfait_1 && !r.forfait_2">{{r.score_1}}/<br></td>
             <td *ngIf="!r.a_venir && r.forfait_1">Forfait BBB<br></td>
-            <td *ngIf="!r.a_venir && r.forfait_2">Forfait {{r.equipe_2}}<br></td>
+            <td *ngIf="!r.a_venir && r.forfait_2">Forfait ADVERSAIRE<br></td>
             <td *ngIf="!r.a_venir ">{{r.equipe_2 | capitalize}} <br></td>
         </tr>
         </tbody>

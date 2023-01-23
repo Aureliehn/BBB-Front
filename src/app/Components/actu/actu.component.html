@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="fw-bold"><span class="fw-bold redColor">ACTUALITES</span> DU BBB</h2>
     <ul class="cards">
-    <li *ngFor="let a of actu">
+    <li *ngFor="let a of actu | dateFilter : currentDate | slice:0:6">
         <a href="" class="card">
           <img src="{{a.img}}" class="card__image" alt="" />
           <div class="card__overlay">
