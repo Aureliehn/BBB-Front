@@ -17,7 +17,6 @@ export class SharedDashboardService {
     private upcomingService: UpcomingService
   ) { }
 
-
   public getResult(section: number = null) : Observable<DASHBOARD.Result[]> {
     return this.resultService.getResult().pipe(map((r:[])=>{
         let res = r as DASHBOARD.Result[];

@@ -23,7 +23,7 @@ export class DashboardUpcomingComponent implements OnInit {
   public getMatch(section: number = 3) {
     this.sharedService.getMatch(section)
     .pipe(
-        tap(res => console.log(res))
+        tap()
     )
     .subscribe(res => {
       this.result = res;

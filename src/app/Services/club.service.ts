@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BASE_URL } from '../global/global';
-import { CLUB, PLAYER } from '../bbb';
+import { CLUB } from '../bbb';
 
 @Injectable({
   providedIn: 'root'

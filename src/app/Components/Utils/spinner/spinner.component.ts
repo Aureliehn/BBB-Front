@@ -6,11 +6,5 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./spinner.component.css']
 })
 export class SpinnerComponent {
-
   @Input() waitingFor: any;
-
-  constructor(){}
-  ngOnInit(): void {
-  }
-
 }

@@ -11,7 +11,6 @@ import { SectionsService } from 'src/app/Services/sections.service';
 })
 
 export class SectionComponent implements OnInit {
-
   public sectionId: number = 0;
   public section : any;
   public equipe: PLAYER.team[] =[]
@@ -23,7 +22,6 @@ export class SectionComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this.route.params.subscribe(data => {
       switch (data.id) {
         case '1':

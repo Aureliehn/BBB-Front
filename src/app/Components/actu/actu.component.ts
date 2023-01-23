@@ -1,6 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { CLUB } from 'src/app/bbb';
-import { ActuService } from 'src/app/Services/actu.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  CLUB
+} from 'src/app/bbb';
+import {
+  ActuService
+} from 'src/app/Services/actu.service';
 
 @Component({
   selector: 'app-actu',
@@ -8,24 +15,22 @@ import { ActuService } from 'src/app/Services/actu.service';
   styleUrls: ['./actu.component.css']
 })
 export class ActuComponent implements OnInit {
-
   public actu: CLUB.Actu[];
-
   constructor(
     private actuService: ActuService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.getActu();
   }
 
-  public getActu(){
+  public getActu() {
     this.actuService.getActu()
-    .subscribe({
-      next:(r: CLUB.Actu[])=>{
-        this.actu = r
-      }
-    })
+      .subscribe({
+        next: (r: CLUB.Actu[]) => {
+          this.actu = r
+        }
+      })
   }
 
 }

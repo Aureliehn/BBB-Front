@@ -29,7 +29,7 @@
         <tbody class="whiteColor flex-wrap" >
             <tr *ngFor="let r of result | nearestDate : currentDate" >
             <td *ngIf="!r.a_venir ">{{r.equipe_1.nom}}</td>
-            <td *ngIf="!r.a_venir " >{{r.resultat.score_1}} / {{r.resultat.score_2}}<br></td>
+            <td *ngIf="!r.a_venir " >{{r.score_1}}/<br></td>
             <td *ngIf="!r.a_venir ">{{r.equipe_2 | capitalize}} <br></td>
         </tr>
         </tbody>

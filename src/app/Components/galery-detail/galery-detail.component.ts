@@ -47,5 +47,4 @@ export class GaleryDetailComponent implements OnInit {
     popup.document.write(`<img src="${imgUrl}" />`);
   }
   
-  
 }

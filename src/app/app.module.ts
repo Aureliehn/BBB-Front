@@ -29,9 +29,9 @@ import { InfosComponent } from './Components/infos/infos.component';
 import { SpinnerComponent } from './Components/Utils/spinner/spinner.component';
 import { TrainingFilterPipe } from './global/training-filter.pipe';
 import { TimeFormatPipe } from './global/timeFormat.pipe';
-import { NearestDatePipe } from './global/NearesrDate.pipe';
+import { NearestDatePipe } from './global/NearestDate.pipe';
 import { CapitalizePipe } from './global/capitalize.pipe';
-import { ExceptionalTrainingComponent } from './Components/exceptional-training/exceptional-training.component';
+import { ExceptionalTrainingComponent } from './Components/club/exceptional-training/exceptional-training.component';
 import { DayPipe } from './global/day.pipe';
 
 

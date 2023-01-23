@@ -13,6 +13,5 @@ export class PartnersService {
     return this.http.get<CLUB.Partners[]>(`${BASE_URL}/partenaire`,{
     })
   }
-    
 
 }

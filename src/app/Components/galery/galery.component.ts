@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 
 export class GaleryComponent implements OnInit {
-
 public albums: PICTURES.Album[];
 
   constructor(

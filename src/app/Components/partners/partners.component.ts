@@ -2,7 +2,9 @@ import {
   Component,
   OnInit
 } from '@angular/core';
-import { CLUB } from 'src/app/bbb';
+import {
+  CLUB
+} from 'src/app/bbb';
 import {
   PartnersService
 } from 'src/app/Services/partners.service';
@@ -22,15 +24,14 @@ export class TestComponent implements OnInit {
   public getPartners() {
     this.partnersService.getAllPartners()
       .subscribe({
-        next: (r)=>{
+        next: (r) => {
           this.partners = r
         }
       })
   }
 
-  public openWebsite(url:string){
-    console.log(url)
-    if(url != null){
+  public openWebsite(url: string) {
+    if (url != null) {
       window.open(url, "_blank")
     }
   }

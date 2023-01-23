@@ -82,13 +82,6 @@ export namespace TRAINING{
     frequence: string;
     jour: string;
     salle: string
-    // equipe:[
-    //   {
-    //     id:number;
-    //     nom:string;
-    //     photo:string
-    //   }
-    // ]
   }
 }
 

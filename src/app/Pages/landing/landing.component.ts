@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -6,15 +6,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
-export class LandingComponent implements OnInit {
-public showSpinner : boolean = false
-  constructor(
-
-  ) { }
-
-  ngOnInit(): void {
-
-  }
-
-
+export class LandingComponent {
+  public showSpinner : boolean = false
 }

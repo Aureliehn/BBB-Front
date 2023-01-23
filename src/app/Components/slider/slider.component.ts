@@ -9,13 +9,14 @@ import { SectionsService } from 'src/app/Services/sections.service';
 export class SliderComponent implements OnInit{
   @Input() section : any
   @Input() teams : any
-constructor(private sectionService: SectionsService){}
+
+  constructor(private sectionService: SectionsService){}
   ngOnInit(): void {
   }
 
   public getTeamBySection(id:number){
     this.sectionService.getTeamBySection(id)
-    .subscribe((response)=>console.log(response))
+    .subscribe()
   }
 }
 

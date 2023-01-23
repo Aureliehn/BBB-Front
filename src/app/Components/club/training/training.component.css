@@ -11,7 +11,7 @@ table{
 }
 table th,
 table td {
-  width: 100px;
+  /* width: 100px; */
   padding-left: 10px;
 }
 
@@ -26,4 +26,9 @@ table td {
 }
 .border{
   border-bottom: 1px solid black;
+}
+@media screen and (max-width:900px) {
+*{
+    font-size: 10px;
+  }
 }

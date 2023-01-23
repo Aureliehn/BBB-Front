@@ -38,6 +38,5 @@ public idSection: number = 0
       this.idSection = id
       this.router.navigateByUrl(`section/${this.idSection}`)
     }
-
   }
 }

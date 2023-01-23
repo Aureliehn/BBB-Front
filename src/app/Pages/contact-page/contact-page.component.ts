@@ -2,9 +2,6 @@ import {
   HttpClient
 } from '@angular/common/http';
 import {
-  Message
-} from '@angular/compiler/src/i18n/i18n_ast';
-import {
   Component,
   OnInit
 } from '@angular/core';
@@ -14,9 +11,8 @@ import {
   FormControl
 } from '@angular/forms';
 import {
-  Router
-} from '@angular/router';
-import { BASE_URL } from 'src/app/global/global';
+  BASE_URL
+} from 'src/app/global/global';
 
 @Component({
   selector: 'app-contact-page',
@@ -24,7 +20,6 @@ import { BASE_URL } from 'src/app/global/global';
   styleUrls: ['./contact-page.component.css']
 })
 export class ContactPageComponent implements OnInit {
-
   public contactForm: FormGroup;
   public expediteur: string = '';
   public telephone: number = 0;
@@ -36,7 +31,7 @@ export class ContactPageComponent implements OnInit {
 
   constructor(
     private http: HttpClient
-  ){}
+  ) {}
   ngOnInit(): void {
     this.contactForm = new FormGroup({
       expediteur: new FormControl('', [Validators.required, Validators.email]),
@@ -47,30 +42,25 @@ export class ContactPageComponent implements OnInit {
     })
   }
 
-
   public submit() {
     this.errorFields = !this.contactForm.valid;
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value)
       this.postDataFormContact(this.contactForm.value);
     }
   }
 
-
   public postDataFormContact(contact) {
     this.http.post(BASE_URL + '/contact-form/', {
-      titre:'Demande de Contact',
-      message: contact.message,
-      prenom: contact.prenom,
-      nom: contact.nom,
-      telephone: contact.telephone,
-      expediteur: contact.expediteur
-    }
-)
-    .subscribe({
-      next: () => this.successMessage = true,
-      error: (e) => console.log(e)
-    })
-
-}
+        titre: 'Demande de Contact',
+        message: contact.message,
+        prenom: contact.prenom,
+        nom: contact.nom,
+        telephone: contact.telephone,
+        expediteur: contact.expediteur
+      })
+      .subscribe({
+        next: () => this.successMessage = true,
+        error: (e) => console.log(e)
+      })
+  }
 }
