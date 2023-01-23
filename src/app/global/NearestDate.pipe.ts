@@ -16,6 +16,6 @@ export class NearestDatePipe implements PipeTransform {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
     return Math.abs(currentDate.getTime() - dateA.getTime()) - Math.abs(currentDate.getTime() - dateB.getTime());
-    }).slice(0, 5);
+    });
   }
 }
