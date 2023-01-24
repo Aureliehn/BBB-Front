@@ -33,7 +33,7 @@ export class DashboardResultComponent implements OnInit {
         tap()
       )
       .subscribe(res => {
-        this.result = res.slice(1,6);
+        this.result = res.slice(0,6);
         this.dataNull = this.result.length === 0;
         console.log(this.result, 'r')
       });

@@ -21,15 +21,15 @@ export class DashboardUpcomingComponent implements OnInit {
     this.getMatch();
   }
   public getMatch(section: number = 3) {
-    this.sharedService.getMatch(section)
-    .pipe(
+    this.sharedService.getResult(section)
+      .pipe(
         tap()
-    )
-    .subscribe(res => {
-      this.result = res;
-      this.dataNull = this.result.length === 0;
-    });
-  } 
+      )
+      .subscribe(res => {
+        this.result = res.slice(0,5);
+        this.dataNull = !this.result.some(r => r.a_venir === true)
+      });
+  }
 
   public handleSection(section) {
     this.getMatch(section);

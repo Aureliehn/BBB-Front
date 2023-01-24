@@ -40,7 +40,8 @@ export namespace DASHBOARD{
     equipe_2: string;
     Date: Date;
     section: number;
-    score: number
+    score: number;
+    a_venir:boolean;
   }
 
 }
