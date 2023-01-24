@@ -11,6 +11,7 @@ export class TrainingFilterPipe implements PipeTransform {
     if (!salle) {
       return trainings;
     }
-    return trainings.filter(training => training.salle.includes(salle));
+    // return trainings.filter(training => training.salle.includes(salle));
+    return trainings.filter(training => training.frequence !== 'UNE' && training.salle === salle);
   }
 }

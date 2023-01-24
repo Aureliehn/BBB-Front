@@ -12,11 +12,10 @@
   <div class="d-flex col-12 flex-wrap justify-content-center">
 
     <div *ngFor="let p of partners">
-
       <div class="myCard m-2 box">
         <div class="myCard">
           <div class="imgBx">
-              <img src="{{p.img}}" (click)='openWebsite(p.url)' class="myCard-img-top">
+              <img src="{{p.img}}" (click)='openWebsite(p.url)' class="myCard-img-top" alt="{{p.nom}}">
           </div>
           <div class="contentBx">
             <div class="team>">

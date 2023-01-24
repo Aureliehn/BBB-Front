@@ -35,7 +35,6 @@ import { ExceptionalTrainingComponent } from './Components/club/exceptional-trai
 import { DayPipe } from './global/day.pipe';
 import { DateFilterPipe } from './global/dateFilter.pipe';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +64,7 @@ import { DateFilterPipe } from './global/dateFilter.pipe';
     CapitalizePipe,
     DayPipe,
     ExceptionalTrainingComponent,
-    DateFilterPipe
+    DateFilterPipe,
   ],
   imports: [
     BrowserModule,
@@ -74,7 +73,6 @@ import { DateFilterPipe } from './global/dateFilter.pipe';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
